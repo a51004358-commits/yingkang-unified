@@ -53,6 +53,7 @@
   @media (min-width: 640px) { .block-inner { padding: 2.6rem 2.4rem; } }
   h1, h2, h3 { line-height: 1.35; margin: 0 0 0.85rem; font-weight: 700; }
   h1 { font-size: clamp(1.55rem, 4vw, 2.1rem); color: var(--red); }
+  h2 { font-size: 1.2rem; color: var(--ink); margin-top: 1.6rem; }
   p { margin: 0 0 1rem; color: #333; }
   .crumb { font-size: 0.88rem; color: var(--muted); margin-bottom: 1.2rem; }
   .crumb a { text-decoration: none; font-weight: 500; }
@@ -93,6 +94,15 @@
   .product:hover { border-color: #d4b896; box-shadow: var(--shadow); color: inherit; }
   .product h3 { font-size: 1.02rem; margin-bottom: 0.4rem; }
   .product .desc { font-size: 0.88rem; color: var(--muted); margin: 0 0 0.85rem; flex-grow: 1; }
+  .product .thumb {
+    width: 100%; aspect-ratio: 1; object-fit: contain; background: var(--cream);
+    border-radius: 10px; border: 1px solid var(--line); margin-bottom: 0.75rem;
+  }
+  .product .thumb-ph {
+    width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+    background: var(--cream); border-radius: 10px; border: 1px dashed #cfc4b4;
+    color: var(--muted); font-size: 0.85rem; margin-bottom: 0.75rem; text-align: center; padding: 0.5rem;
+  }
   .badge {
     align-self: flex-start; font-size: 0.72rem; font-weight: 700;
     color: var(--red); background: #f8e9e9; padding: 0.18rem 0.55rem;
@@ -106,6 +116,54 @@
   footer a { color: #fff; font-weight: 600; text-decoration: none; }
   footer .copy { margin-top: 1rem; font-size: 0.85rem; color: #999; }
   .note { font-size: 0.88rem; color: var(--muted); margin-top: 1.2rem; }
+  .hero-media {
+    display: grid; gap: 1.2rem; margin: 1rem 0 1.4rem;
+  }
+  @media (min-width: 700px) {
+    .hero-media { grid-template-columns: 1.05fr 1fr; align-items: start; }
+  }
+  .gallery {
+    display: flex; flex-direction: column; gap: 0.65rem;
+  }
+  .gallery .main {
+    width: 100%; aspect-ratio: 1; object-fit: contain; background: var(--cream);
+    border: 1px solid var(--line); border-radius: 12px;
+  }
+  .gallery .thumbs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .gallery .thumbs img {
+    width: 64px; height: 64px; object-fit: contain; background: #fff;
+    border: 1px solid var(--line); border-radius: 8px;
+  }
+  .img-placeholder {
+    aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: var(--cream); border: 1px dashed #cfc4b4; border-radius: 12px;
+    color: var(--muted); text-align: center; padding: 1.5rem; gap: 0.4rem;
+  }
+  .img-placeholder strong { color: var(--ink); }
+  .efficacy {
+    background: #fff; border: 1px solid var(--line); border-radius: 12px;
+    padding: 1.15rem 1.25rem; margin: 1.2rem 0;
+  }
+  .efficacy .lines { margin: 0; padding: 0; list-style: none; }
+  .efficacy .lines li {
+    padding: 0.35rem 0 0.35rem 1rem; position: relative; color: #333; font-size: 0.98rem;
+    line-height: 1.65;
+  }
+  .efficacy .lines li::before {
+    content: ""; position: absolute; left: 0; top: 0.85em;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--gold);
+  }
+  .thin-tag {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    color: #8a6d3b; background: #f5ecd8; border-radius: 6px;
+    padding: 0.12rem 0.5rem; margin-left: 0.35rem;
+  }
+  .diagram {
+    margin: 1.3rem 0 0.5rem; padding: 1rem; background: var(--cream);
+    border: 1px solid var(--line); border-radius: 12px; overflow-x: auto;
+  }
+  .diagram svg { display: block; width: 100%; max-width: 640px; height: auto; margin: 0 auto; }
+  .diagram .cap { text-align: center; font-size: 0.85rem; color: var(--muted); margin: 0.55rem 0 0; }
 </style>
 </head>
 <body>
@@ -130,13 +188,70 @@
   <section class="block">
     <div class="block-inner">
       <p class="crumb"><a href="../index.html">首頁</a> · <a href="index.html">產品目錄</a> · BEVIDAN 滅濕痛風痛 60粒</p>
-      <h1>BEVIDAN 滅濕痛風痛 60粒</h1>
-      <p>碧容健 銀杏 改善四肢麻痺 坐骨不適 腰椎勞損 香港製造</p>
-      <div class="price-row">
-        <span class="price-now">HK$236</span>
-        <span class="price-was">HK$398</span>
-        <span class="sold">已售出 40+</span>
+      <div class="hero-media">
+        
+      <div class="gallery">
+        <img class="main" src="../assets/products/mieshitong-bevidan-60caps-k0031/primary.png" alt="BEVIDAN 滅濕痛風痛 60粒" width="600" height="600" loading="eager">
+        <div class="thumbs"><img src="../assets/products/mieshitong-bevidan-60caps-k0031/primary.png" alt="BEVIDAN 滅濕痛風痛 60粒 圖1" width="64" height="64" loading="lazy"></div>
       </div>
+        <div>
+          <h1>BEVIDAN 滅濕痛風痛 60粒</h1>
+          <p>碧容健 銀杏 改善四肢麻痺 坐骨不適 腰椎勞損 香港製造</p>
+          <div class="price-row">
+            <span class="price-now">HK$236</span>
+            <span class="price-was">HK$398</span>
+            <span class="sold">已售出 40+</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 6222 7238</a>
+            <a class="btn btn-outline" href="https://www.hktvmall.com/hktv/zh/p/H6838001_S_K0031" target="_blank" rel="noopener">於 HKTVmall 查看</a>
+          </div>
+        </div>
+      </div>
+
+      <h2>產品說明／功效要點</h2>
+      <div class="efficacy">
+        <ul class="lines">
+          <li>【 專業修復</li>
+          <li>由內而外通循環、強筋骨】您是否正忍受都市人常見的骨骼與神經困擾</li>
+          <li>坐骨腰痛、腰椎勞損、伸屈不順</li>
+          <li>四肢麻痺、手足震軟、氣血不通</li>
+          <li>刺骨腫痛、腰酸背痛、肌肉痠疲</li>
+          <li>【 核心成分</li>
+          <li>中西合璧的血管與神經方案】(BEVIDAN) 滅濕痛風痛採用純天然植萃，拒絕化學合成，給您最安全的修復</li>
+          <li>Pycnogenol (碧容健)</li>
+          <li>碧容健 銀杏 改善四肢麻痺 坐骨不適 腰椎勞損 香港製造</li>
+          <li>規格：60粒</li>
+        </ul>
+        <p class="note" style="margin:0.8rem 0 0">以上文字整理自 HKTVmall／目錄商品原文，不作額外療效宣稱。個別情況請 WhatsApp 6222 7238 查詢。</p>
+      </div>
+
+      <h2>使用示意</h2>
+      <div class="diagram">
+        <svg viewBox="0 0 640 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="產品說明示意">
+  <rect x="8" y="28" width="170" height="88" rx="14" fill="#fff" stroke="#e5ddd0"/>
+  <rect x="235" y="28" width="170" height="88" rx="14" fill="#fff" stroke="#e5ddd0"/>
+  <rect x="462" y="28" width="170" height="88" rx="14" fill="#fff" stroke="#e5ddd0"/>
+  <circle cx="93" cy="52" r="10" fill="#9b1b1f"/>
+  <circle cx="320" cy="52" r="10" fill="#c4a35a"/>
+  <circle cx="547" cy="52" r="10" fill="#7a1216"/>
+  <text x="93" y="78" text-anchor="middle" font-size="13" font-family="Noto Sans TC, sans-serif" fill="#1a1a1a">口服膠囊／丸劑</text>
+  <text x="93" y="98" text-anchor="middle" font-size="11" font-family="Noto Sans TC, sans-serif" fill="#5a5a5a">【 核心成分</text>
+  <text x="320" y="78" text-anchor="middle" font-size="13" font-family="Noto Sans TC, sans-serif" fill="#1a1a1a">依原文服用量</text>
+  <text x="320" y="98" text-anchor="middle" font-size="11" font-family="Noto Sans TC, sans-serif" fill="#5a5a5a">原文要點</text>
+  <text x="547" y="78" text-anchor="middle" font-size="13" font-family="Noto Sans TC, sans-serif" fill="#1a1a1a">查詢前請閱讀標籤</text>
+  <text x="547" y="98" text-anchor="middle" font-size="11" font-family="Noto Sans TC, sans-serif" fill="#5a5a5a">WhatsApp 查詢</text>
+  <path d="M186 72 H227" stroke="#c4a35a" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M413 72 H454" stroke="#c4a35a" stroke-width="2" marker-end="url(#arr)"/>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c4a35a"/>
+    </marker>
+  </defs>
+</svg>
+        <p class="cap">示意流程（非真人照片）— 形式／要點／注意</p>
+      </div>
+
       <div class="specs">
         <p><strong>完整品名</strong>：德國漢堡里哈明 (BEVIDAN) 滅濕痛風痛 60粒｜碧容健 銀杏 改善四肢麻痺 坐骨不適 腰椎勞損 香港製造</p>
         <ul class="meta-list">

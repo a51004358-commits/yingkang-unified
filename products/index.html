@@ -53,6 +53,7 @@
   @media (min-width: 640px) { .block-inner { padding: 2.6rem 2.4rem; } }
   h1, h2, h3 { line-height: 1.35; margin: 0 0 0.85rem; font-weight: 700; }
   h1 { font-size: clamp(1.55rem, 4vw, 2.1rem); color: var(--red); }
+  h2 { font-size: 1.2rem; color: var(--ink); margin-top: 1.6rem; }
   p { margin: 0 0 1rem; color: #333; }
   .crumb { font-size: 0.88rem; color: var(--muted); margin-bottom: 1.2rem; }
   .crumb a { text-decoration: none; font-weight: 500; }
@@ -93,6 +94,15 @@
   .product:hover { border-color: #d4b896; box-shadow: var(--shadow); color: inherit; }
   .product h3 { font-size: 1.02rem; margin-bottom: 0.4rem; }
   .product .desc { font-size: 0.88rem; color: var(--muted); margin: 0 0 0.85rem; flex-grow: 1; }
+  .product .thumb {
+    width: 100%; aspect-ratio: 1; object-fit: contain; background: var(--cream);
+    border-radius: 10px; border: 1px solid var(--line); margin-bottom: 0.75rem;
+  }
+  .product .thumb-ph {
+    width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+    background: var(--cream); border-radius: 10px; border: 1px dashed #cfc4b4;
+    color: var(--muted); font-size: 0.85rem; margin-bottom: 0.75rem; text-align: center; padding: 0.5rem;
+  }
   .badge {
     align-self: flex-start; font-size: 0.72rem; font-weight: 700;
     color: var(--red); background: #f8e9e9; padding: 0.18rem 0.55rem;
@@ -106,6 +116,54 @@
   footer a { color: #fff; font-weight: 600; text-decoration: none; }
   footer .copy { margin-top: 1rem; font-size: 0.85rem; color: #999; }
   .note { font-size: 0.88rem; color: var(--muted); margin-top: 1.2rem; }
+  .hero-media {
+    display: grid; gap: 1.2rem; margin: 1rem 0 1.4rem;
+  }
+  @media (min-width: 700px) {
+    .hero-media { grid-template-columns: 1.05fr 1fr; align-items: start; }
+  }
+  .gallery {
+    display: flex; flex-direction: column; gap: 0.65rem;
+  }
+  .gallery .main {
+    width: 100%; aspect-ratio: 1; object-fit: contain; background: var(--cream);
+    border: 1px solid var(--line); border-radius: 12px;
+  }
+  .gallery .thumbs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .gallery .thumbs img {
+    width: 64px; height: 64px; object-fit: contain; background: #fff;
+    border: 1px solid var(--line); border-radius: 8px;
+  }
+  .img-placeholder {
+    aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: var(--cream); border: 1px dashed #cfc4b4; border-radius: 12px;
+    color: var(--muted); text-align: center; padding: 1.5rem; gap: 0.4rem;
+  }
+  .img-placeholder strong { color: var(--ink); }
+  .efficacy {
+    background: #fff; border: 1px solid var(--line); border-radius: 12px;
+    padding: 1.15rem 1.25rem; margin: 1.2rem 0;
+  }
+  .efficacy .lines { margin: 0; padding: 0; list-style: none; }
+  .efficacy .lines li {
+    padding: 0.35rem 0 0.35rem 1rem; position: relative; color: #333; font-size: 0.98rem;
+    line-height: 1.65;
+  }
+  .efficacy .lines li::before {
+    content: ""; position: absolute; left: 0; top: 0.85em;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--gold);
+  }
+  .thin-tag {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    color: #8a6d3b; background: #f5ecd8; border-radius: 6px;
+    padding: 0.12rem 0.5rem; margin-left: 0.35rem;
+  }
+  .diagram {
+    margin: 1.3rem 0 0.5rem; padding: 1rem; background: var(--cream);
+    border: 1px solid var(--line); border-radius: 12px; overflow-x: auto;
+  }
+  .diagram svg { display: block; width: 100%; max-width: 640px; height: auto; margin: 0 auto; }
+  .diagram .cap { text-align: center; font-size: 0.85rem; color: var(--muted); margin: 0.55rem 0 0; }
 </style>
 </head>
 <body>
@@ -135,6 +193,7 @@
       <div class="product-grid">
         
         <a class="product" href="yanbiqing-60caps-y5.html">
+          <img class="thumb" src="../assets/products/yanbiqing-60caps-y5/primary.png" alt="強力炎必清 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>強力炎必清 60粒</h3>
           <p class="desc">生飛滋喉嚨痛牙肉腫｜香港製造 穿心蓮+紫錐花｜去濕火消口臭 養生膠囊</p>
@@ -144,6 +203,7 @@
           </div>
         </a>
         <a class="product" href="liuwei-dihuang-350caps-x2-k0012.html">
+          <img class="thumb" src="../assets/products/liuwei-dihuang-350caps-x2-k0012/primary.png" alt="強力濃縮六味地黃丸 350粒×2" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>強力濃縮六味地黃丸 350粒×2</h3>
           <p class="desc">改善腰痠耳鳴 緩解疲勞 提升活力｜中西合璧加紫錐花｜香港製造 補而不燥 共700粒</p>
@@ -153,6 +213,7 @@
           </div>
         </a>
         <a class="product" href="jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401.html">
+          <img class="thumb" src="../assets/products/jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401/primary.png" alt="金門一條根坐骨神經膏布 10片" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>金門一條根坐骨神經膏布 10片</h3>
           <p class="desc">強效滲透 舒緩腰腿痛 關節疲勞｜特大 11x15cm｜正宗一條根 驅寒去濕</p>
@@ -162,6 +223,7 @@
           </div>
         </a>
         <a class="product" href="taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025.html">
+          <img class="thumb" src="../assets/products/taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025/primary.png" alt="台灣一條根坐骨神經膏布 20片" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>台灣一條根坐骨神經膏布 20片</h3>
           <p class="desc">天然精油 止痛貼 鎮痛貼 腰痛 腿麻｜深層滲透 台灣製造 MIT</p>
@@ -171,6 +233,7 @@
           </div>
         </a>
         <a class="product" href="futeiling-tokyo-tower-120ml-x3-k0037.html">
+          <img class="thumb" src="../assets/products/futeiling-tokyo-tower-120ml-x3-k0037/primary.png" alt="東京塔牌膚特靈 120ml×3" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>東京塔牌膚特靈 120ml×3</h3>
           <p class="desc">抑菌止癢 針對香港腳 主婦手 脫皮 雞眼｜消除腳氣 改善乾燥龜裂｜大容量 快速乾透 恢復光滑潔淨</p>
@@ -180,6 +243,7 @@
           </div>
         </a>
         <a class="product" href="taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024.html">
+          <img class="thumb" src="../assets/products/taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024/primary.png" alt="台灣一條根坐骨神經膏布 30片" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>台灣一條根坐骨神經膏布 30片</h3>
           <p class="desc">天然精油 止痛貼 鎮痛貼 腰痛 腿麻｜深層滲透 台灣製造 MIT</p>
@@ -189,6 +253,7 @@
           </div>
         </a>
         <a class="product" href="zuogu-wan-60caps-hky7389.html">
+          <img class="thumb" src="../assets/products/zuogu-wan-60caps-hky7389/primary.png" alt="坐骨神經丸 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>坐骨神經丸 60粒</h3>
           <p class="desc">深層修復神經壓迫 腰腿麻木｜含銀杏 碧容健 Pycnogenol｜改善微循環 舒緩抽痛 恢復靈活 港產</p>
@@ -198,6 +263,7 @@
           </div>
         </a>
         <a class="product" href="futeiling-120ml-yk404.html">
+          <img class="thumb" src="../assets/products/futeiling-120ml-yk404/primary.png" alt="膚特靈 120ml 噴霧" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>膚特靈 120ml 噴霧</h3>
           <p class="desc">針對香港腳 主婦手 脫皮 雞眼｜消除腳氣 改善乾燥龜裂</p>
@@ -207,6 +273,7 @@
           </div>
         </a>
         <a class="product" href="yahuanxian-60caps-k0038.html">
+          <img class="thumb" src="../assets/products/yahuanxian-60caps-k0038/primary.png" alt="蕥歡仙 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>蕥歡仙 60粒</h3>
           <p class="desc">碧容健 銀杏 改善坐骨腰痛 四肢麻痺 骨痛 腰椎勞損 舒筋活絡 香港製造</p>
@@ -216,6 +283,7 @@
           </div>
         </a>
         <a class="product" href="zuogu-gaobu-10pcs-x11-mk294.html">
+          <img class="thumb" src="../assets/products/zuogu-gaobu-10pcs-x11-mk294/primary.png" alt="坐骨神經膏布 10片（7.5×11cm）" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>坐骨神經膏布 10片（7.5×11cm）</h3>
           <p class="desc">舒緩受壓麻木 改善腰椎勞損 腰腿痠痛 止痛貼</p>
@@ -225,6 +293,7 @@
           </div>
         </a>
         <a class="product" href="zuogu-wan-150caps-k0008.html">
+          <img class="thumb" src="../assets/products/zuogu-wan-150caps-k0008/primary.png" alt="坐骨神經丸 150粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>坐骨神經丸 150粒</h3>
           <p class="desc">坐骨神經丸 150粒 (日本東京塔牌製藥株式會社監製 高含量銀杏+碧蘿芷) 改善四肢麻痹 舒緩腰腿不適 關節酸軟無力---最佳食用期至203…</p>
@@ -234,6 +303,7 @@
           </div>
         </a>
         <a class="product" href="liuwei-dihuang-350caps-yk396.html">
+          <img class="thumb" src="../assets/products/liuwei-dihuang-350caps-yk396/primary.png" alt="強力濃縮六味地黃丸 350粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>強力濃縮六味地黃丸 350粒</h3>
           <p class="desc">滋陰補腎 壯腰補精 改善腰膝酸軟 盜汗｜含紫錐花 強化體質 提升免疫｜香港製造 熟地黃 山藥</p>
@@ -243,6 +313,7 @@
           </div>
         </a>
         <a class="product" href="mieshitong-gaobu-bevidan-10pcs-yk402.html">
+          <img class="thumb" src="../assets/products/mieshitong-gaobu-bevidan-10pcs-yk402/primary.png" alt="BEVIDAN 滅濕痛風痛膏布 10片" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>BEVIDAN 滅濕痛風痛膏布 10片</h3>
           <p class="desc">台灣製造 一條根 改善關節不適 麻木</p>
@@ -252,6 +323,7 @@
           </div>
         </a>
         <a class="product" href="huatatang-50caps-x4-yk470.html">
+          <img class="thumb" src="../assets/products/huatatang-50caps-x4-yk470/primary.png" alt="花塔糖 50粒×4支" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>花塔糖 50粒×4支</h3>
           <p class="desc">台灣製造 納豆益生菌 山楂開胃 消積化滯 改善食慾不振 脾胃虛弱</p>
@@ -261,6 +333,7 @@
           </div>
         </a>
         <a class="product" href="mieshitong-bevidan-60caps-k0031.html">
+          <img class="thumb" src="../assets/products/mieshitong-bevidan-60caps-k0031/primary.png" alt="BEVIDAN 滅濕痛風痛 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>BEVIDAN 滅濕痛風痛 60粒</h3>
           <p class="desc">碧容健 銀杏 改善四肢麻痺 坐骨不適 腰椎勞損 香港製造</p>
@@ -270,6 +343,7 @@
           </div>
         </a>
         <a class="product" href="zuogu-tongyou-qianli-zhuifeng-50ml-yk408.html">
+          <img class="thumb" src="../assets/products/zuogu-tongyou-qianli-zhuifeng-50ml-yk408/primary.jpg" alt="千里追風坐骨神徑痛油 50ml" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>千里追風坐骨神徑痛油 50ml</h3>
           <p class="desc">有藥材浸泡 舒緩坐骨腰部不適</p>
@@ -279,6 +353,7 @@
           </div>
         </a>
         <a class="product" href="baitongdi-60caps-k0019.html">
+          <img class="thumb" src="../assets/products/baitongdi-60caps-k0019/primary.png" alt="百痛敵 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>百痛敵 60粒</h3>
           <p class="desc">百痛敵 (60粒)｜含有 150mg 碧容健 Pycnogenol + 銀杏｜改善手腳麻痺 關節痠痛 舒緩神經痛 血管清道夫</p>
@@ -288,6 +363,7 @@
           </div>
         </a>
         <a class="product" href="huoluoling-60caps-k0021.html">
+          <img class="thumb" src="../assets/products/huoluoling-60caps-k0021/primary.png" alt="活絡靈 2（60粒）" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>活絡靈 2（60粒）</h3>
           <p class="desc">活絡靈 2 (60粒)｜含有 150mg 碧容健 Pycnogenol + 銀杏｜改善手腳麻痺 促進血液循環 血管清道夫</p>
@@ -297,6 +373,7 @@
           </div>
         </a>
         <a class="product" href="mieshitong-bevidan-150caps-k0009.html">
+          <img class="thumb" src="../assets/products/mieshitong-bevidan-150caps-k0009/primary.png" alt="BEVIDAN 滅濕痛風痛 150粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>BEVIDAN 滅濕痛風痛 150粒</h3>
           <p class="desc">德國漢堡里哈明(公牛牌) 監製 (BEVIDAN) 滅濕痛風痛 150粒 (新加強版 正貨商標302800179) 改善四肢麻痹 舒緩腰酸背…</p>
@@ -306,6 +383,7 @@
           </div>
         </a>
         <a class="product" href="naobaijin-lingzhi-naohuosu-150caps-k0010.html">
+          <img class="thumb" src="../assets/products/naobaijin-lingzhi-naohuosu-150caps-k0010/primary.png" alt="腦白金靈芝孢子腦活素 150粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>腦白金靈芝孢子腦活素 150粒</h3>
           <p class="desc">德國腦白金 靈芝孢子腦活素 150粒 (德國漢堡里哈明 公牛牌 4合1活腦素) 增強記憶力 改善腦霧 助眠安神---最佳食用期至2030年1…</p>
@@ -315,6 +393,7 @@
           </div>
         </a>
         <a class="product" href="mieshitong-gaobu-10pcs-x15-yk403.html">
+          <img class="thumb" src="../assets/products/mieshitong-gaobu-10pcs-x15-yk403/primary.png" alt="滅濕痛風痛膏布 11×15cm（10片）" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>滅濕痛風痛膏布 11×15cm（10片）</h3>
           <p class="desc">台灣製造 艾草薑油精油配方 深層滲透 消腫止痛 舒緩關節痛 袪濕</p>
@@ -324,6 +403,7 @@
           </div>
         </a>
         <a class="product" href="niaosuanqing-60caps-k0020.html">
+          <img class="thumb" src="../assets/products/niaosuanqing-60caps-k0020/primary.png" alt="尿酸清 GOUBUNE 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>尿酸清 GOUBUNE 60粒</h3>
           <p class="desc">盈康尿酸清 GOUBUNE 60粒 (平衡尿酸 溶解結晶 天然草本精華) 美國製造 改善關節紅腫 舒緩痛風不適 消除沙礫感 靈活關節---最…</p>
@@ -333,6 +413,7 @@
           </div>
         </a>
         <a class="product" href="yanbiqing-130caps-yk471.html">
+          <img class="thumb" src="../assets/products/yanbiqing-130caps-yk471/primary.png" alt="強力炎必清 130粒珍寶裝" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>強力炎必清 130粒珍寶裝</h3>
           <p class="desc">消炎清熱 穿心蓮紫錐花配方 舒緩喉嚨腫痛/生飛滋/牙肉腫 提升免疫力 香港製造</p>
@@ -342,6 +423,7 @@
           </div>
         </a>
         <a class="product" href="zuogu-gaobu-10pcs-x11-yk400.html">
+          <img class="thumb" src="../assets/products/zuogu-gaobu-10pcs-x11-yk400/primary.png" alt="坐骨神經膏布 7×11cm（10片）" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>坐骨神經膏布 7×11cm（10片）</h3>
           <p class="desc">坐骨神經膏布7X11CM (十片裝) (肌肉扭傷止痛貼)</p>
@@ -351,6 +433,7 @@
           </div>
         </a>
         <a class="product" href="zuogu-tongwan-60caps-k0003.html">
+          <img class="thumb" src="../assets/products/zuogu-tongwan-60caps-k0003/primary.png" alt="坐骨神徑痛丸 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>坐骨神徑痛丸 60粒</h3>
           <p class="desc">坐骨神徑痛丸 60粒</p>
@@ -360,6 +443,7 @@
           </div>
         </a>
         <a class="product" href="fengse-gucidan-60caps-k0002.html">
+          <img class="thumb" src="../assets/products/fengse-gucidan-60caps-k0002/primary.png" alt="風澀骨剌丹 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>風澀骨剌丹 60粒</h3>
           <p class="desc">風涩(濕)骨剌丹 60粒</p>
@@ -369,6 +453,7 @@
           </div>
         </a>
         <a class="product" href="biyan-60caps-mk368.html">
+          <img class="thumb" src="../assets/products/biyan-60caps-mk368/primary.jpg" alt="鼻炎素 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>鼻炎素 60粒</h3>
           <p class="desc">鼻炎素 60粒 強力舒緩鼻部敏感 暢通呼吸道 守護鼻腔健康 提升防禦</p>
@@ -378,6 +463,7 @@
           </div>
         </a>
         <a class="product" href="jianchiling-60caps-mk285.html">
+          <img class="thumb" src="../assets/products/jianchiling-60caps-mk285/primary.png" alt="健齒靈 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>健齒靈 60粒</h3>
           <p class="desc">健齒靈 60粒 強化牙齦 守護牙齒健康 消除口氣 牙周護理</p>
@@ -387,6 +473,7 @@
           </div>
         </a>
         <a class="product" href="jiuke-tiaoli-60caps-hk102.html">
+          <img class="thumb" src="../assets/products/jiuke-tiaoli-60caps-hk102/primary.jpg" alt="尹淑梅久咳調理丸 60粒" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>尹淑梅久咳調理丸 60粒</h3>
           <p class="desc">尹淑梅 久咳調理丸 1樽裝(60粒) 三代傳承 養陰潤肺 止咳化痰</p>
@@ -396,6 +483,7 @@
           </div>
         </a>
         <a class="product" href="difugen-15ml-yk395.html">
+          <img class="thumb" src="../assets/products/difugen-15ml-yk395/primary.webp" alt="滴膚堅 Difugen 15ml" width="280" height="280" loading="lazy">
           <span class="badge">盈康</span>
           <h3>滴膚堅 Difugen 15ml</h3>
           <p class="desc">滴膚堅 Difugen 15ML 噴掃兩用 雞眼 疣 腳氣腳臭 止痕</p>
