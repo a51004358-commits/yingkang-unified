@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>盈康｜香港本地健康品牌</title>
-<meta name="description" content="盈康 — 香港本地健康品牌。膏布、口服、噴霧產品說明可查，服務電話 6222 7238。">
+<meta name="description" content="盈康 — 香港本地日常養生基礎支援。膏布・口服・噴霧說明可查；先選用途，再 WhatsApp 6222 7238 查詢。">
 <link rel="canonical" href="https://www.ykimed.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -355,6 +355,55 @@ img { max-width: 100%; height: auto; display: block; }
 .filter-pill:hover, .filter-pill.active {
   background: var(--red); color: #fff; border-color: var(--red);
 }
+
+/* Need path — reduce choice paralysis */
+.path-grid {
+  display: grid; gap: 1.1rem;
+}
+@media (min-width: 800px) {
+  .path-grid { grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
+}
+.path-card {
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.45rem 1.3rem 1.35rem;
+  display: flex; flex-direction: column; min-height: 100%;
+  box-shadow: 0 4px 16px rgba(20,20,20,0.04);
+}
+.path-card .step {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em;
+  color: var(--red); margin: 0 0 0.55rem;
+}
+.path-card h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
+.path-card p { margin: 0 0 0.85rem; color: var(--muted); font-size: 0.94rem; line-height: 1.6; flex: 1; }
+.path-card .path-pick {
+  font-size: 0.9rem; color: var(--ink); margin: 0 0 1rem;
+  padding: 0.65rem 0.75rem; background: var(--cream);
+  border-radius: 10px; border: 1px solid var(--line); line-height: 1.5;
+}
+.path-card .path-pick a { font-weight: 700; text-decoration: none; }
+.path-card .path-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* Ritual block */
+.ritual {
+  display: grid; gap: 1.2rem;
+}
+@media (min-width: 800px) {
+  .ritual { grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+}
+.ritual-steps { list-style: none; margin: 0; padding: 0; }
+.ritual-steps li {
+  display: grid; grid-template-columns: 2.2rem 1fr; gap: 0.75rem;
+  padding: 0.85rem 0; border-bottom: 1px solid var(--line);
+}
+.ritual-steps li:last-child { border-bottom: none; }
+.ritual-steps .n {
+  width: 2.1rem; height: 2.1rem; border-radius: 50%;
+  background: var(--soft); color: var(--red); font-weight: 700;
+  display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+}
+.ritual-steps strong { display: block; margin-bottom: 0.15rem; }
+.ritual-steps span { color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
+
 h1,h2,h3 { line-height: 1.3; }
 
 </style>
@@ -374,52 +423,95 @@ h1,h2,h3 { line-height: 1.3; }
 </header>
 <main id="top">
 
-  <!-- 1. Cinematic hero -->
+  <!-- 1. Cinematic hero — foundational daily support -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
-      <span class="hero-kicker">香港本地健康品牌</span>
-      <h1 id="hero-title">清楚說明。<br>電話可問。</h1>
-      <p class="promise">膏布・口服・噴霧 — 產品頁寫明要點，方便購買前核實。</p>
-      <p class="sub">對外公開品牌為<strong>盈康</strong>。功效文字僅整理自店舖原文；無原文者不另撰寫。</p>
+      <span class="hero-kicker">日常養生基礎支援</span>
+      <h1 id="hero-title">先弄清楚要什麼。<br>再輕輕鬆鬆問一句。</h1>
+      <p class="promise">盈康把膏布、口服、噴霧的說明寫清楚 — 不是一支「神產品」，而是可核實的日常選購路徑。</p>
+      <p class="sub">功效文字只整理自店舖原文；無原文者不另撰寫。下一步很簡單：看精選，或直接 WhatsApp。</p>
       <p class="phone-line">服務電話 <a href="tel:+85262227238">6222 7238</a></p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 6222 7238</a>
-        <a class="btn btn-outline" href="products/">瀏覽產品目錄</a>
+        <a class="btn btn-outline" href="#path">先選用途</a>
       </div>
     </div>
   </section>
 
-  <!-- 2. Trust strip -->
-  <section class="trust-strip" aria-label="信任要點">
+  <!-- 2. Trust strip — what we can verify -->
+  <section class="trust-strip" aria-label="可核實要點">
     <div class="wrap">
       <div class="trust-strip-grid">
         <div class="trust-item">
-          <strong>可查產品說明</strong>
-          <span>每支產品獨立頁，要點來自店舖原文</span>
+          <strong>說明可對照</strong>
+          <span>產品頁要點來自店舖原文，不是空口口號</span>
         </div>
         <div class="trust-item">
-          <strong>服務電話 6222 7238</strong>
-          <span>致電或 WhatsApp，購買前先問清楚</span>
+          <strong>來源可問</strong>
+          <span>電話／WhatsApp 6222 7238，購買前先核實</span>
         </div>
         <div class="trust-item">
-          <strong>HKTVmall 店舖</strong>
-          <span>現價與商品原文可於網店對照</span>
+          <strong>成分寫在頁上</strong>
+          <span>有原文才列用法／注意；無則從缺</span>
         </div>
         <div class="trust-item">
-          <strong>香港本地品牌</strong>
-          <span>公開品牌盈康；法人名稱僅列頁尾</span>
+          <strong>不虛構認證</strong>
+          <span>不宣稱未經核實的臨床或第三方標章</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. Featured products -->
+  <!-- 3. Simple path — reduce choice paralysis -->
+  <section class="section section-cream" id="path" aria-labelledby="path-title">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">簡單路徑</p>
+        <h2 id="path-title">先選用途，再看一支代表品</h2>
+        <p class="short-center">怕產品太多？先對用途，再打開產品頁或 WhatsApp 問清楚。</p>
+      </div>
+      <div class="path-grid">
+        <article class="path-card">
+          <p class="step">路徑 A · 外用貼敷</p>
+          <h3>腰腿・關節不適</h3>
+          <p>若你主要想找膏布類外用，可先看一條根系列說明，再決定片數規格。</p>
+          <p class="path-pick">代表：<a href="products/jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401.html">金門一條根坐骨神經膏布 10片</a></p>
+          <div class="path-actions">
+            <a class="btn btn-outline-dark" href="products/jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401.html" style="padding:0.65rem 1.1rem;font-size:0.92rem">看說明</a>
+            <a class="btn btn-primary" href="https://wa.me/85262227238" target="_blank" rel="noopener" style="padding:0.65rem 1.1rem;font-size:0.92rem">WhatsApp 問</a>
+          </div>
+        </article>
+        <article class="path-card">
+          <p class="step">路徑 B · 日常口服</p>
+          <h3>清熱・養生膠囊</h3>
+          <p>若你想找口服養生，先看單品頁的功效要點與服法（有原文才寫），避免一次買一堆。</p>
+          <p class="path-pick">代表：<a href="products/yanbiqing-60caps-y5.html">強力炎必清 60粒</a></p>
+          <div class="path-actions">
+            <a class="btn btn-outline-dark" href="products/yanbiqing-60caps-y5.html" style="padding:0.65rem 1.1rem;font-size:0.92rem">看說明</a>
+            <a class="btn btn-primary" href="https://wa.me/85262227238" target="_blank" rel="noopener" style="padding:0.65rem 1.1rem;font-size:0.92rem">WhatsApp 問</a>
+          </div>
+        </article>
+        <article class="path-card">
+          <p class="step">路徑 C · 皮膚外用</p>
+          <h3>噴霧・外用護理</h3>
+          <p>若你需要噴霧或藥油，先對照該頁注意事項（有原文才列出），再決定是否訂購。</p>
+          <p class="path-pick">代表：<a href="products/futeiling-120ml-yk404.html">膚特靈 120ml 噴霧</a></p>
+          <div class="path-actions">
+            <a class="btn btn-outline-dark" href="products/futeiling-120ml-yk404.html" style="padding:0.65rem 1.1rem;font-size:0.92rem">看說明</a>
+            <a class="btn btn-primary" href="https://wa.me/85262227238" target="_blank" rel="noopener" style="padding:0.65rem 1.1rem;font-size:0.92rem">WhatsApp 問</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Featured products -->
   <section class="section" id="products" aria-labelledby="products-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">精選產品</p>
-        <h2 id="products-title">先看說明，再決定購買</h2>
-        <p class="short">熱賣與經典品項：膏布、口服、噴霧。價格以目錄現價為準。</p>
+        <p class="eyebrow">精選六支</p>
+        <h2 id="products-title">看完路徑，再比較這幾支</h2>
+        <p class="short">不是要你一次買齊。先對用途，再打開說明；補貨可 WhatsApp 或經 HKTVmall。</p>
       </div>
       <div class="product-grid">
 
@@ -526,43 +618,80 @@ h1,h2,h3 { line-height: 1.3; }
     </div>
   </section>
 
-  <!-- 4. Benefits / product story -->
+  <!-- 5. Benefits + daily ritual -->
   <section class="section section-cream" id="benefits" aria-labelledby="benefits-title">
     <div class="wrap">
       <div class="section-head center">
-        <p class="eyebrow">產品線</p>
-        <h2 id="benefits-title">三類產品，用途清楚分開</h2>
-        <p class="short-center">只按劑型說明選購方向；具體功效請見各產品頁原文整理。</p>
+        <p class="eyebrow">對號入座</p>
+        <h2 id="benefits-title">哪類產品，解決哪種麻煩</h2>
+        <p class="short-center">減少「一堆樽不知吃邊支」：按劑型分開，具體功效以各產品頁原文為準。</p>
       </div>
       <div class="benefit-grid">
         <article class="benefit-card">
           <div class="icon" aria-hidden="true">貼</div>
           <h3>膏布</h3>
-          <p>外用貼敷，常見於腰腿、關節不適相關品項。尺寸與用法以各產品頁為準。</p>
+          <p>外用貼敷，常見於腰腿、關節相關選購。先看尺寸與用法，再決定是否長期備用。</p>
         </article>
         <article class="benefit-card">
           <div class="icon" aria-hidden="true">服</div>
           <h3>口服</h3>
-          <p>養生膠囊／丸劑。功效與服法僅在有店舖原文時列出，方便你對照查詢。</p>
+          <p>養生膠囊／丸劑。一次專心一支：看功效要點與服法（有原文才寫），避免盲目堆疊。</p>
         </article>
         <article class="benefit-card">
           <div class="icon" aria-hidden="true">噴</div>
           <h3>噴霧／外用</h3>
-          <p>皮膚外用噴霧與藥油等。使用前請閱讀該產品頁注意事項（有原文才寫）。</p>
+          <p>皮膚外用噴霧與藥油。使用前先讀注意事項；成分與用法以該頁整理為準。</p>
         </article>
+      </div>
+
+      <div class="ritual" style="margin-top:2.4rem">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">日常節奏</p>
+            <h2>養成習慣，比一次買齊更重要</h2>
+            <p>沒有虛構網紅代言。用簡單三步，把「記得用／記得補」變得容易。</p>
+          </div>
+        </div>
+        <ol class="ritual-steps">
+          <li>
+            <span class="n">1</span>
+            <div>
+              <strong>對用途，選一支</strong>
+              <span>用上方路徑或精選，打開產品頁看說明；不肯定就 WhatsApp 問。</span>
+            </div>
+          </li>
+          <li>
+            <span class="n">2</span>
+            <div>
+              <strong>固定時間使用</strong>
+              <span>口服按該頁服法；膏布／噴霧按說明外用。只跟從有原文的用法。</span>
+            </div>
+          </li>
+          <li>
+            <span class="n">3</span>
+            <div>
+              <strong>快用完就補貨</strong>
+              <span>WhatsApp 6222 7238，或經 <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall 盈康店舖</a> 再訂。</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="cta-row" style="justify-content:center;margin-top:1.6rem">
+        <a class="btn btn-primary" href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 查詢／補貨</a>
+        <a class="btn btn-outline-dark" href="products/">瀏覽完整目錄</a>
       </div>
     </div>
   </section>
 
-  <!-- 5. About teaser -->
+  <!-- 6. About teaser -->
   <section class="section section-dark" id="about" aria-labelledby="about-title">
     <div class="wrap">
       <div class="teaser-grid">
         <div>
           <div class="section-head">
             <p class="eyebrow">關於盈康</p>
-            <h2 id="about-title">可查、可問 — 選購前先核實</h2>
-            <p>盈康是香港本地健康品牌。我們把產品說明寫清楚，並公開服務電話，方便你購買前核實。</p>
+            <h2 id="about-title">可核實的日常養生品牌</h2>
+            <p>盈康提供多類產品的清楚說明與選購協助 — 強調可查、可問，而不是單一神效或名人背書。</p>
           </div>
           <ul class="verify-list">
             <li><strong>產品頁</strong> — 功效要點來自店舖原文；有原文時才寫用法／注意事項。</li>
@@ -585,7 +714,7 @@ h1,h2,h3 { line-height: 1.3; }
     </div>
   </section>
 
-  <!-- 6. Contact -->
+  <!-- 7. Contact -->
   <section class="section" id="contact" aria-labelledby="contact-title">
     <div class="wrap">
       <div class="section-head">

@@ -355,6 +355,55 @@ img { max-width: 100%; height: auto; display: block; }
 .filter-pill:hover, .filter-pill.active {
   background: var(--red); color: #fff; border-color: var(--red);
 }
+
+/* Need path — reduce choice paralysis */
+.path-grid {
+  display: grid; gap: 1.1rem;
+}
+@media (min-width: 800px) {
+  .path-grid { grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
+}
+.path-card {
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.45rem 1.3rem 1.35rem;
+  display: flex; flex-direction: column; min-height: 100%;
+  box-shadow: 0 4px 16px rgba(20,20,20,0.04);
+}
+.path-card .step {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em;
+  color: var(--red); margin: 0 0 0.55rem;
+}
+.path-card h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
+.path-card p { margin: 0 0 0.85rem; color: var(--muted); font-size: 0.94rem; line-height: 1.6; flex: 1; }
+.path-card .path-pick {
+  font-size: 0.9rem; color: var(--ink); margin: 0 0 1rem;
+  padding: 0.65rem 0.75rem; background: var(--cream);
+  border-radius: 10px; border: 1px solid var(--line); line-height: 1.5;
+}
+.path-card .path-pick a { font-weight: 700; text-decoration: none; }
+.path-card .path-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* Ritual block */
+.ritual {
+  display: grid; gap: 1.2rem;
+}
+@media (min-width: 800px) {
+  .ritual { grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+}
+.ritual-steps { list-style: none; margin: 0; padding: 0; }
+.ritual-steps li {
+  display: grid; grid-template-columns: 2.2rem 1fr; gap: 0.75rem;
+  padding: 0.85rem 0; border-bottom: 1px solid var(--line);
+}
+.ritual-steps li:last-child { border-bottom: none; }
+.ritual-steps .n {
+  width: 2.1rem; height: 2.1rem; border-radius: 50%;
+  background: var(--soft); color: var(--red); font-weight: 700;
+  display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+}
+.ritual-steps strong { display: block; margin-bottom: 0.15rem; }
+.ritual-steps span { color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
+
 h1,h2,h3 { line-height: 1.3; }
 
 </style>
@@ -376,13 +425,20 @@ h1,h2,h3 { line-height: 1.3; }
   <section class="page-hero">
     <div class="wrap">
       <h1>產品目錄</h1>
-      <p>30 件產品說明頁 — 膏布・口服・噴霧。點擊查看功效要點與聯絡方式。</p>
+      <p>先對用途，再打開說明。30 件產品頁 — 不是要你一次看完，而是方便對號入座。</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
       <p class="crumb"><a href="../index.html">首頁</a> / 產品目錄</p>
+      
+      <div class="cream-card" style="margin-bottom:1.5rem">
+        <h3>不知從哪支開始？</h3>
+        <p>回首頁用「簡單路徑」先選用途，或直接 WhatsApp <a href="https://wa.me/85262227238" target="_blank" rel="noopener">6222 7238</a> 說明你的情況。</p>
+        <p class="note" style="margin:0.5rem 0 0"><a href="../index.html#path">← 返回簡單路徑</a></p>
+      </div>
+
       <div class="filter-row" aria-label="分類">
         <span class="filter-pill active">全部 30</span>
         <span class="filter-pill">膏布／外用</span>

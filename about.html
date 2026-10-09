@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>關於我們｜盈康</title>
-<meta name="description" content="盈康是香港本地健康品牌。產品說明可查、服務電話可問。WhatsApp 6222 7238。">
+<meta name="description" content="盈康是香港本地日常養生品牌：說明可查、電話可問。無虛構認證或名人背書。WhatsApp 6222 7238。">
 <link rel="canonical" href="https://www.ykimed.com/about.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -355,6 +355,55 @@ img { max-width: 100%; height: auto; display: block; }
 .filter-pill:hover, .filter-pill.active {
   background: var(--red); color: #fff; border-color: var(--red);
 }
+
+/* Need path — reduce choice paralysis */
+.path-grid {
+  display: grid; gap: 1.1rem;
+}
+@media (min-width: 800px) {
+  .path-grid { grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
+}
+.path-card {
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.45rem 1.3rem 1.35rem;
+  display: flex; flex-direction: column; min-height: 100%;
+  box-shadow: 0 4px 16px rgba(20,20,20,0.04);
+}
+.path-card .step {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em;
+  color: var(--red); margin: 0 0 0.55rem;
+}
+.path-card h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
+.path-card p { margin: 0 0 0.85rem; color: var(--muted); font-size: 0.94rem; line-height: 1.6; flex: 1; }
+.path-card .path-pick {
+  font-size: 0.9rem; color: var(--ink); margin: 0 0 1rem;
+  padding: 0.65rem 0.75rem; background: var(--cream);
+  border-radius: 10px; border: 1px solid var(--line); line-height: 1.5;
+}
+.path-card .path-pick a { font-weight: 700; text-decoration: none; }
+.path-card .path-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* Ritual block */
+.ritual {
+  display: grid; gap: 1.2rem;
+}
+@media (min-width: 800px) {
+  .ritual { grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+}
+.ritual-steps { list-style: none; margin: 0; padding: 0; }
+.ritual-steps li {
+  display: grid; grid-template-columns: 2.2rem 1fr; gap: 0.75rem;
+  padding: 0.85rem 0; border-bottom: 1px solid var(--line);
+}
+.ritual-steps li:last-child { border-bottom: none; }
+.ritual-steps .n {
+  width: 2.1rem; height: 2.1rem; border-radius: 50%;
+  background: var(--soft); color: var(--red); font-weight: 700;
+  display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+}
+.ritual-steps strong { display: block; margin-bottom: 0.15rem; }
+.ritual-steps span { color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
+
 h1,h2,h3 { line-height: 1.3; }
 
 </style>
@@ -376,25 +425,25 @@ h1,h2,h3 { line-height: 1.3; }
   <section class="page-hero">
     <div class="wrap">
       <h1>關於盈康</h1>
-      <p>香港本地健康品牌。產品說明可查，服務電話可問 — 方便購買前核實。</p>
+      <p>日常養生基礎支援 — 多類產品、清楚說明、電話可問。不作單一神效或虛構代言。</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap" style="max-width:760px">
-      <p class="short" style="font-size:1.08rem;color:var(--muted)">盈康面向大眾提供膏布、口服、噴霧等養生相關產品說明與選購協助。</p>
-      <p class="short">本站以「可查、可問」為原則：產品頁整理店舖原文要點，服務電話公開。</p>
-      <p class="short">對外公開品牌名稱為<strong>盈康</strong>。法人公司名稱僅列於頁尾，本頁不刊登商業登記號碼。</p>
+      <p class="short" style="font-size:1.08rem;color:var(--muted)">盈康把膏布、口服、噴霧等產品說明整理成可對照的獨立頁，方便你建立自己的日常選購節奏。</p>
+      <p class="short">我們的原則很簡單：<strong>可查、可問</strong>。功效／用法／注意事項只來自店舖原文；沒有的就不寫。不虛構第三方認證、臨床數據或名人推薦。</p>
+      <p class="short">對外公開品牌為<strong>盈康</strong>。法人公司名稱僅列於頁尾，本頁不刊登商業登記號碼。</p>
     </div>
   </section>
 
   <section class="trust-strip" aria-label="信任要點">
     <div class="wrap">
       <div class="trust-strip-grid">
-        <div class="trust-item"><strong>可查產品說明</strong><span>獨立產品頁 + 原文要點</span></div>
-        <div class="trust-item"><strong>服務電話 6222 7238</strong><span>致電或 WhatsApp</span></div>
-        <div class="trust-item"><strong>通路購買可問</strong><span>HKTVmall 店舖現價可對照</span></div>
-        <div class="trust-item"><strong>不虛構評價</strong><span>不刊登無法核實的獎項數字</span></div>
+        <div class="trust-item"><strong>說明可對照</strong><span>獨立產品頁 + 店舖原文要點</span></div>
+        <div class="trust-item"><strong>服務電話 6222 7238</strong><span>致電或 WhatsApp 先問清楚</span></div>
+        <div class="trust-item"><strong>成分與用法</strong><span>有原文才列；無則從缺</span></div>
+        <div class="trust-item"><strong>不虛構認證</strong><span>無第三方標章就不宣稱</span></div>
       </div>
     </div>
   </section>
@@ -435,6 +484,30 @@ h1,h2,h3 { line-height: 1.3; }
         <p>中山醫學院教授尹鏡波嫡傳孫女，香港註冊中醫師、中醫內科針灸教授。三代從醫，從醫五十多年；著有《中醫科學養生防治法》、《中華醫學尹家醫珍》、《尹家三代行醫紀要——醫海驪珠》等。</p>
         <p class="note" style="margin:0.6rem 0 0">以上簡歷整理自盈康公開歷程介紹，不作額外獎項或市場佔有率宣稱。</p>
       </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="wrap" style="max-width:760px">
+      <div class="section-head">
+        <p class="eyebrow">日常節奏</p>
+        <h2>怎樣把選購變簡單</h2>
+      </div>
+      <ol class="ritual-steps">
+        <li>
+          <span class="n">1</span>
+          <div><strong>先對用途</strong><span>外用貼敷、日常口服、或皮膚噴霧 — 先選一條路徑。</span></div>
+        </li>
+        <li>
+          <span class="n">2</span>
+          <div><strong>只專心一支</strong><span>打開產品頁看說明；不肯定就 WhatsApp 6222 7238。</span></div>
+        </li>
+        <li>
+          <span class="n">3</span>
+          <div><strong>用完再補</strong><span>經 WhatsApp 或 <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall</a> 再訂，養成固定習慣。</span></div>
+        </li>
+      </ol>
     </div>
   </section>
 
