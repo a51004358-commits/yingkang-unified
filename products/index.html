@@ -164,6 +164,64 @@
   }
   .diagram svg { display: block; width: 100%; max-width: 640px; height: auto; margin: 0 auto; }
   .diagram .cap { text-align: center; font-size: 0.85rem; color: var(--muted); margin: 0.55rem 0 0; }
+
+  .trust-chips {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    justify-content: center; margin: 1.1rem 0 1.4rem;
+  }
+  .trust-chip {
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    background: #fff; border: 1px solid var(--line);
+    border-radius: 999px; padding: 0.4rem 0.9rem;
+    font-size: 0.88rem; font-weight: 600; color: var(--ink);
+    box-shadow: 0 2px 8px rgba(26,26,26,0.04);
+  }
+  .trust-chip .dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--gold);
+    flex-shrink: 0;
+  }
+  .hero-phone {
+    margin: 0.35rem 0 0.9rem;
+    font-size: clamp(1.25rem, 3.5vw, 1.55rem);
+    font-weight: 700;
+  }
+  .hero-phone a { color: var(--red); text-decoration: none; }
+  .hero-phone a:hover { text-decoration: underline; }
+  .pos-line {
+    font-size: 1.05rem; font-weight: 600; color: var(--red-dark);
+    margin: 0 auto 0.55rem; max-width: 28em;
+  }
+  .trust-block {
+    background: var(--cream); border: 1px solid var(--line);
+    border-radius: 12px; padding: 1.2rem 1.25rem; margin: 1.4rem 0;
+  }
+  .trust-block h2 {
+    font-size: 1.15rem; margin: 0 0 0.85rem;
+    border-left: 4px solid var(--red); padding-left: 0.65rem;
+  }
+  .trust-block h3 {
+    font-size: 0.98rem; color: var(--red); margin: 0.95rem 0 0.4rem;
+  }
+  .trust-block h3:first-of-type { margin-top: 0.2rem; }
+  .trust-block ul { margin: 0.2rem 0 0.4rem; padding-left: 1.15rem; }
+  .trust-block li { margin: 0.25rem 0; color: #333; font-size: 0.95rem; line-height: 1.65; }
+  .trust-block .contact-line {
+    margin: 0.55rem 0 0; font-size: 1.02rem; font-weight: 700;
+  }
+  .trust-block .contact-line a { text-decoration: none; }
+  .trust-block .src-note {
+    margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--muted);
+  }
+  .verify-list {
+    margin: 0.6rem 0 0; padding: 0; list-style: none;
+  }
+  .verify-list li {
+    padding: 0.55rem 0.75rem; margin-bottom: 0.45rem;
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    font-size: 0.95rem;
+  }
+  .verify-list strong { color: var(--red); }
+
 </style>
 </head>
 <body>
@@ -174,10 +232,11 @@
       <img src="../assets/logo.png" alt="盈康" width="42" height="42">
       <span>盈康</span>
     </a>
-    <nav class="nav-links" aria-label="主要導覽">
+        <nav class="nav-links" aria-label="主要導覽">
       <a href="../index.html">首頁</a>
+      <a href="../about.html">關於我們</a>
       <a href="index.html">產品目錄</a>
-      <a href="../index.html#contact">聯絡</a>
+      <a href="../about.html#contact">聯絡</a>
       <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall</a>
     </nav>
   </div>
@@ -507,7 +566,7 @@
   <p><strong>盈康藥業有限公司</strong><br>YING KANG MEDICINE LIMITED</p>
   <p>RM 1605, 16/F, Wing Hing Ind Bldg, 83-93 Chai Wan Kok St, Tsuen Wan</p>
   <p>電話 <a href="tel:+85262227238">6222 7238</a></p>
-  <p class="copy">© 2026 盈康</p>
+  <p class="copy">© 2026 盈康 · 法人名稱僅列於頁尾</p>
 </footer>
 
 </body>
