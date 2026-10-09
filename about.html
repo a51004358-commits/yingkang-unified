@@ -11,142 +11,352 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --red: #9b1b1f; --red-dark: #7a1216; --gold: #c4a35a;
-    --ink: #1a1a1a; --muted: #5a5a5a; --paper: #ffffff;
-    --cream: #f7f3eb; --soft: #f0ebe3; --line: #e5ddd0;
-    --radius: 14px; --shadow: 0 8px 28px rgba(26,26,26,0.08); --max: 920px;
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
-    color: var(--ink); background: var(--cream);
-    line-height: 1.75; letter-spacing: 0.02em;
-  }
-  a { color: var(--red); text-underline-offset: 0.15em; }
-  a:hover { color: var(--red-dark); }
-  .nav {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(255,255,255,0.96); backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav-inner {
-    max-width: var(--max); margin: 0 auto; padding: 0.7rem 1.1rem;
-    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-  }
-  .nav-brand {
-    display: flex; align-items: center; gap: 0.65rem;
-    text-decoration: none; color: var(--ink); font-weight: 700;
-  }
-  .nav-brand img { width: 42px; height: 42px; object-fit: contain; border-radius: 8px; }
-  .nav-links { display: flex; gap: 0.35rem 1rem; flex-wrap: wrap; font-size: 0.92rem; }
-  .nav-links a { text-decoration: none; color: var(--muted); font-weight: 500; }
-  .nav-links a:hover { color: var(--red); }
-  .block {
-    background: var(--paper); margin: 1.25rem auto; max-width: var(--max);
-    border-radius: var(--radius); box-shadow: var(--shadow);
-    border: 1px solid var(--line); overflow: hidden;
-  }
-  .block-inner { padding: 2.2rem 1.5rem; }
-  @media (min-width: 640px) { .block-inner { padding: 2.6rem 2.4rem; } }
-  h1, h2, h3 { line-height: 1.35; margin: 0 0 0.85rem; font-weight: 700; }
-  h1 { font-size: clamp(1.65rem, 4vw, 2.2rem); color: var(--red); }
-  h2 {
-    font-size: clamp(1.25rem, 3vw, 1.5rem); color: var(--ink);
-    border-left: 4px solid var(--red); padding-left: 0.7rem; margin: 1.6rem 0 1rem;
-  }
-  h2:first-of-type { margin-top: 0.3rem; }
-  p { margin: 0 0 0.85rem; color: #333; }
-  .lead { font-size: 1.05rem; color: var(--muted); max-width: 36em; }
-  .short { max-width: 34em; }
-  .card-soft {
-    background: var(--cream); border: 1px solid var(--line);
-    border-radius: 12px; padding: 1.15rem 1.2rem; margin: 1rem 0;
-  }
-  .card-soft h3 { color: var(--red); margin-bottom: 0.45rem; font-size: 1.05rem; }
-  .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.2rem 0 0.4rem; }
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
-    font-family: inherit; font-weight: 700; font-size: 1.02rem;
-    text-decoration: none; border-radius: 999px; padding: 0.8rem 1.4rem;
-    border: 2px solid transparent;
-  }
-  .btn-primary { background: var(--red); color: #fff; }
-  .btn-primary:hover { background: var(--red-dark); color: #fff; }
-  .btn-outline { background: #fff; color: var(--red); border-color: var(--red); }
-  .btn-outline:hover { background: var(--soft); color: var(--red-dark); }
-  .contact-dl {
-    margin: 0; display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.65rem 0.8rem;
-  }
-  .contact-dl dt { font-weight: 700; color: var(--muted); font-size: 0.92rem; }
-  .contact-dl dd { margin: 0; }
-  .contact-dl a { font-weight: 600; text-decoration: none; }
-  footer {
-    background: #1a1212; color: #ddd; text-align: center;
-    padding: 2rem 1.2rem 2.4rem; margin-top: 1.5rem;
-  }
-  footer p { margin: 0.35rem 0; color: #ccc; font-size: 0.95rem; }
-  footer a { color: #fff; font-weight: 600; text-decoration: none; }
-  footer .copy { margin-top: 1rem; font-size: 0.85rem; color: #999; }
 
-  .trust-chips {
-    display: flex; flex-wrap: wrap; gap: 0.5rem;
-    justify-content: center; margin: 1.1rem 0 1.4rem;
-  }
-  .trust-chip {
-    display: inline-flex; align-items: center; gap: 0.35rem;
-    background: #fff; border: 1px solid var(--line);
-    border-radius: 999px; padding: 0.4rem 0.9rem;
-    font-size: 0.88rem; font-weight: 600; color: var(--ink);
-    box-shadow: 0 2px 8px rgba(26,26,26,0.04);
-  }
-  .trust-chip .dot {
-    width: 8px; height: 8px; border-radius: 50%; background: var(--gold);
-    flex-shrink: 0;
-  }
-  .hero-phone {
-    margin: 0.35rem 0 0.9rem;
-    font-size: clamp(1.25rem, 3.5vw, 1.55rem);
-    font-weight: 700;
-  }
-  .hero-phone a { color: var(--red); text-decoration: none; }
-  .hero-phone a:hover { text-decoration: underline; }
-  .pos-line {
-    font-size: 1.05rem; font-weight: 600; color: var(--red-dark);
-    margin: 0 auto 0.55rem; max-width: 28em;
-  }
-  .trust-block {
-    background: var(--cream); border: 1px solid var(--line);
-    border-radius: 12px; padding: 1.2rem 1.25rem; margin: 1.4rem 0;
-  }
-  .trust-block h2 {
-    font-size: 1.15rem; margin: 0 0 0.85rem;
-    border-left: 4px solid var(--red); padding-left: 0.65rem;
-  }
-  .trust-block h3 {
-    font-size: 0.98rem; color: var(--red); margin: 0.95rem 0 0.4rem;
-  }
-  .trust-block h3:first-of-type { margin-top: 0.2rem; }
-  .trust-block ul { margin: 0.2rem 0 0.4rem; padding-left: 1.15rem; }
-  .trust-block li { margin: 0.25rem 0; color: #333; font-size: 0.95rem; line-height: 1.65; }
-  .trust-block .contact-line {
-    margin: 0.55rem 0 0; font-size: 1.02rem; font-weight: 700;
-  }
-  .trust-block .contact-line a { text-decoration: none; }
-  .trust-block .src-note {
-    margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--muted);
-  }
-  .verify-list {
-    margin: 0.6rem 0 0; padding: 0; list-style: none;
-  }
-  .verify-list li {
-    padding: 0.55rem 0.75rem; margin-bottom: 0.45rem;
-    background: #fff; border: 1px solid var(--line); border-radius: 10px;
-    font-size: 0.95rem;
-  }
-  .verify-list strong { color: var(--red); }
+:root {
+  --red: #9b1b1f;
+  --red-dark: #6e1014;
+  --red-deep: #3a0a0c;
+  --gold: #c4a35a;
+  --ink: #141414;
+  --muted: #5c5c5c;
+  --paper: #ffffff;
+  --cream: #f6f2ea;
+  --soft: #efe8dc;
+  --line: #e2d8c8;
+  --max: 1120px;
+  --radius: 16px;
+  --shadow: 0 12px 40px rgba(20,20,20,0.08);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.7;
+  letter-spacing: 0.015em;
+  font-size: 16px;
+}
+a { color: var(--red); text-underline-offset: 0.15em; }
+a:hover { color: var(--red-dark); }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+.short { max-width: 28em; }
+.short-center { max-width: 28em; margin-left: auto; margin-right: auto; }
+
+/* Nav */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(226,216,200,0.85);
+}
+.nav-inner {
+  max-width: var(--max); margin: 0 auto; padding: 0.75rem 1.25rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 0.65rem;
+  text-decoration: none; color: var(--ink); font-weight: 700; font-size: 1.05rem;
+}
+.nav-brand img { width: 40px; height: 40px; object-fit: contain; border-radius: 8px; }
+.nav-links { display: flex; gap: 0.2rem 1.15rem; flex-wrap: wrap; font-size: 0.92rem; }
+.nav-links a { text-decoration: none; color: var(--muted); font-weight: 500; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--red); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+  font-family: inherit; font-weight: 700; font-size: 1.02rem;
+  text-decoration: none; border-radius: 999px; padding: 0.9rem 1.65rem;
+  border: 2px solid transparent; transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary {
+  background: var(--red); color: #fff;
+  box-shadow: 0 8px 24px rgba(155,27,31,0.28);
+}
+.btn-primary:hover { background: var(--red-dark); color: #fff; }
+.btn-outline {
+  background: transparent; color: #fff; border-color: rgba(255,255,255,0.65);
+}
+.btn-outline:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.btn-outline-dark {
+  background: #fff; color: var(--red); border-color: var(--red);
+}
+.btn-outline-dark:hover { background: var(--soft); color: var(--red-dark); }
+.cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+
+/* Cinematic hero */
+.hero {
+  position: relative;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(196,163,90,0.18), transparent 55%),
+    linear-gradient(155deg, #4a1014 0%, var(--red-deep) 42%, #1a0809 100%);
+  color: #fff;
+  padding: clamp(3.2rem, 8vw, 5.8rem) 0 clamp(3.5rem, 8vw, 6rem);
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute; inset: auto -10% -40% 40%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(155,27,31,0.45), transparent 65%);
+  pointer-events: none;
+}
+.hero .wrap { position: relative; z-index: 1; }
+.hero-kicker {
+  display: inline-block;
+  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em;
+  color: var(--gold); margin-bottom: 1rem;
+  border: 1px solid rgba(196,163,90,0.45);
+  padding: 0.28rem 0.85rem; border-radius: 999px;
+  background: rgba(0,0,0,0.2);
+}
+.hero h1 {
+  font-size: clamp(2.15rem, 6vw, 3.4rem);
+  line-height: 1.2; margin: 0 0 1rem; font-weight: 700;
+  max-width: 12em;
+}
+.hero .promise {
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  color: rgba(255,255,255,0.88);
+  margin: 0 0 0.55rem; max-width: 26em; font-weight: 500;
+}
+.hero .sub {
+  font-size: 1rem; color: rgba(255,255,255,0.72);
+  margin: 0 0 1.6rem; max-width: 28em;
+}
+.hero .phone-line {
+  font-size: clamp(1.2rem, 3vw, 1.45rem); font-weight: 700;
+  margin: 0 0 1.4rem;
+}
+.hero .phone-line a { color: #fff; text-decoration: none; border-bottom: 1px solid rgba(196,163,90,0.7); }
+.hero .phone-line a:hover { color: var(--gold); }
+
+/* Trust strip */
+.trust-strip {
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+  padding: 1.35rem 0;
+}
+.trust-strip-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem 1.5rem;
+  text-align: center;
+}
+@media (min-width: 640px) {
+  .trust-strip-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .trust-strip-grid { grid-template-columns: repeat(4, 1fr); }
+}
+.trust-item {
+  padding: 0.35rem 0.5rem;
+}
+.trust-item strong {
+  display: block; font-size: 0.98rem; color: var(--ink); margin-bottom: 0.15rem;
+}
+.trust-item span {
+  display: block; font-size: 0.86rem; color: var(--muted); line-height: 1.45;
+}
+
+/* Sections */
+.section { padding: clamp(2.8rem, 6vw, 4.5rem) 0; }
+.section-cream { background: var(--cream); }
+.section-dark {
+  background: linear-gradient(160deg, #2a1012, #1a0809);
+  color: #f5f0e8;
+}
+.section-dark .muted, .section-dark p { color: rgba(245,240,232,0.78); }
+.section-head { margin-bottom: 2rem; max-width: 34em; }
+.section-head.center { text-align: center; margin-left: auto; margin-right: auto; }
+.section-head .eyebrow {
+  color: var(--red); font-weight: 700; font-size: 0.88rem;
+  letter-spacing: 0.06em; margin: 0 0 0.55rem;
+}
+.section-dark .section-head .eyebrow { color: var(--gold); }
+.section-head h2 {
+  font-size: clamp(1.55rem, 3.5vw, 2.1rem);
+  line-height: 1.3; margin: 0 0 0.75rem; font-weight: 700;
+}
+.section-head p { margin: 0; color: var(--muted); font-size: 1.02rem; }
+.section-dark .section-head p { color: rgba(245,240,232,0.75); }
+
+/* Product cards */
+.product-grid {
+  display: grid; grid-template-columns: 1fr; gap: 1.15rem;
+}
+@media (min-width: 560px) { .product-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .product-grid { grid-template-columns: 1fr 1fr 1fr; } }
+.product-card {
+  display: flex; flex-direction: column;
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden;
+  text-decoration: none; color: inherit;
+  box-shadow: 0 4px 18px rgba(20,20,20,0.04);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: #d4b896;
+  color: inherit;
+}
+.product-card .thumb-wrap {
+  aspect-ratio: 1; background: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  padding: 1rem; border-bottom: 1px solid var(--line);
+}
+.product-card .thumb-wrap img {
+  max-height: 100%; width: auto; max-width: 100%; object-fit: contain;
+}
+.product-card .body { padding: 1.05rem 1.15rem 1.25rem; display: flex; flex-direction: column; flex: 1; }
+.product-card .badge {
+  align-self: flex-start; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.03em; color: var(--red); background: #f8e9e9;
+  padding: 0.18rem 0.55rem; border-radius: 6px; margin-bottom: 0.5rem;
+}
+.product-card .badge.plaster { background: #efe8dc; color: #6b4f1d; }
+.product-card .badge.oral { background: #e8f0ea; color: #2d5a3d; }
+.product-card .badge.spray { background: #e6eef6; color: #1e4a6e; }
+.product-card h3 { font-size: 1.05rem; margin: 0 0 0.4rem; line-height: 1.35; }
+.product-card .desc {
+  font-size: 0.88rem; color: var(--muted); margin: 0 0 0.9rem; flex: 1; line-height: 1.55;
+}
+.product-card .price-row {
+  display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;
+}
+.price-now { font-size: 1.2rem; font-weight: 700; color: var(--red); }
+.price-was { font-size: 0.88rem; color: #999; text-decoration: line-through; }
+.sold { font-size: 0.78rem; color: #888; width: 100%; margin-top: 0.15rem; }
+
+/* Benefit story blocks */
+.benefit-grid { display: grid; gap: 1.25rem; }
+@media (min-width: 800px) {
+  .benefit-grid { grid-template-columns: 1fr 1fr 1fr; gap: 1.4rem; }
+}
+.benefit-card {
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.5rem 1.35rem;
+  box-shadow: 0 4px 16px rgba(20,20,20,0.04);
+}
+.benefit-card .icon {
+  width: 42px; height: 42px; border-radius: 12px;
+  background: var(--soft); color: var(--red);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.95rem; margin-bottom: 0.9rem;
+}
+.benefit-card h3 { font-size: 1.12rem; margin: 0 0 0.5rem; }
+.benefit-card p { margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.65; }
+
+/* About teaser / verify */
+.teaser-grid {
+  display: grid; gap: 1.4rem; align-items: center;
+}
+@media (min-width: 800px) {
+  .teaser-grid { grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; }
+}
+.verify-list { list-style: none; margin: 1rem 0 0; padding: 0; }
+.verify-list li {
+  padding: 0.85rem 1rem; margin-bottom: 0.55rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px; font-size: 0.95rem; line-height: 1.55;
+}
+.verify-list strong { color: var(--gold); }
+.cream-card {
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.35rem 1.3rem;
+}
+.cream-card h3 { margin: 0 0 0.45rem; color: var(--red); font-size: 1.05rem; }
+.cream-card p { margin: 0 0 0.65rem; color: #333; font-size: 0.95rem; }
+.cream-card p:last-child { margin-bottom: 0; }
+
+/* Contact */
+.contact-grid {
+  display: grid; gap: 1.5rem;
+}
+@media (min-width: 800px) {
+  .contact-grid { grid-template-columns: 1.1fr 0.9fr; }
+}
+.contact-dl {
+  margin: 0; display: grid;
+  grid-template-columns: 5.2rem 1fr; gap: 0.7rem 0.85rem;
+}
+.contact-dl dt { font-weight: 700; color: var(--muted); font-size: 0.9rem; }
+.contact-dl dd { margin: 0; }
+.contact-dl a { font-weight: 600; text-decoration: none; }
+.map-wrap {
+  border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--line); aspect-ratio: 4/3; background: var(--soft);
+}
+.map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* Page hero (inner pages) */
+.page-hero {
+  background:
+    linear-gradient(155deg, #4a1014 0%, var(--red-deep) 50%, #1a0809 100%);
+  color: #fff; padding: clamp(2.4rem, 5vw, 3.6rem) 0;
+}
+.page-hero h1 {
+  font-size: clamp(1.85rem, 4.5vw, 2.6rem);
+  margin: 0 0 0.7rem; line-height: 1.25;
+}
+.page-hero p { margin: 0; color: rgba(255,255,255,0.78); max-width: 30em; font-size: 1.05rem; }
+.crumb { font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem; }
+.crumb a { text-decoration: none; font-weight: 500; }
+
+/* Footer */
+.site-footer {
+  background: #120a0a; color: #ccc;
+  padding: 2.4rem 0 2.6rem; margin-top: 0;
+}
+.footer-inner {
+  max-width: var(--max); margin: 0 auto; padding: 0 1.25rem;
+  display: grid; gap: 1.6rem;
+}
+@media (min-width: 800px) {
+  .footer-inner { grid-template-columns: 1.1fr 0.9fr 1.2fr; gap: 2rem; }
+}
+.footer-brand { display: flex; gap: 0.85rem; align-items: flex-start; }
+.footer-brand img { border-radius: 8px; }
+.footer-brand strong { display: block; color: #fff; font-size: 1.1rem; }
+.footer-brand p { margin: 0.25rem 0 0; font-size: 0.88rem; color: #aaa; }
+.footer-trust p, .footer-legal p { margin: 0.3rem 0; font-size: 0.9rem; color: #bbb; }
+.footer-trust a, .footer-legal a { color: #fff; font-weight: 600; text-decoration: none; }
+.footer-trust a:hover, .footer-legal a:hover { text-decoration: underline; color: #fff; }
+.footer-legal .copy { margin-top: 0.85rem; font-size: 0.82rem; color: #888; }
+
+.wa-float {
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 60;
+  background: #25D366; color: #fff;
+  width: 3.4rem; height: 3.4rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(37,211,102,0.45);
+  text-decoration: none;
+}
+.wa-float:hover { color: #fff; transform: scale(1.05); }
+.wa-float svg { width: 1.7rem; height: 1.7rem; fill: currentColor; }
+
+.store-cta { text-align: center; margin-top: 2rem; }
+.note { font-size: 0.88rem; color: var(--muted); margin-top: 1rem; }
+.filter-row {
+  display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.4rem;
+}
+.filter-pill {
+  font-size: 0.85rem; font-weight: 600;
+  padding: 0.4rem 0.95rem; border-radius: 999px;
+  background: var(--soft); color: var(--muted); border: 1px solid var(--line);
+  text-decoration: none;
+}
+.filter-pill:hover, .filter-pill.active {
+  background: var(--red); color: #fff; border-color: var(--red);
+}
+h1,h2,h3 { line-height: 1.3; }
+
 </style>
 </head>
 <body>
@@ -154,86 +364,143 @@
 <header class="nav">
   <div class="nav-inner">
     <a class="nav-brand" href="index.html">
-      <img src="assets/logo.png" alt="盈康" width="42" height="42">
+      <img src="assets/logo.png" alt="盈康" width="40" height="40">
       <span>盈康</span>
     </a>
     <nav class="nav-links" aria-label="主要導覽">
-      <a href="index.html">首頁</a>
-      <a href="about.html">關於我們</a>
-      <a href="products/">產品目錄</a>
-      <a href="#contact">聯絡</a>
-      <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall</a>
+      <a href="about.html" aria-current="page">關於我們</a> <a href="products/">產品目錄</a> <a href="#products">精選</a> <a href="about.html#contact">聯絡</a> <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall</a>
     </nav>
   </div>
 </header>
-
 <main>
-  <section class="block" aria-labelledby="about-h1">
-    <div class="block-inner">
-      <h1 id="about-h1">關於盈康</h1>
-      <p class="lead">盈康是香港本地健康品牌，面向大眾提供膏布、口服、噴霧等養生相關產品說明與選購協助。</p>
-      <p class="short">本站以「可查、可問」為原則：產品頁整理店舖原文要點，服務電話公開，方便購買前核實。</p>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>關於盈康</h1>
+      <p>香港本地健康品牌。產品說明可查，服務電話可問 — 方便購買前核實。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="max-width:760px">
+      <p class="short" style="font-size:1.08rem;color:var(--muted)">盈康面向大眾提供膏布、口服、噴霧等養生相關產品說明與選購協助。</p>
+      <p class="short">本站以「可查、可問」為原則：產品頁整理店舖原文要點，服務電話公開。</p>
       <p class="short">對外公開品牌名稱為<strong>盈康</strong>。法人公司名稱僅列於頁尾，本頁不刊登商業登記號碼。</p>
+    </div>
+  </section>
 
-      <div class="trust-chips" style="justify-content:flex-start;margin:1.2rem 0">
-        <span class="trust-chip"><span class="dot" aria-hidden="true"></span>可查產品說明</span>
-        <span class="trust-chip"><span class="dot" aria-hidden="true"></span>服務電話 6222 7238</span>
-        <span class="trust-chip"><span class="dot" aria-hidden="true"></span>通路購買可問</span>
+  <section class="trust-strip" aria-label="信任要點">
+    <div class="wrap">
+      <div class="trust-strip-grid">
+        <div class="trust-item"><strong>可查產品說明</strong><span>獨立產品頁 + 原文要點</span></div>
+        <div class="trust-item"><strong>服務電話 6222 7238</strong><span>致電或 WhatsApp</span></div>
+        <div class="trust-item"><strong>通路購買可問</strong><span>HKTVmall 店舖現價可對照</span></div>
+        <div class="trust-item"><strong>不虛構評價</strong><span>不刊登無法核實的獎項數字</span></div>
       </div>
+    </div>
+  </section>
 
-      <h2>你可以怎樣核實</h2>
-      <ul class="verify-list">
-        <li><strong>產品頁</strong> — 每支產品有獨立說明：功效要點（來源於店舖原文）、有原文時附用法／注意事項。</li>
-        <li><strong>服務電話</strong> — 致電或 WhatsApp <a href="tel:+85262227238">6222 7238</a> 查規格、用法與購買途徑。</li>
-        <li><strong>網店通路</strong> — 於 <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall 盈康店舖</a> 對照現價與商品原文。</li>
-      </ul>
+  <section class="section section-cream">
+    <div class="wrap" style="max-width:760px">
+      <div class="section-head">
+        <p class="eyebrow">核實方式</p>
+        <h2>你可以怎樣核實</h2>
+      </div>
+      <div class="cream-card" style="margin-bottom:1rem">
+        <h3>產品頁</h3>
+        <p>每支產品有獨立說明：功效要點（來源於店舖原文）、有原文時附用法／注意事項。</p>
+      </div>
+      <div class="cream-card" style="margin-bottom:1rem">
+        <h3>服務電話</h3>
+        <p>致電或 WhatsApp <a href="tel:+85262227238"><strong>6222 7238</strong></a> 查規格、用法與購買途徑。</p>
+      </div>
+      <div class="cream-card">
+        <h3>網店通路</h3>
+        <p>於 <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall 盈康店舖</a> 對照現價與商品原文。</p>
+      </div>
+    </div>
+  </section>
 
-      <h2>品牌背景</h2>
-      <div class="card-soft">
-        <h3>公開品牌 · 盈康</h3>
+  <section class="section">
+    <div class="wrap" style="max-width:760px">
+      <div class="section-head">
+        <p class="eyebrow">品牌背景</p>
+        <h2>公開品牌 · 盈康</h2>
+      </div>
+      <div class="cream-card" style="margin-bottom:1rem">
         <p>盈康傳承尹淑梅醫館理念，代理及整理膏布、口服、噴霧等養生產品資訊，並於 HKTVmall 設有店舖。</p>
         <p>我們希望訪客在選購前，能先看清說明、再打電話確認，而不是只看空泛口號。</p>
       </div>
-      <div class="card-soft">
+      <div class="cream-card">
         <h3>奠基人 · 尹淑梅（公開簡介）</h3>
         <p>中山醫學院教授尹鏡波嫡傳孫女，香港註冊中醫師、中醫內科針灸教授。三代從醫，從醫五十多年；著有《中醫科學養生防治法》、《中華醫學尹家醫珍》、《尹家三代行醫紀要——醫海驪珠》等。</p>
-        <p class="src-note" style="margin:0;font-size:0.88rem;color:var(--muted)">以上簡歷整理自盈康公開歷程介紹，不作額外獎項或市場佔有率宣稱。</p>
+        <p class="note" style="margin:0.6rem 0 0">以上簡歷整理自盈康公開歷程介紹，不作額外獎項或市場佔有率宣稱。</p>
       </div>
+    </div>
+  </section>
 
-      <h2 id="contact">聯絡我們</h2>
-      <dl class="contact-dl">
-        <dt>公開品牌</dt>
-        <dd>盈康</dd>
-        <dt>地址</dt>
-        <dd>香港新界荃灣柴灣角街 83-93 號榮興工業大廈 1605 室</dd>
-        <dt>電話</dt>
-        <dd><a href="tel:+85262227238">6222 7238</a></dd>
-        <dt>WhatsApp</dt>
-        <dd><a href="https://wa.me/85262227238" target="_blank" rel="noopener">6222 7238</a></dd>
-        <dt>WeChat</dt>
-        <dd>ykmedicine</dd>
-        <dt>網店</dt>
-        <dd><a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall 盈康香港輕養生</a></dd>
-      </dl>
-      <p class="src-note" style="margin-top:1rem;font-size:0.9rem;color:var(--muted)">法人公司名稱見本頁頁尾；本頁不刊登商業登記號碼。</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 6222 7238</a>
-        <a class="btn btn-outline" href="products/">瀏覽產品目錄</a>
-        <a class="btn btn-outline" href="index.html">返回首頁</a>
+  <section class="section section-cream" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">聯絡</p>
+        <h2>聯絡我們</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <dl class="contact-dl">
+            <dt>公開品牌</dt><dd>盈康</dd>
+            <dt>地址</dt><dd>香港新界荃灣柴灣角街 83-93 號榮興工業大廈 1605 室</dd>
+            <dt>電話</dt><dd><a href="tel:+85262227238">6222 7238</a></dd>
+            <dt>WhatsApp</dt><dd><a href="https://wa.me/85262227238" target="_blank" rel="noopener">6222 7238</a></dd>
+            <dt>WeChat</dt><dd>ykmedicine</dd>
+            <dt>網店</dt><dd><a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall 盈康香港輕養生</a></dd>
+          </dl>
+          <p class="note">法人公司名稱見本頁頁尾；本頁不刊登商業登記號碼。</p>
+          <div class="cta-row" style="margin-top:1.2rem">
+            <a class="btn btn-primary" href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 6222 7238</a>
+            <a class="btn btn-outline-dark" href="products/">瀏覽產品目錄</a>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            title="榮興工業大廈地圖"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=%E9%A6%99%E6%B8%AF%E6%96%B0%E7%95%8C%E8%8D%83%E7%81%A3%E6%9F%B4%E7%81%A3%E8%A7%92%E8%A1%9783-93%E8%99%9F%E6%A6%AE%E8%88%88%E5%B7%A5%E6%A5%AD%E5%A4%A7%E5%BB%881605%E5%AE%A4&z=16&output=embed">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
-
-<footer>
-  <p><strong>盈康國際集團有限公司</strong><br>WEALTH HEALTHLY INTERNATIONAL GROUP LIMITED</p>
-  <p><strong>盈康藥業有限公司</strong><br>YING KANG MEDICINE LIMITED</p>
-  <p>RM 1605, 16/F, Wing Hing Ind Bldg, 83-93 Chai Wan Kok St, Tsuen Wan</p>
-  <p>電話 <a href="tel:+85262227238">6222 7238</a></p>
-  <p class="copy">© 2026 盈康 · 法人名稱僅列於頁尾</p>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="盈康" width="48" height="48">
+      <div>
+        <strong>盈康</strong>
+        <p>香港本地健康品牌 · 膏布・口服・噴霧</p>
+      </div>
+    </div>
+    <div class="footer-trust">
+      <p>服務電話 <a href="tel:+85262227238">6222 7238</a></p>
+      <p><a href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 6222 7238</a></p>
+      <p><a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall 盈康店舖</a></p>
+      <p>荃灣榮興工業大廈 1605 室</p>
+    </div>
+    <div class="footer-legal">
+      <p><strong>盈康國際集團有限公司</strong><br>WEALTH HEALTHLY INTERNATIONAL GROUP LIMITED</p>
+      <p><strong>盈康藥業有限公司</strong><br>YING KANG MEDICINE LIMITED</p>
+      <p>RM 1605, 16/F, Wing Hing Ind Bldg, 83-93 Chai Wan Kok St, Tsuen Wan</p>
+      <p class="copy">© 2026 盈康 · 法人名稱僅列於頁尾</p>
+    </div>
+  </div>
 </footer>
 
+
+<a class="wa-float" href="https://wa.me/85262227238" target="_blank" rel="noopener" aria-label="WhatsApp 6222 7238">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
 </body>
 </html>

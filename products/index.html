@@ -11,216 +11,351 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --red: #9b1b1f; --red-dark: #7a1216; --gold: #c4a35a;
-    --ink: #1a1a1a; --muted: #5a5a5a; --paper: #ffffff;
-    --cream: #f7f3eb; --soft: #f0ebe3; --line: #e5ddd0;
-    --radius: 14px; --shadow: 0 8px 28px rgba(26,26,26,0.08); --max: 920px;
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
-    color: var(--ink); background: var(--cream);
-    line-height: 1.75; letter-spacing: 0.02em;
-  }
-  a { color: var(--red); text-underline-offset: 0.15em; }
-  a:hover { color: var(--red-dark); }
-  .nav {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(255,255,255,0.96); backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav-inner {
-    max-width: var(--max); margin: 0 auto; padding: 0.7rem 1.1rem;
-    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-  }
-  .nav-brand {
-    display: flex; align-items: center; gap: 0.65rem;
-    text-decoration: none; color: var(--ink); font-weight: 700;
-  }
-  .nav-brand img { width: 42px; height: 42px; object-fit: contain; border-radius: 8px; }
-  .nav-links { display: flex; gap: 0.35rem 1rem; flex-wrap: wrap; font-size: 0.92rem; }
-  .nav-links a { text-decoration: none; color: var(--muted); font-weight: 500; }
-  .nav-links a:hover { color: var(--red); }
-  .block {
-    background: var(--paper); margin: 1.25rem auto; max-width: var(--max);
-    border-radius: var(--radius); box-shadow: var(--shadow);
-    border: 1px solid var(--line); overflow: hidden;
-  }
-  .block-inner { padding: 2.2rem 1.5rem; }
-  @media (min-width: 640px) { .block-inner { padding: 2.6rem 2.4rem; } }
-  h1, h2, h3 { line-height: 1.35; margin: 0 0 0.85rem; font-weight: 700; }
-  h1 { font-size: clamp(1.55rem, 4vw, 2.1rem); color: var(--red); }
-  h2 { font-size: 1.2rem; color: var(--ink); margin-top: 1.6rem; }
-  p { margin: 0 0 1rem; color: #333; }
-  .crumb { font-size: 0.88rem; color: var(--muted); margin-bottom: 1.2rem; }
-  .crumb a { text-decoration: none; font-weight: 500; }
-  .meta-list { margin: 1rem 0 1.4rem; padding: 0; list-style: none; }
-  .meta-list li {
-    display: flex; gap: 0.75rem; padding: 0.45rem 0;
-    border-bottom: 1px dashed var(--line); font-size: 0.95rem;
-  }
-  .meta-list .k { color: var(--muted); min-width: 4.5rem; font-weight: 600; }
-  .specs {
-    background: var(--cream); border: 1px solid var(--line);
-    border-radius: 12px; padding: 1.1rem 1.2rem; margin: 1.2rem 0;
-  }
-  .specs p { margin: 0 0 0.55rem; }
-  .price-row { display: flex; align-items: baseline; gap: 0.55rem; flex-wrap: wrap; margin: 1rem 0 1.4rem; }
-  .price-now { font-size: 1.45rem; font-weight: 700; color: var(--red); }
-  .price-was { font-size: 0.95rem; color: #999; text-decoration: line-through; }
-  .sold { font-size: 0.85rem; color: #888; }
-  .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.4rem 0 0.5rem; }
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
-    font-family: inherit; font-weight: 700; font-size: 1.02rem;
-    text-decoration: none; border-radius: 999px; padding: 0.8rem 1.4rem;
-    border: 2px solid transparent;
-  }
-  .btn-primary { background: var(--red); color: #fff; }
-  .btn-primary:hover { background: var(--red-dark); color: #fff; }
-  .btn-outline { background: #fff; color: var(--red); border-color: var(--red); }
-  .btn-outline:hover { background: var(--soft); color: var(--red-dark); }
-  .product-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
-  @media (min-width: 560px) { .product-grid { grid-template-columns: 1fr 1fr; } }
-  @media (min-width: 820px) { .product-grid { grid-template-columns: 1fr 1fr 1fr; } }
-  .product {
-    display: flex; flex-direction: column; background: #fff;
-    border: 1px solid var(--line); border-radius: 12px;
-    padding: 1.1rem 1.15rem 1.2rem; text-decoration: none; color: inherit;
-  }
-  .product:hover { border-color: #d4b896; box-shadow: var(--shadow); color: inherit; }
-  .product h3 { font-size: 1.02rem; margin-bottom: 0.4rem; }
-  .product .desc { font-size: 0.88rem; color: var(--muted); margin: 0 0 0.85rem; flex-grow: 1; }
-  .product .thumb {
-    width: 100%; aspect-ratio: 1; object-fit: contain; background: var(--cream);
-    border-radius: 10px; border: 1px solid var(--line); margin-bottom: 0.75rem;
-  }
-  .product .thumb-ph {
-    width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
-    background: var(--cream); border-radius: 10px; border: 1px dashed #cfc4b4;
-    color: var(--muted); font-size: 0.85rem; margin-bottom: 0.75rem; text-align: center; padding: 0.5rem;
-  }
-  .badge {
-    align-self: flex-start; font-size: 0.72rem; font-weight: 700;
-    color: var(--red); background: #f8e9e9; padding: 0.18rem 0.55rem;
-    border-radius: 6px; margin-bottom: 0.55rem;
-  }
-  footer {
-    background: #1a1212; color: #ddd; text-align: center;
-    padding: 2rem 1.2rem 2.4rem; margin-top: 1.5rem;
-  }
-  footer p { margin: 0.35rem 0; color: #ccc; font-size: 0.95rem; }
-  footer a { color: #fff; font-weight: 600; text-decoration: none; }
-  footer .copy { margin-top: 1rem; font-size: 0.85rem; color: #999; }
-  .note { font-size: 0.88rem; color: var(--muted); margin-top: 1.2rem; }
-  .hero-media {
-    display: grid; gap: 1.2rem; margin: 1rem 0 1.4rem;
-  }
-  @media (min-width: 700px) {
-    .hero-media { grid-template-columns: 1.05fr 1fr; align-items: start; }
-  }
-  .gallery {
-    display: flex; flex-direction: column; gap: 0.65rem;
-  }
-  .gallery .main {
-    width: 100%; aspect-ratio: 1; object-fit: contain; background: var(--cream);
-    border: 1px solid var(--line); border-radius: 12px;
-  }
-  .gallery .thumbs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-  .gallery .thumbs img {
-    width: 64px; height: 64px; object-fit: contain; background: #fff;
-    border: 1px solid var(--line); border-radius: 8px;
-  }
-  .img-placeholder {
-    aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
-    background: var(--cream); border: 1px dashed #cfc4b4; border-radius: 12px;
-    color: var(--muted); text-align: center; padding: 1.5rem; gap: 0.4rem;
-  }
-  .img-placeholder strong { color: var(--ink); }
-  .efficacy {
-    background: #fff; border: 1px solid var(--line); border-radius: 12px;
-    padding: 1.15rem 1.25rem; margin: 1.2rem 0;
-  }
-  .efficacy .lines { margin: 0; padding: 0; list-style: none; }
-  .efficacy .lines li {
-    padding: 0.35rem 0 0.35rem 1rem; position: relative; color: #333; font-size: 0.98rem;
-    line-height: 1.65;
-  }
-  .efficacy .lines li::before {
-    content: ""; position: absolute; left: 0; top: 0.85em;
-    width: 6px; height: 6px; border-radius: 50%; background: var(--gold);
-  }
-  .thin-tag {
-    display: inline-block; font-size: 0.75rem; font-weight: 700;
-    color: #8a6d3b; background: #f5ecd8; border-radius: 6px;
-    padding: 0.12rem 0.5rem; margin-left: 0.35rem;
-  }
-  .diagram {
-    margin: 1.3rem 0 0.5rem; padding: 1rem; background: var(--cream);
-    border: 1px solid var(--line); border-radius: 12px; overflow-x: auto;
-  }
-  .diagram svg { display: block; width: 100%; max-width: 640px; height: auto; margin: 0 auto; }
-  .diagram .cap { text-align: center; font-size: 0.85rem; color: var(--muted); margin: 0.55rem 0 0; }
 
-  .trust-chips {
-    display: flex; flex-wrap: wrap; gap: 0.5rem;
-    justify-content: center; margin: 1.1rem 0 1.4rem;
-  }
-  .trust-chip {
-    display: inline-flex; align-items: center; gap: 0.35rem;
-    background: #fff; border: 1px solid var(--line);
-    border-radius: 999px; padding: 0.4rem 0.9rem;
-    font-size: 0.88rem; font-weight: 600; color: var(--ink);
-    box-shadow: 0 2px 8px rgba(26,26,26,0.04);
-  }
-  .trust-chip .dot {
-    width: 8px; height: 8px; border-radius: 50%; background: var(--gold);
-    flex-shrink: 0;
-  }
-  .hero-phone {
-    margin: 0.35rem 0 0.9rem;
-    font-size: clamp(1.25rem, 3.5vw, 1.55rem);
-    font-weight: 700;
-  }
-  .hero-phone a { color: var(--red); text-decoration: none; }
-  .hero-phone a:hover { text-decoration: underline; }
-  .pos-line {
-    font-size: 1.05rem; font-weight: 600; color: var(--red-dark);
-    margin: 0 auto 0.55rem; max-width: 28em;
-  }
-  .trust-block {
-    background: var(--cream); border: 1px solid var(--line);
-    border-radius: 12px; padding: 1.2rem 1.25rem; margin: 1.4rem 0;
-  }
-  .trust-block h2 {
-    font-size: 1.15rem; margin: 0 0 0.85rem;
-    border-left: 4px solid var(--red); padding-left: 0.65rem;
-  }
-  .trust-block h3 {
-    font-size: 0.98rem; color: var(--red); margin: 0.95rem 0 0.4rem;
-  }
-  .trust-block h3:first-of-type { margin-top: 0.2rem; }
-  .trust-block ul { margin: 0.2rem 0 0.4rem; padding-left: 1.15rem; }
-  .trust-block li { margin: 0.25rem 0; color: #333; font-size: 0.95rem; line-height: 1.65; }
-  .trust-block .contact-line {
-    margin: 0.55rem 0 0; font-size: 1.02rem; font-weight: 700;
-  }
-  .trust-block .contact-line a { text-decoration: none; }
-  .trust-block .src-note {
-    margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--muted);
-  }
-  .verify-list {
-    margin: 0.6rem 0 0; padding: 0; list-style: none;
-  }
-  .verify-list li {
-    padding: 0.55rem 0.75rem; margin-bottom: 0.45rem;
-    background: #fff; border: 1px solid var(--line); border-radius: 10px;
-    font-size: 0.95rem;
-  }
-  .verify-list strong { color: var(--red); }
+:root {
+  --red: #9b1b1f;
+  --red-dark: #6e1014;
+  --red-deep: #3a0a0c;
+  --gold: #c4a35a;
+  --ink: #141414;
+  --muted: #5c5c5c;
+  --paper: #ffffff;
+  --cream: #f6f2ea;
+  --soft: #efe8dc;
+  --line: #e2d8c8;
+  --max: 1120px;
+  --radius: 16px;
+  --shadow: 0 12px 40px rgba(20,20,20,0.08);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.7;
+  letter-spacing: 0.015em;
+  font-size: 16px;
+}
+a { color: var(--red); text-underline-offset: 0.15em; }
+a:hover { color: var(--red-dark); }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+.short { max-width: 28em; }
+.short-center { max-width: 28em; margin-left: auto; margin-right: auto; }
+
+/* Nav */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(226,216,200,0.85);
+}
+.nav-inner {
+  max-width: var(--max); margin: 0 auto; padding: 0.75rem 1.25rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 0.65rem;
+  text-decoration: none; color: var(--ink); font-weight: 700; font-size: 1.05rem;
+}
+.nav-brand img { width: 40px; height: 40px; object-fit: contain; border-radius: 8px; }
+.nav-links { display: flex; gap: 0.2rem 1.15rem; flex-wrap: wrap; font-size: 0.92rem; }
+.nav-links a { text-decoration: none; color: var(--muted); font-weight: 500; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--red); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+  font-family: inherit; font-weight: 700; font-size: 1.02rem;
+  text-decoration: none; border-radius: 999px; padding: 0.9rem 1.65rem;
+  border: 2px solid transparent; transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary {
+  background: var(--red); color: #fff;
+  box-shadow: 0 8px 24px rgba(155,27,31,0.28);
+}
+.btn-primary:hover { background: var(--red-dark); color: #fff; }
+.btn-outline {
+  background: transparent; color: #fff; border-color: rgba(255,255,255,0.65);
+}
+.btn-outline:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.btn-outline-dark {
+  background: #fff; color: var(--red); border-color: var(--red);
+}
+.btn-outline-dark:hover { background: var(--soft); color: var(--red-dark); }
+.cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+
+/* Cinematic hero */
+.hero {
+  position: relative;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(196,163,90,0.18), transparent 55%),
+    linear-gradient(155deg, #4a1014 0%, var(--red-deep) 42%, #1a0809 100%);
+  color: #fff;
+  padding: clamp(3.2rem, 8vw, 5.8rem) 0 clamp(3.5rem, 8vw, 6rem);
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute; inset: auto -10% -40% 40%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(155,27,31,0.45), transparent 65%);
+  pointer-events: none;
+}
+.hero .wrap { position: relative; z-index: 1; }
+.hero-kicker {
+  display: inline-block;
+  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em;
+  color: var(--gold); margin-bottom: 1rem;
+  border: 1px solid rgba(196,163,90,0.45);
+  padding: 0.28rem 0.85rem; border-radius: 999px;
+  background: rgba(0,0,0,0.2);
+}
+.hero h1 {
+  font-size: clamp(2.15rem, 6vw, 3.4rem);
+  line-height: 1.2; margin: 0 0 1rem; font-weight: 700;
+  max-width: 12em;
+}
+.hero .promise {
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  color: rgba(255,255,255,0.88);
+  margin: 0 0 0.55rem; max-width: 26em; font-weight: 500;
+}
+.hero .sub {
+  font-size: 1rem; color: rgba(255,255,255,0.72);
+  margin: 0 0 1.6rem; max-width: 28em;
+}
+.hero .phone-line {
+  font-size: clamp(1.2rem, 3vw, 1.45rem); font-weight: 700;
+  margin: 0 0 1.4rem;
+}
+.hero .phone-line a { color: #fff; text-decoration: none; border-bottom: 1px solid rgba(196,163,90,0.7); }
+.hero .phone-line a:hover { color: var(--gold); }
+
+/* Trust strip */
+.trust-strip {
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+  padding: 1.35rem 0;
+}
+.trust-strip-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem 1.5rem;
+  text-align: center;
+}
+@media (min-width: 640px) {
+  .trust-strip-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .trust-strip-grid { grid-template-columns: repeat(4, 1fr); }
+}
+.trust-item {
+  padding: 0.35rem 0.5rem;
+}
+.trust-item strong {
+  display: block; font-size: 0.98rem; color: var(--ink); margin-bottom: 0.15rem;
+}
+.trust-item span {
+  display: block; font-size: 0.86rem; color: var(--muted); line-height: 1.45;
+}
+
+/* Sections */
+.section { padding: clamp(2.8rem, 6vw, 4.5rem) 0; }
+.section-cream { background: var(--cream); }
+.section-dark {
+  background: linear-gradient(160deg, #2a1012, #1a0809);
+  color: #f5f0e8;
+}
+.section-dark .muted, .section-dark p { color: rgba(245,240,232,0.78); }
+.section-head { margin-bottom: 2rem; max-width: 34em; }
+.section-head.center { text-align: center; margin-left: auto; margin-right: auto; }
+.section-head .eyebrow {
+  color: var(--red); font-weight: 700; font-size: 0.88rem;
+  letter-spacing: 0.06em; margin: 0 0 0.55rem;
+}
+.section-dark .section-head .eyebrow { color: var(--gold); }
+.section-head h2 {
+  font-size: clamp(1.55rem, 3.5vw, 2.1rem);
+  line-height: 1.3; margin: 0 0 0.75rem; font-weight: 700;
+}
+.section-head p { margin: 0; color: var(--muted); font-size: 1.02rem; }
+.section-dark .section-head p { color: rgba(245,240,232,0.75); }
+
+/* Product cards */
+.product-grid {
+  display: grid; grid-template-columns: 1fr; gap: 1.15rem;
+}
+@media (min-width: 560px) { .product-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .product-grid { grid-template-columns: 1fr 1fr 1fr; } }
+.product-card {
+  display: flex; flex-direction: column;
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden;
+  text-decoration: none; color: inherit;
+  box-shadow: 0 4px 18px rgba(20,20,20,0.04);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: #d4b896;
+  color: inherit;
+}
+.product-card .thumb-wrap {
+  aspect-ratio: 1; background: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  padding: 1rem; border-bottom: 1px solid var(--line);
+}
+.product-card .thumb-wrap img {
+  max-height: 100%; width: auto; max-width: 100%; object-fit: contain;
+}
+.product-card .body { padding: 1.05rem 1.15rem 1.25rem; display: flex; flex-direction: column; flex: 1; }
+.product-card .badge {
+  align-self: flex-start; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.03em; color: var(--red); background: #f8e9e9;
+  padding: 0.18rem 0.55rem; border-radius: 6px; margin-bottom: 0.5rem;
+}
+.product-card .badge.plaster { background: #efe8dc; color: #6b4f1d; }
+.product-card .badge.oral { background: #e8f0ea; color: #2d5a3d; }
+.product-card .badge.spray { background: #e6eef6; color: #1e4a6e; }
+.product-card h3 { font-size: 1.05rem; margin: 0 0 0.4rem; line-height: 1.35; }
+.product-card .desc {
+  font-size: 0.88rem; color: var(--muted); margin: 0 0 0.9rem; flex: 1; line-height: 1.55;
+}
+.product-card .price-row {
+  display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;
+}
+.price-now { font-size: 1.2rem; font-weight: 700; color: var(--red); }
+.price-was { font-size: 0.88rem; color: #999; text-decoration: line-through; }
+.sold { font-size: 0.78rem; color: #888; width: 100%; margin-top: 0.15rem; }
+
+/* Benefit story blocks */
+.benefit-grid { display: grid; gap: 1.25rem; }
+@media (min-width: 800px) {
+  .benefit-grid { grid-template-columns: 1fr 1fr 1fr; gap: 1.4rem; }
+}
+.benefit-card {
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.5rem 1.35rem;
+  box-shadow: 0 4px 16px rgba(20,20,20,0.04);
+}
+.benefit-card .icon {
+  width: 42px; height: 42px; border-radius: 12px;
+  background: var(--soft); color: var(--red);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.95rem; margin-bottom: 0.9rem;
+}
+.benefit-card h3 { font-size: 1.12rem; margin: 0 0 0.5rem; }
+.benefit-card p { margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.65; }
+
+/* About teaser / verify */
+.teaser-grid {
+  display: grid; gap: 1.4rem; align-items: center;
+}
+@media (min-width: 800px) {
+  .teaser-grid { grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; }
+}
+.verify-list { list-style: none; margin: 1rem 0 0; padding: 0; }
+.verify-list li {
+  padding: 0.85rem 1rem; margin-bottom: 0.55rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px; font-size: 0.95rem; line-height: 1.55;
+}
+.verify-list strong { color: var(--gold); }
+.cream-card {
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.35rem 1.3rem;
+}
+.cream-card h3 { margin: 0 0 0.45rem; color: var(--red); font-size: 1.05rem; }
+.cream-card p { margin: 0 0 0.65rem; color: #333; font-size: 0.95rem; }
+.cream-card p:last-child { margin-bottom: 0; }
+
+/* Contact */
+.contact-grid {
+  display: grid; gap: 1.5rem;
+}
+@media (min-width: 800px) {
+  .contact-grid { grid-template-columns: 1.1fr 0.9fr; }
+}
+.contact-dl {
+  margin: 0; display: grid;
+  grid-template-columns: 5.2rem 1fr; gap: 0.7rem 0.85rem;
+}
+.contact-dl dt { font-weight: 700; color: var(--muted); font-size: 0.9rem; }
+.contact-dl dd { margin: 0; }
+.contact-dl a { font-weight: 600; text-decoration: none; }
+.map-wrap {
+  border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--line); aspect-ratio: 4/3; background: var(--soft);
+}
+.map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* Page hero (inner pages) */
+.page-hero {
+  background:
+    linear-gradient(155deg, #4a1014 0%, var(--red-deep) 50%, #1a0809 100%);
+  color: #fff; padding: clamp(2.4rem, 5vw, 3.6rem) 0;
+}
+.page-hero h1 {
+  font-size: clamp(1.85rem, 4.5vw, 2.6rem);
+  margin: 0 0 0.7rem; line-height: 1.25;
+}
+.page-hero p { margin: 0; color: rgba(255,255,255,0.78); max-width: 30em; font-size: 1.05rem; }
+.crumb { font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem; }
+.crumb a { text-decoration: none; font-weight: 500; }
+
+/* Footer */
+.site-footer {
+  background: #120a0a; color: #ccc;
+  padding: 2.4rem 0 2.6rem; margin-top: 0;
+}
+.footer-inner {
+  max-width: var(--max); margin: 0 auto; padding: 0 1.25rem;
+  display: grid; gap: 1.6rem;
+}
+@media (min-width: 800px) {
+  .footer-inner { grid-template-columns: 1.1fr 0.9fr 1.2fr; gap: 2rem; }
+}
+.footer-brand { display: flex; gap: 0.85rem; align-items: flex-start; }
+.footer-brand img { border-radius: 8px; }
+.footer-brand strong { display: block; color: #fff; font-size: 1.1rem; }
+.footer-brand p { margin: 0.25rem 0 0; font-size: 0.88rem; color: #aaa; }
+.footer-trust p, .footer-legal p { margin: 0.3rem 0; font-size: 0.9rem; color: #bbb; }
+.footer-trust a, .footer-legal a { color: #fff; font-weight: 600; text-decoration: none; }
+.footer-trust a:hover, .footer-legal a:hover { text-decoration: underline; color: #fff; }
+.footer-legal .copy { margin-top: 0.85rem; font-size: 0.82rem; color: #888; }
+
+.wa-float {
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 60;
+  background: #25D366; color: #fff;
+  width: 3.4rem; height: 3.4rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(37,211,102,0.45);
+  text-decoration: none;
+}
+.wa-float:hover { color: #fff; transform: scale(1.05); }
+.wa-float svg { width: 1.7rem; height: 1.7rem; fill: currentColor; }
+
+.store-cta { text-align: center; margin-top: 2rem; }
+.note { font-size: 0.88rem; color: var(--muted); margin-top: 1rem; }
+.filter-row {
+  display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.4rem;
+}
+.filter-pill {
+  font-size: 0.85rem; font-weight: 600;
+  padding: 0.4rem 0.95rem; border-radius: 999px;
+  background: var(--soft); color: var(--muted); border: 1px solid var(--line);
+  text-decoration: none;
+}
+.filter-pill:hover, .filter-pill.active {
+  background: var(--red); color: #fff; border-color: var(--red);
+}
+h1,h2,h3 { line-height: 1.3; }
 
 </style>
 </head>
@@ -229,345 +364,550 @@
 <header class="nav">
   <div class="nav-inner">
     <a class="nav-brand" href="../index.html">
-      <img src="../assets/logo.png" alt="盈康" width="42" height="42">
+      <img src="../assets/logo.png" alt="盈康" width="40" height="40">
       <span>盈康</span>
     </a>
-        <nav class="nav-links" aria-label="主要導覽">
-      <a href="../index.html">首頁</a>
-      <a href="../about.html">關於我們</a>
-      <a href="index.html">產品目錄</a>
-      <a href="../about.html#contact">聯絡</a>
-      <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall</a>
+    <nav class="nav-links" aria-label="主要導覽">
+      <a href="../about.html">關於我們</a> <a href="../products/" aria-current="page">產品目錄</a> <a href="../index.html#products">精選</a> <a href="../about.html#contact">聯絡</a> <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall</a>
     </nav>
   </div>
 </header>
-
-
 <main>
-  <section class="block">
-    <div class="block-inner">
-      <p class="crumb"><a href="../index.html">首頁</a> · 產品目錄</p>
+  <section class="page-hero">
+    <div class="wrap">
       <h1>產品目錄</h1>
-      <p>精選 HKTVmall「盈康香港輕養生」熱賣與經典品項。<br>點擊查看詳情；購買可前往 HKTVmall 或 WhatsApp 6222 7238。</p>
+      <p>30 件產品說明頁 — 膏布・口服・噴霧。點擊查看功效要點與聯絡方式。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">首頁</a> / 產品目錄</p>
+      <div class="filter-row" aria-label="分類">
+        <span class="filter-pill active">全部 30</span>
+        <span class="filter-pill">膏布／外用</span>
+        <span class="filter-pill">口服</span>
+        <span class="filter-pill">噴霧</span>
+      </div>
       <div class="product-grid">
-        
-        <a class="product" href="yanbiqing-60caps-y5.html">
-          <img class="thumb" src="../assets/products/yanbiqing-60caps-y5/primary.png" alt="強力炎必清 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>強力炎必清 60粒</h3>
-          <p class="desc">生飛滋喉嚨痛牙肉腫｜香港製造 穿心蓮+紫錐花｜去濕火消口臭 養生膠囊</p>
-          <div class="price-row">
-            <span class="price-now">HK$199</span>
-            <span class="sold">已售出 400+</span>
+
+        <a class="product-card" href="yanbiqing-60caps-y5.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/yanbiqing-60caps-y5/primary.png" alt="強力炎必清 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>強力炎必清 60粒</h3>
+            <p class="desc">生飛滋喉嚨痛牙肉腫｜香港製造 穿心蓮+紫錐花｜去濕火消口臭 養生膠囊</p>
+            <div class="price-row">
+              <span class="price-now">HK$199</span>
+              
+              <span class="sold">已售出 400+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="liuwei-dihuang-350caps-x2-k0012.html">
-          <img class="thumb" src="../assets/products/liuwei-dihuang-350caps-x2-k0012/primary.png" alt="強力濃縮六味地黃丸 350粒×2" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>強力濃縮六味地黃丸 350粒×2</h3>
-          <p class="desc">改善腰痠耳鳴 緩解疲勞 提升活力｜中西合璧加紫錐花｜香港製造 補而不燥 共700粒</p>
-          <div class="price-row">
-            <span class="price-now">HK$158</span>
-            <span class="sold">已售出 100+</span>
+
+        <a class="product-card" href="liuwei-dihuang-350caps-x2-k0012.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/liuwei-dihuang-350caps-x2-k0012/primary.png" alt="強力濃縮六味地黃丸 350粒×2" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>強力濃縮六味地黃丸 350粒×2</h3>
+            <p class="desc">改善腰痠耳鳴 緩解疲勞 提升活力｜中西合璧加紫錐花｜香港製造 補而不燥 共700粒</p>
+            <div class="price-row">
+              <span class="price-now">HK$158</span>
+              
+              <span class="sold">已售出 100+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401.html">
-          <img class="thumb" src="../assets/products/jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401/primary.png" alt="金門一條根坐骨神經膏布 10片" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>金門一條根坐骨神經膏布 10片</h3>
-          <p class="desc">強效滲透 舒緩腰腿痛 關節疲勞｜特大 11x15cm｜正宗一條根 驅寒去濕</p>
-          <div class="price-row">
-            <span class="price-now">HK$99</span>
-            <span class="sold">已售出 100+</span>
+
+        <a class="product-card" href="jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401/primary.png" alt="金門一條根坐骨神經膏布 10片" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge plaster">膏布／外用</span>
+            <h3>金門一條根坐骨神經膏布 10片</h3>
+            <p class="desc">強效滲透 舒緩腰腿痛 關節疲勞｜特大 11x15cm｜正宗一條根 驅寒去濕</p>
+            <div class="price-row">
+              <span class="price-now">HK$99</span>
+              
+              <span class="sold">已售出 100+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025.html">
-          <img class="thumb" src="../assets/products/taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025/primary.png" alt="台灣一條根坐骨神經膏布 20片" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>台灣一條根坐骨神經膏布 20片</h3>
-          <p class="desc">天然精油 止痛貼 鎮痛貼 腰痛 腿麻｜深層滲透 台灣製造 MIT</p>
-          <div class="price-row">
-            <span class="price-now">HK$189</span>
-            <span class="sold">已售出 100+</span>
+
+        <a class="product-card" href="taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025/primary.png" alt="台灣一條根坐骨神經膏布 20片" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge plaster">膏布／外用</span>
+            <h3>台灣一條根坐骨神經膏布 20片</h3>
+            <p class="desc">天然精油 止痛貼 鎮痛貼 腰痛 腿麻｜深層滲透 台灣製造 MIT</p>
+            <div class="price-row">
+              <span class="price-now">HK$189</span>
+              
+              <span class="sold">已售出 100+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="futeiling-tokyo-tower-120ml-x3-k0037.html">
-          <img class="thumb" src="../assets/products/futeiling-tokyo-tower-120ml-x3-k0037/primary.png" alt="東京塔牌膚特靈 120ml×3" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>東京塔牌膚特靈 120ml×3</h3>
-          <p class="desc">抑菌止癢 針對香港腳 主婦手 脫皮 雞眼｜消除腳氣 改善乾燥龜裂｜大容量 快速乾透 恢復光滑潔淨</p>
-          <div class="price-row">
-            <span class="price-now">HK$248</span>
-            <span class="sold">已售出 80+</span>
+
+        <a class="product-card" href="futeiling-tokyo-tower-120ml-x3-k0037.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/futeiling-tokyo-tower-120ml-x3-k0037/primary.png" alt="東京塔牌膚特靈 120ml×3" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge spray">噴霧</span>
+            <h3>東京塔牌膚特靈 120ml×3</h3>
+            <p class="desc">抑菌止癢 針對香港腳 主婦手 脫皮 雞眼｜消除腳氣 改善乾燥龜裂｜大容量 快速乾透 恢復光滑潔淨</p>
+            <div class="price-row">
+              <span class="price-now">HK$248</span>
+              
+              <span class="sold">已售出 80+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024.html">
-          <img class="thumb" src="../assets/products/taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024/primary.png" alt="台灣一條根坐骨神經膏布 30片" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>台灣一條根坐骨神經膏布 30片</h3>
-          <p class="desc">天然精油 止痛貼 鎮痛貼 腰痛 腿麻｜深層滲透 台灣製造 MIT</p>
-          <div class="price-row">
-            <span class="price-now">HK$177</span>
-            <span class="sold">已售出 70+</span>
+
+        <a class="product-card" href="taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024/primary.png" alt="台灣一條根坐骨神經膏布 30片" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge plaster">膏布／外用</span>
+            <h3>台灣一條根坐骨神經膏布 30片</h3>
+            <p class="desc">天然精油 止痛貼 鎮痛貼 腰痛 腿麻｜深層滲透 台灣製造 MIT</p>
+            <div class="price-row">
+              <span class="price-now">HK$177</span>
+              
+              <span class="sold">已售出 70+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="zuogu-wan-60caps-hky7389.html">
-          <img class="thumb" src="../assets/products/zuogu-wan-60caps-hky7389/primary.png" alt="坐骨神經丸 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>坐骨神經丸 60粒</h3>
-          <p class="desc">深層修復神經壓迫 腰腿麻木｜含銀杏 碧容健 Pycnogenol｜改善微循環 舒緩抽痛 恢復靈活 港產</p>
-          <div class="price-row">
-            <span class="price-now">HK$212</span>
-            <span class="sold">已售出 70+</span>
+
+        <a class="product-card" href="zuogu-wan-60caps-hky7389.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/zuogu-wan-60caps-hky7389/primary.png" alt="坐骨神經丸 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>坐骨神經丸 60粒</h3>
+            <p class="desc">深層修復神經壓迫 腰腿麻木｜含銀杏 碧容健 Pycnogenol｜改善微循環 舒緩抽痛 恢復靈活 港產</p>
+            <div class="price-row">
+              <span class="price-now">HK$212</span>
+              
+              <span class="sold">已售出 70+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="futeiling-120ml-yk404.html">
-          <img class="thumb" src="../assets/products/futeiling-120ml-yk404/primary.png" alt="膚特靈 120ml 噴霧" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>膚特靈 120ml 噴霧</h3>
-          <p class="desc">針對香港腳 主婦手 脫皮 雞眼｜消除腳氣 改善乾燥龜裂</p>
-          <div class="price-row">
-            <span class="price-now">HK$99</span>
-            <span class="sold">已售出 60+</span>
+
+        <a class="product-card" href="futeiling-120ml-yk404.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/futeiling-120ml-yk404/primary.png" alt="膚特靈 120ml 噴霧" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge spray">噴霧</span>
+            <h3>膚特靈 120ml 噴霧</h3>
+            <p class="desc">針對香港腳 主婦手 脫皮 雞眼｜消除腳氣 改善乾燥龜裂</p>
+            <div class="price-row">
+              <span class="price-now">HK$99</span>
+              
+              <span class="sold">已售出 60+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="yahuanxian-60caps-k0038.html">
-          <img class="thumb" src="../assets/products/yahuanxian-60caps-k0038/primary.png" alt="蕥歡仙 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>蕥歡仙 60粒</h3>
-          <p class="desc">碧容健 銀杏 改善坐骨腰痛 四肢麻痺 骨痛 腰椎勞損 舒筋活絡 香港製造</p>
-          <div class="price-row">
-            <span class="price-now">HK$239</span>
-            <span class="sold">已售出 50+</span>
+
+        <a class="product-card" href="yahuanxian-60caps-k0038.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/yahuanxian-60caps-k0038/primary.png" alt="蕥歡仙 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>蕥歡仙 60粒</h3>
+            <p class="desc">碧容健 銀杏 改善坐骨腰痛 四肢麻痺 骨痛 腰椎勞損 舒筋活絡 香港製造</p>
+            <div class="price-row">
+              <span class="price-now">HK$239</span>
+              
+              <span class="sold">已售出 50+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="zuogu-gaobu-10pcs-x11-mk294.html">
-          <img class="thumb" src="../assets/products/zuogu-gaobu-10pcs-x11-mk294/primary.png" alt="坐骨神經膏布 10片（7.5×11cm）" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>坐骨神經膏布 10片（7.5×11cm）</h3>
-          <p class="desc">舒緩受壓麻木 改善腰椎勞損 腰腿痠痛 止痛貼</p>
-          <div class="price-row">
-            <span class="price-now">HK$89</span>
-            <span class="sold">已售出 50+</span>
+
+        <a class="product-card" href="zuogu-gaobu-10pcs-x11-mk294.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/zuogu-gaobu-10pcs-x11-mk294/primary.png" alt="坐骨神經膏布 10片（7.5×11cm）" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge plaster">膏布／外用</span>
+            <h3>坐骨神經膏布 10片（7.5×11cm）</h3>
+            <p class="desc">舒緩受壓麻木 改善腰椎勞損 腰腿痠痛 止痛貼</p>
+            <div class="price-row">
+              <span class="price-now">HK$89</span>
+              
+              <span class="sold">已售出 50+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="zuogu-wan-150caps-k0008.html">
-          <img class="thumb" src="../assets/products/zuogu-wan-150caps-k0008/primary.png" alt="坐骨神經丸 150粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>坐骨神經丸 150粒</h3>
-          <p class="desc">坐骨神經丸 150粒 (日本東京塔牌製藥株式會社監製 高含量銀杏+碧蘿芷) 改善四肢麻痹 舒緩腰腿不適 關節酸軟無力---最佳食用期至203…</p>
-          <div class="price-row">
-            <span class="price-now">HK$438</span>
-            <span class="sold">已售出 50+</span>
+
+        <a class="product-card" href="zuogu-wan-150caps-k0008.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/zuogu-wan-150caps-k0008/primary.png" alt="坐骨神經丸 150粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>坐骨神經丸 150粒</h3>
+            <p class="desc">坐骨神經丸 150粒 (日本東京塔牌製藥株式會社監製 高含量銀杏+碧蘿芷) 改善四肢麻痹 舒緩腰腿不適 關節酸軟無力---最佳食用期至203…</p>
+            <div class="price-row">
+              <span class="price-now">HK$438</span>
+              
+              <span class="sold">已售出 50+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="liuwei-dihuang-350caps-yk396.html">
-          <img class="thumb" src="../assets/products/liuwei-dihuang-350caps-yk396/primary.png" alt="強力濃縮六味地黃丸 350粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>強力濃縮六味地黃丸 350粒</h3>
-          <p class="desc">滋陰補腎 壯腰補精 改善腰膝酸軟 盜汗｜含紫錐花 強化體質 提升免疫｜香港製造 熟地黃 山藥</p>
-          <div class="price-row">
-            <span class="price-now">HK$99</span>
-            <span class="sold">已售出 50+</span>
+
+        <a class="product-card" href="liuwei-dihuang-350caps-yk396.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/liuwei-dihuang-350caps-yk396/primary.png" alt="強力濃縮六味地黃丸 350粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>強力濃縮六味地黃丸 350粒</h3>
+            <p class="desc">滋陰補腎 壯腰補精 改善腰膝酸軟 盜汗｜含紫錐花 強化體質 提升免疫｜香港製造 熟地黃 山藥</p>
+            <div class="price-row">
+              <span class="price-now">HK$99</span>
+              
+              <span class="sold">已售出 50+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="mieshitong-gaobu-bevidan-10pcs-yk402.html">
-          <img class="thumb" src="../assets/products/mieshitong-gaobu-bevidan-10pcs-yk402/primary.png" alt="BEVIDAN 滅濕痛風痛膏布 10片" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>BEVIDAN 滅濕痛風痛膏布 10片</h3>
-          <p class="desc">台灣製造 一條根 改善關節不適 麻木</p>
-          <div class="price-row">
-            <span class="price-now">HK$89</span>
-            <span class="sold">已售出 40+</span>
+
+        <a class="product-card" href="mieshitong-gaobu-bevidan-10pcs-yk402.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/mieshitong-gaobu-bevidan-10pcs-yk402/primary.png" alt="BEVIDAN 滅濕痛風痛膏布 10片" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge plaster">膏布／外用</span>
+            <h3>BEVIDAN 滅濕痛風痛膏布 10片</h3>
+            <p class="desc">台灣製造 一條根 改善關節不適 麻木</p>
+            <div class="price-row">
+              <span class="price-now">HK$89</span>
+              
+              <span class="sold">已售出 40+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="huatatang-50caps-x4-yk470.html">
-          <img class="thumb" src="../assets/products/huatatang-50caps-x4-yk470/primary.png" alt="花塔糖 50粒×4支" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>花塔糖 50粒×4支</h3>
-          <p class="desc">台灣製造 納豆益生菌 山楂開胃 消積化滯 改善食慾不振 脾胃虛弱</p>
-          <div class="price-row">
-            <span class="price-now">HK$199</span>
-            <span class="sold">已售出 40+</span>
+
+        <a class="product-card" href="huatatang-50caps-x4-yk470.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/huatatang-50caps-x4-yk470/primary.png" alt="花塔糖 50粒×4支" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>花塔糖 50粒×4支</h3>
+            <p class="desc">台灣製造 納豆益生菌 山楂開胃 消積化滯 改善食慾不振 脾胃虛弱</p>
+            <div class="price-row">
+              <span class="price-now">HK$199</span>
+              
+              <span class="sold">已售出 40+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="mieshitong-bevidan-60caps-k0031.html">
-          <img class="thumb" src="../assets/products/mieshitong-bevidan-60caps-k0031/primary.png" alt="BEVIDAN 滅濕痛風痛 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>BEVIDAN 滅濕痛風痛 60粒</h3>
-          <p class="desc">碧容健 銀杏 改善四肢麻痺 坐骨不適 腰椎勞損 香港製造</p>
-          <div class="price-row">
-            <span class="price-now">HK$236</span>
-            <span class="sold">已售出 40+</span>
+
+        <a class="product-card" href="mieshitong-bevidan-60caps-k0031.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/mieshitong-bevidan-60caps-k0031/primary.png" alt="BEVIDAN 滅濕痛風痛 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>BEVIDAN 滅濕痛風痛 60粒</h3>
+            <p class="desc">碧容健 銀杏 改善四肢麻痺 坐骨不適 腰椎勞損 香港製造</p>
+            <div class="price-row">
+              <span class="price-now">HK$236</span>
+              
+              <span class="sold">已售出 40+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="zuogu-tongyou-qianli-zhuifeng-50ml-yk408.html">
-          <img class="thumb" src="../assets/products/zuogu-tongyou-qianli-zhuifeng-50ml-yk408/primary.jpg" alt="千里追風坐骨神徑痛油 50ml" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>千里追風坐骨神徑痛油 50ml</h3>
-          <p class="desc">有藥材浸泡 舒緩坐骨腰部不適</p>
-          <div class="price-row">
-            <span class="price-now">HK$89</span>
-            <span class="sold">已售出 40+</span>
+
+        <a class="product-card" href="zuogu-tongyou-qianli-zhuifeng-50ml-yk408.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/zuogu-tongyou-qianli-zhuifeng-50ml-yk408/primary.jpg" alt="千里追風坐骨神徑痛油 50ml" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge plaster">膏布／外用</span>
+            <h3>千里追風坐骨神徑痛油 50ml</h3>
+            <p class="desc">有藥材浸泡 舒緩坐骨腰部不適</p>
+            <div class="price-row">
+              <span class="price-now">HK$89</span>
+              
+              <span class="sold">已售出 40+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="baitongdi-60caps-k0019.html">
-          <img class="thumb" src="../assets/products/baitongdi-60caps-k0019/primary.png" alt="百痛敵 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>百痛敵 60粒</h3>
-          <p class="desc">百痛敵 (60粒)｜含有 150mg 碧容健 Pycnogenol + 銀杏｜改善手腳麻痺 關節痠痛 舒緩神經痛 血管清道夫</p>
-          <div class="price-row">
-            <span class="price-now">HK$239</span>
-            <span class="sold">已售出 30+</span>
+
+        <a class="product-card" href="baitongdi-60caps-k0019.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/baitongdi-60caps-k0019/primary.png" alt="百痛敵 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>百痛敵 60粒</h3>
+            <p class="desc">百痛敵 (60粒)｜含有 150mg 碧容健 Pycnogenol + 銀杏｜改善手腳麻痺 關節痠痛 舒緩神經痛 血管清道夫</p>
+            <div class="price-row">
+              <span class="price-now">HK$239</span>
+              
+              <span class="sold">已售出 30+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="huoluoling-60caps-k0021.html">
-          <img class="thumb" src="../assets/products/huoluoling-60caps-k0021/primary.png" alt="活絡靈 2（60粒）" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>活絡靈 2（60粒）</h3>
-          <p class="desc">活絡靈 2 (60粒)｜含有 150mg 碧容健 Pycnogenol + 銀杏｜改善手腳麻痺 促進血液循環 血管清道夫</p>
-          <div class="price-row">
-            <span class="price-now">HK$233</span>
-            <span class="sold">已售出 30+</span>
+
+        <a class="product-card" href="huoluoling-60caps-k0021.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/huoluoling-60caps-k0021/primary.png" alt="活絡靈 2（60粒）" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>活絡靈 2（60粒）</h3>
+            <p class="desc">活絡靈 2 (60粒)｜含有 150mg 碧容健 Pycnogenol + 銀杏｜改善手腳麻痺 促進血液循環 血管清道夫</p>
+            <div class="price-row">
+              <span class="price-now">HK$233</span>
+              
+              <span class="sold">已售出 30+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="mieshitong-bevidan-150caps-k0009.html">
-          <img class="thumb" src="../assets/products/mieshitong-bevidan-150caps-k0009/primary.png" alt="BEVIDAN 滅濕痛風痛 150粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>BEVIDAN 滅濕痛風痛 150粒</h3>
-          <p class="desc">德國漢堡里哈明(公牛牌) 監製 (BEVIDAN) 滅濕痛風痛 150粒 (新加強版 正貨商標302800179) 改善四肢麻痹 舒緩腰酸背…</p>
-          <div class="price-row">
-            <span class="price-now">HK$438</span>
-            <span class="sold">已售出 30+</span>
+
+        <a class="product-card" href="mieshitong-bevidan-150caps-k0009.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/mieshitong-bevidan-150caps-k0009/primary.png" alt="BEVIDAN 滅濕痛風痛 150粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>BEVIDAN 滅濕痛風痛 150粒</h3>
+            <p class="desc">德國漢堡里哈明(公牛牌) 監製 (BEVIDAN) 滅濕痛風痛 150粒 (新加強版 正貨商標302800179) 改善四肢麻痹 舒緩腰酸背…</p>
+            <div class="price-row">
+              <span class="price-now">HK$438</span>
+              
+              <span class="sold">已售出 30+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="naobaijin-lingzhi-naohuosu-150caps-k0010.html">
-          <img class="thumb" src="../assets/products/naobaijin-lingzhi-naohuosu-150caps-k0010/primary.png" alt="腦白金靈芝孢子腦活素 150粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>腦白金靈芝孢子腦活素 150粒</h3>
-          <p class="desc">德國腦白金 靈芝孢子腦活素 150粒 (德國漢堡里哈明 公牛牌 4合1活腦素) 增強記憶力 改善腦霧 助眠安神---最佳食用期至2030年1…</p>
-          <div class="price-row">
-            <span class="price-now">HK$399</span>
-            <span class="sold">已售出 30+</span>
+
+        <a class="product-card" href="naobaijin-lingzhi-naohuosu-150caps-k0010.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/naobaijin-lingzhi-naohuosu-150caps-k0010/primary.png" alt="腦白金靈芝孢子腦活素 150粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>腦白金靈芝孢子腦活素 150粒</h3>
+            <p class="desc">德國腦白金 靈芝孢子腦活素 150粒 (德國漢堡里哈明 公牛牌 4合1活腦素) 增強記憶力 改善腦霧 助眠安神---最佳食用期至2030年1…</p>
+            <div class="price-row">
+              <span class="price-now">HK$399</span>
+              
+              <span class="sold">已售出 30+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="mieshitong-gaobu-10pcs-x15-yk403.html">
-          <img class="thumb" src="../assets/products/mieshitong-gaobu-10pcs-x15-yk403/primary.png" alt="滅濕痛風痛膏布 11×15cm（10片）" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>滅濕痛風痛膏布 11×15cm（10片）</h3>
-          <p class="desc">台灣製造 艾草薑油精油配方 深層滲透 消腫止痛 舒緩關節痛 袪濕</p>
-          <div class="price-row">
-            <span class="price-now">HK$99</span>
-            <span class="sold">已售出 20+</span>
+
+        <a class="product-card" href="mieshitong-gaobu-10pcs-x15-yk403.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/mieshitong-gaobu-10pcs-x15-yk403/primary.png" alt="滅濕痛風痛膏布 11×15cm（10片）" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge plaster">膏布／外用</span>
+            <h3>滅濕痛風痛膏布 11×15cm（10片）</h3>
+            <p class="desc">台灣製造 艾草薑油精油配方 深層滲透 消腫止痛 舒緩關節痛 袪濕</p>
+            <div class="price-row">
+              <span class="price-now">HK$99</span>
+              
+              <span class="sold">已售出 20+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="niaosuanqing-60caps-k0020.html">
-          <img class="thumb" src="../assets/products/niaosuanqing-60caps-k0020/primary.png" alt="尿酸清 GOUBUNE 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>尿酸清 GOUBUNE 60粒</h3>
-          <p class="desc">盈康尿酸清 GOUBUNE 60粒 (平衡尿酸 溶解結晶 天然草本精華) 美國製造 改善關節紅腫 舒緩痛風不適 消除沙礫感 靈活關節---最…</p>
-          <div class="price-row">
-            <span class="price-now">HK$258</span>
-            <span class="sold">已售出 20+</span>
+
+        <a class="product-card" href="niaosuanqing-60caps-k0020.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/niaosuanqing-60caps-k0020/primary.png" alt="尿酸清 GOUBUNE 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>尿酸清 GOUBUNE 60粒</h3>
+            <p class="desc">盈康尿酸清 GOUBUNE 60粒 (平衡尿酸 溶解結晶 天然草本精華) 美國製造 改善關節紅腫 舒緩痛風不適 消除沙礫感 靈活關節---最…</p>
+            <div class="price-row">
+              <span class="price-now">HK$258</span>
+              
+              <span class="sold">已售出 20+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="yanbiqing-130caps-yk471.html">
-          <img class="thumb" src="../assets/products/yanbiqing-130caps-yk471/primary.png" alt="強力炎必清 130粒珍寶裝" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>強力炎必清 130粒珍寶裝</h3>
-          <p class="desc">消炎清熱 穿心蓮紫錐花配方 舒緩喉嚨腫痛/生飛滋/牙肉腫 提升免疫力 香港製造</p>
-          <div class="price-row">
-            <span class="price-now">HK$399</span>
-            <span class="sold">已售出 20+</span>
+
+        <a class="product-card" href="yanbiqing-130caps-yk471.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/yanbiqing-130caps-yk471/primary.png" alt="強力炎必清 130粒珍寶裝" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>強力炎必清 130粒珍寶裝</h3>
+            <p class="desc">消炎清熱 穿心蓮紫錐花配方 舒緩喉嚨腫痛/生飛滋/牙肉腫 提升免疫力 香港製造</p>
+            <div class="price-row">
+              <span class="price-now">HK$399</span>
+              
+              <span class="sold">已售出 20+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="zuogu-gaobu-10pcs-x11-yk400.html">
-          <img class="thumb" src="../assets/products/zuogu-gaobu-10pcs-x11-yk400/primary.png" alt="坐骨神經膏布 7×11cm（10片）" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>坐骨神經膏布 7×11cm（10片）</h3>
-          <p class="desc">坐骨神經膏布7X11CM (十片裝) (肌肉扭傷止痛貼)</p>
-          <div class="price-row">
-            <span class="price-now">HK$89</span>
-            <span class="sold">已售出 20+</span>
+
+        <a class="product-card" href="zuogu-gaobu-10pcs-x11-yk400.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/zuogu-gaobu-10pcs-x11-yk400/primary.png" alt="坐骨神經膏布 7×11cm（10片）" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge plaster">膏布／外用</span>
+            <h3>坐骨神經膏布 7×11cm（10片）</h3>
+            <p class="desc">坐骨神經膏布7X11CM (十片裝) (肌肉扭傷止痛貼)</p>
+            <div class="price-row">
+              <span class="price-now">HK$89</span>
+              
+              <span class="sold">已售出 20+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="zuogu-tongwan-60caps-k0003.html">
-          <img class="thumb" src="../assets/products/zuogu-tongwan-60caps-k0003/primary.png" alt="坐骨神徑痛丸 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>坐骨神徑痛丸 60粒</h3>
-          <p class="desc">坐骨神徑痛丸 60粒</p>
-          <div class="price-row">
-            <span class="price-now">HK$212</span>
-            <span class="sold">已售出 20+</span>
+
+        <a class="product-card" href="zuogu-tongwan-60caps-k0003.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/zuogu-tongwan-60caps-k0003/primary.png" alt="坐骨神徑痛丸 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>坐骨神徑痛丸 60粒</h3>
+            <p class="desc">坐骨神徑痛丸 60粒</p>
+            <div class="price-row">
+              <span class="price-now">HK$212</span>
+              
+              <span class="sold">已售出 20+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="fengse-gucidan-60caps-k0002.html">
-          <img class="thumb" src="../assets/products/fengse-gucidan-60caps-k0002/primary.png" alt="風澀骨剌丹 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>風澀骨剌丹 60粒</h3>
-          <p class="desc">風涩(濕)骨剌丹 60粒</p>
-          <div class="price-row">
-            <span class="price-now">HK$238</span>
-            
+
+        <a class="product-card" href="fengse-gucidan-60caps-k0002.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/fengse-gucidan-60caps-k0002/primary.png" alt="風澀骨剌丹 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>風澀骨剌丹 60粒</h3>
+            <p class="desc">風涩(濕)骨剌丹 60粒</p>
+            <div class="price-row">
+              <span class="price-now">HK$238</span>
+              
+              
+            </div>
           </div>
         </a>
-        <a class="product" href="biyan-60caps-mk368.html">
-          <img class="thumb" src="../assets/products/biyan-60caps-mk368/primary.jpg" alt="鼻炎素 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>鼻炎素 60粒</h3>
-          <p class="desc">鼻炎素 60粒 強力舒緩鼻部敏感 暢通呼吸道 守護鼻腔健康 提升防禦</p>
-          <div class="price-row">
-            <span class="price-now">HK$238</span>
-            <span class="sold">已售出 10+</span>
+
+        <a class="product-card" href="biyan-60caps-mk368.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/biyan-60caps-mk368/primary.jpg" alt="鼻炎素 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>鼻炎素 60粒</h3>
+            <p class="desc">鼻炎素 60粒 強力舒緩鼻部敏感 暢通呼吸道 守護鼻腔健康 提升防禦</p>
+            <div class="price-row">
+              <span class="price-now">HK$238</span>
+              
+              <span class="sold">已售出 10+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="jianchiling-60caps-mk285.html">
-          <img class="thumb" src="../assets/products/jianchiling-60caps-mk285/primary.png" alt="健齒靈 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>健齒靈 60粒</h3>
-          <p class="desc">健齒靈 60粒 強化牙齦 守護牙齒健康 消除口氣 牙周護理</p>
-          <div class="price-row">
-            <span class="price-now">HK$228</span>
-            <span class="sold">已售出 10+</span>
+
+        <a class="product-card" href="jianchiling-60caps-mk285.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/jianchiling-60caps-mk285/primary.png" alt="健齒靈 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>健齒靈 60粒</h3>
+            <p class="desc">健齒靈 60粒 強化牙齦 守護牙齒健康 消除口氣 牙周護理</p>
+            <div class="price-row">
+              <span class="price-now">HK$228</span>
+              
+              <span class="sold">已售出 10+</span>
+            </div>
           </div>
         </a>
-        <a class="product" href="jiuke-tiaoli-60caps-hk102.html">
-          <img class="thumb" src="../assets/products/jiuke-tiaoli-60caps-hk102/primary.jpg" alt="尹淑梅久咳調理丸 60粒" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>尹淑梅久咳調理丸 60粒</h3>
-          <p class="desc">尹淑梅 久咳調理丸 1樽裝(60粒) 三代傳承 養陰潤肺 止咳化痰</p>
-          <div class="price-row">
-            <span class="price-now">HK$89</span>
-            
+
+        <a class="product-card" href="jiuke-tiaoli-60caps-hk102.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/jiuke-tiaoli-60caps-hk102/primary.jpg" alt="尹淑梅久咳調理丸 60粒" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge oral">口服</span>
+            <h3>尹淑梅久咳調理丸 60粒</h3>
+            <p class="desc">尹淑梅 久咳調理丸 1樽裝(60粒) 三代傳承 養陰潤肺 止咳化痰</p>
+            <div class="price-row">
+              <span class="price-now">HK$89</span>
+              
+              
+            </div>
           </div>
         </a>
-        <a class="product" href="difugen-15ml-yk395.html">
-          <img class="thumb" src="../assets/products/difugen-15ml-yk395/primary.webp" alt="滴膚堅 Difugen 15ml" width="280" height="280" loading="lazy">
-          <span class="badge">盈康</span>
-          <h3>滴膚堅 Difugen 15ml</h3>
-          <p class="desc">滴膚堅 Difugen 15ML 噴掃兩用 雞眼 疣 腳氣腳臭 止痕</p>
-          <div class="price-row">
-            <span class="price-now">HK$89</span>
-            
+
+        <a class="product-card" href="difugen-15ml-yk395.html">
+          <div class="thumb-wrap">
+            <img src="../assets/products/difugen-15ml-yk395/primary.webp" alt="滴膚堅 Difugen 15ml" loading="lazy" width="400" height="400">
+          </div>
+          <div class="body">
+            <span class="badge plaster">膏布／外用</span>
+            <h3>滴膚堅 Difugen 15ml</h3>
+            <p class="desc">滴膚堅 Difugen 15ML 噴掃兩用 雞眼 疣 腳氣腳臭 止痕</p>
+            <div class="price-row">
+              <span class="price-now">HK$89</span>
+              
+              
+            </div>
           </div>
         </a>
       </div>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall 全部產品</a>
-        <a class="btn btn-outline" href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 6222 7238</a>
+      <p class="note">價格以目錄／HKTVmall 現價為準。功效／用法／注意事項僅整理自店舖商品原文。</p>
+      <div class="store-cta cta-row" style="justify-content:center">
+        <a class="btn btn-primary" href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 6222 7238</a>
+        <a class="btn btn-outline-dark" href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">前往 HKTVmall</a>
       </div>
     </div>
   </section>
 </main>
 
-
-<footer>
-  <p><strong>盈康國際集團有限公司</strong><br>WEALTH HEALTHLY INTERNATIONAL GROUP LIMITED</p>
-  <p><strong>盈康藥業有限公司</strong><br>YING KANG MEDICINE LIMITED</p>
-  <p>RM 1605, 16/F, Wing Hing Ind Bldg, 83-93 Chai Wan Kok St, Tsuen Wan</p>
-  <p>電話 <a href="tel:+85262227238">6222 7238</a></p>
-  <p class="copy">© 2026 盈康 · 法人名稱僅列於頁尾</p>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="../assets/logo.png" alt="盈康" width="48" height="48">
+      <div>
+        <strong>盈康</strong>
+        <p>香港本地健康品牌 · 膏布・口服・噴霧</p>
+      </div>
+    </div>
+    <div class="footer-trust">
+      <p>服務電話 <a href="tel:+85262227238">6222 7238</a></p>
+      <p><a href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 6222 7238</a></p>
+      <p><a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall 盈康店舖</a></p>
+      <p>荃灣榮興工業大廈 1605 室</p>
+    </div>
+    <div class="footer-legal">
+      <p><strong>盈康國際集團有限公司</strong><br>WEALTH HEALTHLY INTERNATIONAL GROUP LIMITED</p>
+      <p><strong>盈康藥業有限公司</strong><br>YING KANG MEDICINE LIMITED</p>
+      <p>RM 1605, 16/F, Wing Hing Ind Bldg, 83-93 Chai Wan Kok St, Tsuen Wan</p>
+      <p class="copy">© 2026 盈康 · 法人名稱僅列於頁尾</p>
+    </div>
+  </div>
 </footer>
+
+
+<a class="wa-float" href="https://wa.me/85262227238" target="_blank" rel="noopener" aria-label="WhatsApp 6222 7238">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
 </body>
 </html>
