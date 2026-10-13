@@ -10,302 +10,49 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<style>
-:root {
-  --orange: #E57700;
-  --orange-dk: #dd7700;
-  --orange-lt: #ff912d;
-  --brown: #7E410A;
-  --ink: #333;
-  --muted: #656565;
-  --line: #e6e5e4;
-  --paper: #fff;
-  --footer-bg: #4a4a4a;
-  --max: 1100px;
-}
-* { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
-  color: var(--ink); background: var(--paper);
-  line-height: 1.65; font-size: 16px;
-}
-a { color: var(--orange); text-underline-offset: 0.12em; }
-a:hover { color: var(--orange-dk); }
-img { max-width: 100%; height: auto; display: block; }
-.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1rem; }
-.muted { color: var(--muted); }
 
-/* Top bar — Suntory-like */
-.topbar {
-  background: #fff; border-bottom: 1px solid var(--line);
-}
-.topbar-inner {
-  max-width: var(--max); margin: 0 auto; padding: 0.65rem 1rem;
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-}
-.brand {
-  display: flex; align-items: center; gap: 0.6rem;
-  text-decoration: none; color: var(--ink); font-weight: 900; font-size: 1.15rem;
-}
-.brand img { height: 44px; width: auto; object-fit: contain; }
-.top-phone {
-  display: inline-flex; align-items: center; gap: 0.4rem;
-  text-decoration: none; color: var(--orange); font-weight: 800; font-size: 1.05rem;
-}
-.top-phone:hover { color: var(--orange-dk); }
 
-.nav {
-  background: var(--orange); position: sticky; top: 0; z-index: 50;
-}
-.nav-inner {
-  max-width: var(--max); margin: 0 auto; padding: 0 0.5rem;
-  display: flex; flex-wrap: wrap; gap: 0;
-}
-.nav a {
-  color: #fff; text-decoration: none; font-weight: 700; font-size: 0.95rem;
-  padding: 0.75rem 1rem; display: inline-block;
-}
-.nav a:hover, .nav a[aria-current="page"] { background: var(--orange-dk); color: #fff; }
-
-/* Carousel */
-.carousel {
-  position: relative; overflow: hidden; background: #f5f5f5;
-}
-.carousel-track {
-  display: flex; transition: transform .45s ease;
-}
-.carousel-slide {
-  min-width: 100%; position: relative;
-}
-.carousel-slide img {
-  width: 100%; height: auto; aspect-ratio: 1440/400; object-fit: cover;
-}
-.carousel-dots {
-  position: absolute; left: 0; right: 0; bottom: 12px;
-  display: flex; justify-content: center; gap: 8px; z-index: 2;
-}
-.carousel-dots button {
-  width: 10px; height: 10px; border-radius: 50%; border: 0;
-  background: rgba(255,255,255,.55); cursor: pointer; padding: 0;
-}
-.carousel-dots button.on { background: var(--orange); }
-.carousel-btn {
-  position: absolute; top: 50%; transform: translateY(-50%);
-  background: rgba(0,0,0,.35); color: #fff; border: 0;
-  width: 36px; height: 48px; cursor: pointer; font-size: 1.2rem; z-index: 2;
-}
-.carousel-btn.prev { left: 0; }
-.carousel-btn.next { right: 0; }
-
-/* Trust strip */
-.trust-strip {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
-  border-bottom: 1px solid var(--line); background: #fffaf5;
-}
-@media (min-width: 720px) { .trust-strip { grid-template-columns: repeat(4, 1fr); } }
-.trust-item {
-  padding: 1rem 1.1rem; border-bottom: 1px solid var(--line);
-  text-align: center;
-}
-@media (min-width: 720px) {
-  .trust-item { border-bottom: none; border-right: 1px solid var(--line); }
-  .trust-item:last-child { border-right: none; }
-}
-.trust-item strong { display: block; color: var(--orange); font-size: 0.95rem; margin-bottom: 0.2rem; }
-.trust-item span { display: block; font-size: 0.82rem; color: var(--muted); }
-
-/* Product banner blocks — Suntory style */
-.banner-product {
-  width: 100%; display: flex; flex-direction: row; flex-wrap: wrap;
-  justify-content: space-between; padding: 1.2rem 0 2rem;
-}
-.banner-product-title {
-  font-size: 24px; color: var(--muted); text-align: center;
-  margin: 10px auto 18px; width: 100%; font-weight: 900;
-}
-.banner-product-block {
-  width: 48%; margin: 6px auto; display: block;
-  border: 2px solid var(--line); border-radius: 3px; background: #fff;
-  text-decoration: none; color: inherit; overflow: hidden;
-  transition: box-shadow .15s ease, border-color .15s ease;
-}
-.banner-product-block:hover {
-  border-color: var(--orange); box-shadow: 0 4px 14px rgba(229,119,0,.15); color: inherit;
-}
-.product-img { width: 100%; background: #fafafa; }
-.product-img img {
-  width: 100%; aspect-ratio: 1; object-fit: contain; margin: 0 auto;
-}
-.product-text { text-align: center; }
-.product-title {
-  display: flex; min-height: 56px; font-size: 16px; padding: 12px 8px 0;
-  margin: 0; font-weight: 900; align-items: center; justify-content: center;
-  color: var(--brown);
-}
-.product-content {
-  font-size: 14px; color: #4e4e4e; font-weight: 700;
-  padding: 10px 8px 16px; min-height: 72px;
-  display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
-}
-.product-price {
-  font-size: 15px; font-weight: 900; color: var(--orange);
-  padding: 0 8px 14px;
-}
-@media (min-width: 768px) {
-  .banner-product-block { width: 24%; margin: 4px auto; }
-  .product-title { font-size: 17px; }
-  .product-content { font-size: 15px; min-height: 90px; }
-}
-
-/* Celebrity */
-.celeb {
-  background: linear-gradient(135deg, #fff7ef, #fff);
-  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-  padding: 2rem 0;
-}
-.celeb-grid {
-  display: grid; grid-template-columns: 1fr; gap: 1.4rem; align-items: center;
-}
-@media (min-width: 720px) { .celeb-grid { grid-template-columns: 1.2fr 1fr; } }
-.celeb h2 { color: var(--brown); margin: 0 0 0.6rem; font-size: 1.4rem; }
-.celeb .roles { font-size: 0.88rem; color: var(--muted); margin: 0.6rem 0 1rem; }
-.celeb .roles span {
-  display: inline-block; background: #fff; border: 1px solid var(--line);
-  border-radius: 999px; padding: 0.2rem 0.65rem; margin: 0.2rem 0.25rem 0.2rem 0;
-}
-
-/* Buttons / CTAs — Suntory orange */
-.btn {
-  display: inline-flex; align-items: center; justify-content: center;
-  font-family: inherit; font-weight: 800; font-size: 0.95rem;
-  text-decoration: none; border-radius: 3px; padding: 0.75rem 1.3rem;
-  border: 2px solid transparent; cursor: pointer;
-  transition: background .12s, color .12s, border-color .12s;
-}
-.btn-primary { background: var(--orange); color: #fff; border-color: var(--orange); }
-.btn-primary:hover { background: var(--orange-dk); color: #fff; border-color: var(--orange-dk); }
-.btn-outline { background: #fff; color: var(--orange); border-color: var(--orange); }
-.btn-outline:hover { background: #fff7ef; color: var(--orange-dk); }
-.btn-dark { background: #444; color: #fff; border-color: #444; }
-.btn-dark:hover { background: #222; color: #fff; }
-.cta-row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; margin: 1rem 0; }
-
-/* PDP */
-.crumb { font-size: 0.88rem; color: var(--muted); margin: 1rem 0; }
-.crumb a { color: var(--muted); text-decoration: none; }
-.crumb a:hover { color: var(--orange); }
-.pdp {
-  display: grid; grid-template-columns: 1fr; gap: 1.6rem;
-  padding: 0.5rem 0 1.5rem;
-}
-@media (min-width: 760px) {
-  .pdp { grid-template-columns: minmax(260px, 480px) 1fr; gap: 2rem; align-items: start; }
-}
-.gallery .main {
-  width: 100%; aspect-ratio: 1; object-fit: contain;
-  border: 1px solid var(--line); background: #fafafa;
-}
-.gallery .thumbs { display: flex; gap: 0.45rem; margin-top: 0.55rem; flex-wrap: wrap; }
-.gallery .thumbs img {
-  width: 64px; height: 64px; object-fit: contain;
-  border: 1px solid var(--line); background: #fff; cursor: pointer;
-}
-.pdp h1 { font-size: clamp(1.35rem, 3vw, 1.75rem); color: #333; margin: 0 0 0.5rem; }
-.price-row { display: flex; align-items: baseline; gap: 0.55rem; flex-wrap: wrap; margin: 0.8rem 0; }
-.price-now { font-size: 1.6rem; font-weight: 900; color: var(--orange); }
-.price-was { font-size: 0.95rem; color: #999; text-decoration: line-through; }
-.sold { font-size: 0.85rem; color: #888; }
-.stock { display: inline-block; background: #fff3e6; color: var(--orange); font-weight: 800; font-size: 0.85rem; padding: 0.25rem 0.6rem; border-radius: 3px; }
-.block { padding: 1.5rem 0; border-top: 1px solid var(--line); }
-.block h2 {
-  font-size: 1.15rem; color: var(--muted); margin: 0 0 0.8rem;
-  padding-bottom: 0.4rem; border-bottom: 2px solid var(--orange);
-  display: inline-block;
-}
-.block ul { margin: 0.2rem 0 0.5rem; padding-left: 1.15rem; }
-.block li { margin: 0.35rem 0; }
-.ing-notes { list-style: none; padding: 0; margin: 0; }
-.ing-notes li {
-  padding: 0.7rem 0.85rem; margin: 0.4rem 0;
-  background: #fffaf5; border-left: 3px solid var(--orange);
-}
-
-/* Footer — Suntory style */
-.footer-upper {
-  background: #fff; border-top: 3px solid var(--orange); padding: 1.6rem 0;
-}
-.footer-phones {
-  display: grid; grid-template-columns: 1fr; gap: 1rem; justify-items: center;
-}
-@media (min-width: 700px) { .footer-phones { grid-template-columns: 1fr 1fr; } }
-.phone-box {
-  display: flex; align-items: center; gap: 0.85rem;
-  border: 2px solid var(--orange); border-radius: 6px;
-  padding: 0.85rem 1.2rem; text-decoration: none; color: inherit;
-  min-width: min(100%, 340px);
-}
-.phone-box .icon { font-size: 1.6rem; color: var(--orange); }
-.phone-box .label { font-size: 0.95rem; text-decoration: underline; }
-.phone-box .num { font-size: 1.45rem; font-weight: 900; color: var(--orange); line-height: 1.2; }
-.footer-lower {
-  background: var(--footer-bg); color: #fff; padding: 1.4rem 0 2rem; text-align: center;
-}
-.footer-lower a { color: #fff; text-decoration: none; margin: 0 0.6rem; font-size: 0.92rem; }
-.footer-lower a:hover { text-decoration: underline; color: #fff; }
-.footer-legal {
-  margin-top: 1rem; font-size: 0.78rem; color: #ccc; line-height: 1.6;
-}
-.disclaimer {
-  font-size: 0.78rem; color: #999; margin-top: 1.2rem; line-height: 1.55;
-}
-
-.section { padding: 1.5rem 0; }
-.filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1rem; }
-.filters a {
-  text-decoration: none; font-size: 0.85rem; font-weight: 700;
-  padding: 0.35rem 0.75rem; border: 1px solid var(--line); color: var(--muted); border-radius: 3px;
-}
-.filters a:hover, .filters a.is-on { color: #fff; background: var(--orange); border-color: var(--orange); }
-
-.about-hero {
-  background: linear-gradient(120deg, #fff7ef, #fff); padding: 2.2rem 0 1.5rem;
-  border-bottom: 1px solid var(--line);
-}
-.about-hero h1 { color: var(--brown); margin: 0 0 0.6rem; }
-.proof-grid {
-  display: grid; grid-template-columns: 1fr; gap: 0.8rem; margin: 1rem 0;
-}
-@media (min-width: 640px) { .proof-grid { grid-template-columns: 1fr 1fr; } }
-.proof-card {
-  border: 1px solid var(--line); border-radius: 4px; padding: 1rem 1.1rem; background: #fff;
-}
-.proof-card h3 { margin: 0 0 0.35rem; font-size: 1rem; color: var(--orange); }
-</style>
-
+<link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="topbar-inner">
     <a class="brand" href="../index.html">
-      <img src="../assets/logo.png" alt="盈康" width="44" height="44">
-      <span>盈康</span>
+      <img src="../assets/logo.png" alt="盈康" width="48" height="48">
+      <span class="brand-text">
+        <span class="brand-name">盈康</span>
+        <span class="brand-sub">香港健康網路商店</span>
+      </span>
     </a>
-    <a class="top-phone" href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 6222 7238</a>
+    <div class="topbar-right">
+      <div class="top-actions">
+        <a class="pill" href="https://wa.me/85262227238?text=我想登入會員／查詢訂單" target="_blank" rel="noopener" title="會員服務經 WhatsApp 查詢"><span class="ico">👤</span>登入會員</a>
+        <a class="pill" href="https://wa.me/85262227238?text=我想查詢購物／下單" target="_blank" rel="noopener" title="購物車經 WhatsApp 下單"><span class="ico">🛒</span>購物車</a>
+        <button type="button" class="search-btn" id="open-search" aria-label="搜尋">🔍</button>
+      </div>
+      <a class="wa-box" href="https://wa.me/85262227238" target="_blank" rel="noopener"><span class="wa-ico">💬</span> 6222 7238</a>
+    </div>
   </div>
 </header>
 <nav class="nav" aria-label="主選單">
   <div class="nav-inner">
-    <a href="../index.html">首頁</a>
-    <a href="../products/index.html">所有產品</a>
-    <a href="../about.html">關於盈康</a>
-    <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall 專營店</a>
-    <a href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 查詢</a>
+    <a href="../products/index.html" aria-current="page">所有產品</a>
+    <a href="../faq.html">常見問題</a>
+    <a href="../about.html">關於我們</a>
+    <a href="../index.html#health">健康資訊</a>
+    <a href="https://wa.me/85262227238" target="_blank" rel="noopener">聯絡我們</a>
   </div>
 </nav>
-
+<div class="announce">香港本地健康品牌｜膏布・口服・噴霧</div>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="搜尋">
+  <div class="search-panel">
+    <form action="../products/index.html" method="get">
+      <input type="search" name="q" placeholder="搜尋產品名稱…" aria-label="搜尋">
+    </form>
+    <p class="hint">亦可 WhatsApp 6222 7238 直接查詢。按 Esc 關閉。</p>
+  </div>
+</div>
 <div class="wrap">
   <p class="crumb"><a href="../index.html">首頁</a> › <a href="index.html">所有產品</a> › 百痛敵 60粒</p>
   <div class="pdp">
@@ -411,41 +158,54 @@ img { max-width: 100%; height: auto; display: block; }
   </div>
 </div>
 
-<div class="footer-upper">
+<div class="footer-upper" id="contact">
   <div class="wrap footer-phones">
     <a class="phone-box" href="https://wa.me/85262227238" target="_blank" rel="noopener">
-      <span class="icon">☎</span>
+      <span class="icon">💬</span>
       <span>
         <div class="label">WhatsApp 客服</div>
-        <div class="num">(852) 6222 7238</div>
+        <div class="num">6222 7238</div>
       </span>
     </a>
     <div class="phone-box" style="cursor:default">
       <span class="icon">🕒</span>
       <span>
         <div class="label">客服時間 <span style="font-size:0.75em;color:#777">(周一～周五，公眾假期除外)</span></div>
-        <div class="num" style="font-size:1.25rem">AM9:00～PM6:00</div>
+        <div class="num" style="font-size:1.25rem">AM10:00～PM18:00</div>
       </span>
     </div>
   </div>
-</div>
-<footer class="footer-lower">
-  <div class="wrap">
-    <div>
-      <a href="../index.html">首頁</a>
-      <a href="../products/index.html">所有產品</a>
-      <a href="../about.html">關於盈康</a>
-      <a href="https://www.hktvmall.com/hktv/zh/s/H6838001" target="_blank" rel="noopener">HKTVmall</a>
-      <a href="https://shop.price.com.hk/ykmlt/" target="_blank" rel="noopener">Price 商戶</a>
-      <a href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="mailto:A51004358@hotmail.com">電郵</a>
-    </div>
-    <div class="footer-legal">
-      盈康藥業有限公司（YING KANG MEDICINE LIMITED）<br>
-      盈康國際集團有限公司（WEALTH HEALTHLY INTERNATIONAL GROUP LIMITED）<br>
-      荃灣柴灣角街 83-93 號永興工業大廈 16 樓 1605 室
-    </div>
-    <p class="disclaimer" style="color:#bbb">本網站產品說明僅供參考，並非註冊藥品宣傳。個別體質不同，如有不適請諮詢醫護人員。© 盈康</p>
+  <div class="pay-logos">
+    <span>VISA</span><span>Mastercard</span><span>轉數快</span><span>HKTVmall</span>
   </div>
-</footer>
+</div>
+<div class="footer-orange">
+  <a href="../about.html">關於我們</a>
+  <a href="../faq.html">個資及隱私權政策</a>
+  <a href="../faq.html">會員使用服務條款</a>
+  <a href="../faq.html">訂購須知</a>
+  <a href="https://wa.me/85262227238" target="_blank" rel="noopener">WhatsApp 查詢</a>
+</div>
+<div class="footer-legal-area">
+  <div class="wrap">
+    盈康｜WEALTH HEALTHLY INTERNATIONAL GROUP LIMITED<br>
+    YING KANG MEDICINE LIMITED<br>
+    荃灣柴灣角街 83-93 號永興工業大廈 16 樓 1605 室<br>
+    <span style="display:block;margin-top:0.5rem">本網站產品說明僅供參考，並非註冊藥品宣傳。個別體質不同，如有不適請諮詢醫護人員。</span>
+    <span style="display:block;margin-top:0.35rem">© 盈康</span>
+  </div>
+</div>
+<a class="back-top" href="#" aria-label="回到頂部">↑</a>
+<script>
+(function(){
+  var ov=document.getElementById('search-overlay');
+  var btn=document.getElementById('open-search');
+  if(btn&&ov){
+    btn.onclick=function(){ov.classList.add('open');var i=ov.querySelector('input');if(i)i.focus();};
+    ov.onclick=function(e){if(e.target===ov)ov.classList.remove('open');};
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')ov.classList.remove('open');});
+  }
+})();
+</script>
+
 </body></html>
