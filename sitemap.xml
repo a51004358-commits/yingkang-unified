@@ -16,6 +16,66 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/yinshumei/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/award-5th-symposium.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/award-cacm-paper.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/award-natural-gold.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/book-wuxing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/book-yihailizhu.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/book-yinxueyizhen.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/chen-lanying-academic.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/chen-lanying-international.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/clinic-opening.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/guoran-dazai.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/yinshumei/news/plaque-thanks.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>

@@ -741,3 +741,218 @@ img { max-width: 100%; height: auto; display: block; }
 .lf-bottom-cta {
   text-align: center; padding: 1.5rem 0 0.5rem;
 }
+
+/* ===== 尹淑梅專區 (long-form PDP storytelling) ===== */
+.ysm-crumb { margin: 1rem 0 0.5rem; font-size: 0.88rem; color: var(--muted); }
+.ysm-crumb a { color: var(--muted); text-decoration: none; }
+.ysm-crumb a:hover { color: var(--orange); }
+.ysm-top {
+  display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+  padding: 0.5rem 0 1.5rem; align-items: start;
+}
+@media (min-width: 860px) {
+  .ysm-top { grid-template-columns: 1.05fr 0.95fr; gap: 2rem; }
+}
+.ysm-gallery {
+  background: #f7f5f2; border-radius: 8px; overflow: hidden;
+  border: 1px solid var(--line);
+}
+.ysm-gallery .main {
+  width: 100%; aspect-ratio: 4/3; object-fit: cover; background: #eee;
+}
+.ysm-gallery .banner {
+  width: 100%; aspect-ratio: 16/5; object-fit: cover; display: block;
+  border-top: 1px solid var(--line);
+}
+.ysm-buy {
+  position: relative;
+}
+@media (min-width: 860px) {
+  .ysm-buy { position: sticky; top: 4.2rem; }
+}
+.ysm-buy .eyebrow {
+  display: inline-block; font-size: 0.78rem; font-weight: 800;
+  letter-spacing: 0.08em; color: var(--orange); margin-bottom: 0.35rem;
+}
+.ysm-buy h1 {
+  font-size: clamp(1.45rem, 3.2vw, 1.95rem); margin: 0 0 0.35rem;
+  color: #2a2a2a; line-height: 1.25; font-weight: 900;
+}
+.ysm-buy .subhead {
+  font-size: 1.15rem; font-weight: 800; color: #8B1A1A; margin: 0 0 0.75rem;
+}
+.ysm-badges {
+  display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0 1rem;
+}
+.ysm-badges span {
+  background: #fff7ef; border: 1px solid #f0d4b8; color: #8B5A2B;
+  font-size: 0.78rem; font-weight: 700; padding: 0.28rem 0.65rem; border-radius: 999px;
+}
+.ysm-quick {
+  list-style: none; margin: 0 0 1rem; padding: 0;
+}
+.ysm-quick li {
+  display: flex; gap: 0.55rem; align-items: flex-start;
+  padding: 0.45rem 0; border-bottom: 1px solid #f0eeeb; font-size: 0.92rem; color: #444;
+}
+.ysm-quick li::before {
+  content: "✓"; color: var(--orange); font-weight: 900; flex-shrink: 0;
+}
+.ysm-breaking {
+  background: #1e4d7b; color: #fff; text-align: center;
+  font-weight: 800; font-size: 0.98rem; padding: 0.75rem 1rem;
+  letter-spacing: 0.03em; margin: 0.5rem 0 1.5rem; border-radius: 4px;
+}
+.ysm-breaking strong { color: #ffd27a; }
+.ysm-section {
+  padding: 1.6rem 0 0.4rem; border-top: 1px solid var(--line); margin-top: 0.4rem;
+}
+.ysm-section h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.55rem); color: #333; margin: 0 0 1rem;
+  font-weight: 900;
+}
+.ysm-section h2 .accent { color: var(--orange); }
+.ysm-section p { color: #444; margin: 0.55rem 0; line-height: 1.75; }
+.ysm-icon-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;
+}
+@media (min-width: 700px) { .ysm-icon-row { grid-template-columns: repeat(4, 1fr); } }
+.ysm-icon-card {
+  background: #fffaf5; border: 1px solid #f0e0d0; border-radius: 8px;
+  padding: 1.1rem 0.85rem; text-align: center;
+}
+.ysm-icon-card .ico { font-size: 1.6rem; margin-bottom: 0.35rem; }
+.ysm-icon-card h3 { margin: 0; font-size: 0.98rem; color: #7E410A; font-weight: 800; }
+.ysm-icon-card p { margin: 0.35rem 0 0; font-size: 0.82rem; color: #666; }
+.ysm-titles {
+  display: grid; grid-template-columns: 1fr; gap: 0.45rem;
+}
+@media (min-width: 640px) { .ysm-titles { grid-template-columns: 1fr 1fr; } }
+.ysm-title-item {
+  display: flex; gap: 0.6rem; align-items: flex-start;
+  background: #fff; border-left: 3px solid var(--orange);
+  padding: 0.7rem 0.85rem; border-radius: 0 4px 4px 0;
+  border-top: 1px solid #f0eeeb; border-right: 1px solid #f0eeeb; border-bottom: 1px solid #f0eeeb;
+  font-size: 0.92rem; color: #333; font-weight: 600;
+}
+.ysm-title-item .n {
+  flex-shrink: 0; width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  background: var(--orange); color: #fff; font-size: 0.75rem; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+}
+.ysm-cards {
+  display: grid; grid-template-columns: 1fr; gap: 1rem;
+}
+@media (min-width: 640px) { .ysm-cards { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .ysm-cards { grid-template-columns: 1fr 1fr 1fr; } }
+.ysm-card {
+  display: flex; flex-direction: column; text-decoration: none; color: inherit;
+  border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+  background: #fff; transition: border-color .15s, box-shadow .15s;
+}
+.ysm-card:hover {
+  border-color: var(--orange); box-shadow: 0 6px 18px rgba(232,119,34,.12); color: inherit;
+}
+.ysm-card img {
+  width: 100%; aspect-ratio: 16/10; object-fit: cover; background: #f3f1ee;
+}
+.ysm-card .body { padding: 0.85rem 0.95rem 1rem; flex: 1; display: flex; flex-direction: column; }
+.ysm-card .tag {
+  font-size: 0.72rem; font-weight: 800; color: var(--orange); letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+.ysm-card h3 {
+  margin: 0 0 0.35rem; font-size: 0.98rem; font-weight: 800; color: #333; line-height: 1.4;
+}
+.ysm-card p { margin: 0; font-size: 0.85rem; color: #666; flex: 1; }
+.ysm-card .more {
+  margin-top: 0.65rem; font-size: 0.82rem; font-weight: 800; color: var(--orange);
+}
+.ysm-books {
+  display: grid; grid-template-columns: 1fr; gap: 1rem;
+}
+@media (min-width: 700px) { .ysm-books { grid-template-columns: repeat(4, 1fr); } }
+.ysm-book {
+  text-align: center; border: 1px solid var(--line); border-radius: 8px;
+  padding: 1rem 0.75rem; background: #fff;
+}
+.ysm-book img {
+  width: 100%; max-width: 160px; margin: 0 auto 0.75rem; aspect-ratio: 3/4;
+  object-fit: contain; background: #faf8f5;
+}
+.ysm-book h3 { margin: 0 0 0.3rem; font-size: 0.92rem; font-weight: 800; color: #333; }
+.ysm-book p { margin: 0; font-size: 0.8rem; color: #666; }
+.ysm-spec-table {
+  width: 100%; border-collapse: collapse; font-size: 0.92rem;
+}
+.ysm-spec-table th, .ysm-spec-table td {
+  border: 1px solid #e8e4df; padding: 0.7rem 0.85rem; text-align: left; vertical-align: top;
+}
+.ysm-spec-table th {
+  width: 28%; background: #fffaf5; color: #7E410A; font-weight: 800;
+}
+.ysm-bridge {
+  background: linear-gradient(135deg, #fff7ef, #f5f9fc);
+  border: 1px solid #f0e0d0; border-radius: 8px; padding: 1.4rem 1.2rem;
+}
+.ysm-bridge h3 { margin: 0 0 0.5rem; color: #7E410A; font-size: 1.1rem; }
+.ysm-products {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem;
+}
+@media (min-width: 800px) { .ysm-products { grid-template-columns: repeat(5, 1fr); } }
+.ysm-prod {
+  display: flex; flex-direction: column; text-decoration: none; color: inherit;
+  border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff;
+}
+.ysm-prod:hover { border-color: var(--orange); color: inherit; }
+.ysm-prod img { width: 100%; aspect-ratio: 1; object-fit: contain; background: #fafafa; padding: 0.4rem; }
+.ysm-prod .body { padding: 0.65rem 0.7rem 0.85rem; }
+.ysm-prod h3 { margin: 0 0 0.25rem; font-size: 0.82rem; font-weight: 800; line-height: 1.35; color: #333; }
+.ysm-prod .price { font-weight: 900; color: var(--orange); font-size: 0.95rem; }
+.ysm-prod .note { font-size: 0.72rem; color: #888; margin-top: 0.2rem; }
+.ysm-contact-panel {
+  display: grid; grid-template-columns: 1fr; gap: 0.75rem; margin-top: 0.5rem;
+}
+@media (min-width: 640px) { .ysm-contact-panel { grid-template-columns: 1fr 1fr 1fr; } }
+.ysm-contact-card {
+  border: 1px solid var(--line); border-radius: 8px; padding: 1rem;
+  background: #fff;
+}
+.ysm-contact-card .label { font-size: 0.78rem; color: #888; font-weight: 700; }
+.ysm-contact-card .val { font-size: 1.05rem; font-weight: 800; color: #333; margin-top: 0.2rem; }
+.ysm-contact-card a { text-decoration: none; }
+.ysm-home-teaser {
+  display: grid; grid-template-columns: 1fr; gap: 1rem; align-items: center;
+  background: linear-gradient(100deg, #fff7ef 0%, #fff 55%, #f5f9fc 100%);
+  border: 1px solid #f0e0d0; border-radius: 10px; padding: 1.25rem;
+  margin: 1.5rem auto; max-width: var(--max);
+  text-decoration: none; color: inherit;
+}
+@media (min-width: 720px) {
+  .ysm-home-teaser { grid-template-columns: 200px 1fr auto; padding: 1.4rem 1.5rem; }
+}
+.ysm-home-teaser img {
+  width: 100%; max-width: 200px; aspect-ratio: 4/3; object-fit: cover;
+  border-radius: 6px; margin: 0 auto;
+}
+.ysm-home-teaser h3 { margin: 0 0 0.35rem; font-size: 1.2rem; color: #7E410A; font-weight: 900; }
+.ysm-home-teaser p { margin: 0; color: #555; font-size: 0.92rem; }
+.ysm-home-teaser .go {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--orange); color: #fff !important; font-weight: 800;
+  padding: 0.7rem 1.2rem; border-radius: 4px; white-space: nowrap;
+  text-decoration: none;
+}
+.ysm-home-teaser:hover .go { background: var(--orange-dk); }
+.ysm-news-article { max-width: 760px; margin: 0 auto; padding: 1.2rem 1rem 2.5rem; }
+.ysm-news-article h1 { font-size: clamp(1.35rem, 3vw, 1.75rem); margin: 0.3rem 0 0.8rem; color: #333; }
+.ysm-news-article .meta { color: #888; font-size: 0.88rem; margin-bottom: 1rem; }
+.ysm-news-article .lead { font-size: 1.02rem; color: #444; }
+.ysm-news-article img.feature {
+  width: 100%; border-radius: 8px; margin: 1rem 0; border: 1px solid var(--line);
+}
+.ysm-news-article .summary-tag {
+  display: inline-block; background: #fff7ef; color: #8B5A2B;
+  font-size: 0.75rem; font-weight: 800; padding: 0.2rem 0.55rem; border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
