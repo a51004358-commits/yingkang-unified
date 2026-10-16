@@ -133,6 +133,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .carousel-track { display: flex; transition: transform .45s ease; }
 .carousel-slide { min-width: 100%; position: relative; }
+.carousel-slide > a { display: block; color: inherit; text-decoration: none; }
 .carousel-slide img {
   width: 100%; height: auto; aspect-ratio: 1440/400; object-fit: cover;
 }
