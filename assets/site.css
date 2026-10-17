@@ -220,9 +220,15 @@ body.drawer-open { overflow: hidden; }
 }
 .carousel-track { display: flex; transition: transform .45s ease; }
 .carousel-slide { min-width: 100%; position: relative; }
-.carousel-slide > a { display: block; color: inherit; text-decoration: none; }
+.carousel-slide > a {
+  display: block; color: inherit; text-decoration: none;
+  position: relative; width: 100%; aspect-ratio: 1 / 1;
+  overflow: hidden; background: #eee;
+}
 .carousel-slide img {
-  width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;
+  position: absolute; inset: 0;
+  width: 100% !important; height: 100% !important; max-width: none !important;
+  object-fit: cover; object-position: center; aspect-ratio: auto;
 }
 .carousel-slide .hero-css {
   width: 100%; aspect-ratio: 1 / 1;
@@ -249,8 +255,8 @@ body.drawer-open { overflow: hidden; }
 .carousel-btn.next { right: 0; }
 
 @media (min-width: 769px) {
-  .carousel-slide img,
-  .carousel-slide .hero-css { aspect-ratio: 2 / 1; object-fit: cover; object-position: center; }
+  .carousel-slide > a,
+  .carousel-slide .hero-css { aspect-ratio: 2 / 1; }
 }
 
 /* ===== 5. Promo strip / 2×2 grid ===== */
