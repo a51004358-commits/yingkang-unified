@@ -184,8 +184,6 @@ body.drawer-open { overflow: hidden; }
   .carousel-btn { display: none; }
 }
 @media (min-width: 769px) {
-  .carousel-slide img,
-  .carousel-slide .hero-css { aspect-ratio: 2 / 1; object-fit: cover; object-position: center; }
   #nav-toggle { display: none; }
   .m-wa-desk { display: inline-flex; }
   .m-logo img { height: 42px; }
@@ -249,6 +247,11 @@ body.drawer-open { overflow: hidden; }
 }
 .carousel-btn.prev { left: 0; }
 .carousel-btn.next { right: 0; }
+
+@media (min-width: 769px) {
+  .carousel-slide img,
+  .carousel-slide .hero-css { aspect-ratio: 2 / 1; object-fit: cover; object-position: center; }
+}
 
 /* ===== 5. Promo strip / 2×2 grid ===== */
 .promo-strip {
