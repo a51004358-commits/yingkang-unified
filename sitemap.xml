@@ -81,12 +81,62 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.ykimed.com/healthblog/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.ykimed.com/products/angong-niuhuang-1pills-mk380.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/angong-niuhuang-3pills-mk382.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/angong-niuhuang-6pills-hk01.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.ykimed.com/products/baitongdi-60caps-k0019.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/baqi-she-fengshi-zuogu-oil-50ml-mk385.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/baqi-she-jianjing-cigu-oil-50ml-mk383.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/baqi-she-jingyaozhui-oil-50ml-mk389.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/baqi-she-potong-oil-50ml-mk384.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/benmingfo-mk356.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/benmingfo-mk358.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/benmingfo-mk359.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/benmingfo-mk360.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -96,12 +146,57 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/bluetooth-speaker-mk402.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/dianqishi-tiebu-70pcs-tt-ts-10-001.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/difugen-15ml-x3-k0034.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/difugen-15ml-yk395.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/fengse-gucidan-150caps-k0006.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/fengse-gucidan-60caps-k0002.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/fengse-gutong-oil-50ml-x3-k0044.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/fengse-gutong-oil-50ml-yk409.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/fengse-gutong-oil-y26.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/fengtong-gucidan-60caps-k0023.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/forehead-thermometer-yk245.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -116,6 +211,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/gutongling-60caps-k0026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/gutongling-60caps-k0049.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/huatatang-50caps-x4-yk470.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -126,7 +231,32 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/huoluoling-60caps-y23.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jianbu-huqian-320caps-mk370.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/jianchiling-60caps-mk285.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jingang-shenyou-10ml-yk474.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jinhuwang-50ml-mk386.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jinmaomao-hongcha-mk346.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -141,12 +271,72 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/jiuke-tiaoli-yinshumei-hk011.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jiuke-wan-60caps-hk100.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jiuke-wan-720caps-mk390.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jiuke-wan-720caps-mk391.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jiuke-wan-huaxiatang-60caps-hk101.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jiuke-wan-huaxiatang-mk400.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jiuke-wan-mk399.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jiuke-wan-yinshumei-120caps-mk369.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/jiuxin-dan-100caps-k0014.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/liaoshitong-60caps-mk284.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/lingzhi-naohuosu-150caps-k0011.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/liuwei-dihuang-350caps-x2-k0012.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.ykimed.com/products/liuwei-dihuang-350caps-yk396.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/maitong-100caps-mk395.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -161,6 +351,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/mieshitong-gaobu-10pcs-x11-k0032.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/mieshitong-gaobu-10pcs-x15-k0033.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/mieshitong-gaobu-10pcs-x15-yk403.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -171,12 +371,82 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/mieshitong-oil-50ml-mk349.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/mieshitong-oil-50ml-x3-k0047.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/mieshitong-oil-60caps-y25.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/naobaijin-lingzhi-naohuosu-150caps-k0010.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/naobaijin-lingzhi-naohuosu-150caps-x2-yk135.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/niaosuanqing-60caps-k0020.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/niuhuang-jiedu-120caps-x3-k0017.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/niuhuang-jiedu-120caps-x7-yk472.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/niuhuang-jiedu-120pcs-yk398.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/wireless-mouse-mk401.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/qianli-zhuifeng-baqi-she-50ml-mk381.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/qianli-zhuifeng-huoluoling-50ml-x3-k0045.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/qianli-zhuifeng-huoluoling-50ml-yk410.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/rimachi-wan-100caps-mk344.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/shitong-gucidan-60caps-k0039.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/storage-bag-mk341.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -187,6 +457,31 @@
   </url>
   <url>
     <loc>https://www.ykimed.com/products/taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/tongxue-wan-60caps-k0029.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/weimeng-shenyou-10ml-yk473.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/wubian-haigou-350caps-mk396.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/wubian-haigou-350caps-mk397.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/xiangshui-50caps-k0035.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -206,6 +501,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/yanbiqing-oil-set-y16.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zhuifeng-fgu-gaobu-yitiaogen-x11-mk387.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zhuifeng-fgu-gaobu-yitiaogen-x15-mk388.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-3pcs-set-y3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-4in1-y13.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-4pcs-set-y4.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/zuogu-gaobu-10pcs-x11-mk294.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -216,7 +541,102 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/zuogu-gaobu-y8.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-gaobu-y9.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-gaobu-yanbiqing-y1.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-gaobu-yanbiqing-y10.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-150caps-50ml-y6.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-150caps-k0007.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-150caps-x2-y20.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-150caps-x2-y21.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-60caps-10pcs-y11.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-60caps-50ml-y14.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/zuogu-tongwan-60caps-k0003.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-60caps-x3-y17.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-60caps-x3-y18.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-y12.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-yanbiqing-150caps-x2-y22.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-yanbiqing-150caps-y7.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-yanbiqing-60caps-x3-y19.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongwan-yanbiqing-60caps-y15.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongyou-50ml-x2-sp3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-tongyou-qianli-zhuifeng-50ml-x3-k0043.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -231,9 +651,45 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ykimed.com/products/zuogu-wan-150caps-y2.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ykimed.com/products/zuogu-wan-60caps-hky7389.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-yaotong-oil-50ml-x3-k0042.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-yaotong-oil-50ml-yk407.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-yaotong-oil-y27.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-yaotong-wan-150caps-mk292.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ykimed.com/products/zuogu-yaotong-wan-60caps-mk290.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ykimed.com/healthblog/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.ykimed.com/healthblog/posts/2026-10-17-office-dry-eyes.html</loc>
