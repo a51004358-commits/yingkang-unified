@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="香蜂草">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ef"/>
+      <stop offset="100%" stop-color="#f0f7fb"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#g)" stroke="#5a9e6f" stroke-width="4"/>
+  <circle cx="100" cy="100" r="70" fill="#fff" stroke="#5a9e6f" stroke-width="1.5" opacity="0.9"/>
+  <text x="100" y="95" text-anchor="middle" fill="#7E410A" font-size="22" font-weight="700" font-family="Noto Sans TC, sans-serif">香蜂草</text>
+  <text x="100" y="122" text-anchor="middle" fill="#888" font-size="12" font-family="Noto Sans TC, sans-serif">溫和</text>
+</svg>
