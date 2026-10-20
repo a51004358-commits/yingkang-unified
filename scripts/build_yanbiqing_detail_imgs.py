@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""v4: Six-panel photo-first 詳圖 for 強力炎必清.
+"""v4.1: Six-panel photo-first 詳圖 for 強力炎必清.
 
 Customer critique fixes:
 - Full-bleed spokesperson-v4 hero (product in hand), minimal overlay
@@ -147,7 +147,19 @@ def panel_01_hero() -> Image.Image:
     im = ImageEnhance.Contrast(im).enhance(1.05)
     im = ImageEnhance.Color(im).enhance(1.04)
     im = top_bar(im, 80, 185)
-    im = bottom_scrim(im, 0.68, (255, 246, 232), 215)
+    # Soft feathered scrim — readable title zone without a hard PowerPoint plaque
+    im = bottom_scrim(im, 0.72, (255, 248, 238), 175)
+    # Extra very soft mid wash only behind title band
+    wash = Image.new("RGBA", (W, 2000), (0, 0, 0, 0))
+    px = wash.load()
+    for y in range(1380, 1680):
+        t = (y - 1380) / 300
+        # peak soft cream in the middle of the title band
+        a = int(70 * (1 - abs(t - 0.35) * 1.6))
+        a = max(0, min(90, a))
+        for x in range(W):
+            px[x, y] = (255, 248, 236, a)
+    im = Image.alpha_composite(im.convert("RGBA"), wash).convert("RGB")
     draw = ImageDraw.Draw(im)
 
     if LOGO.exists():
@@ -159,14 +171,14 @@ def panel_01_hero() -> Image.Image:
         draw = ImageDraw.Draw(im)
     draw.text((200, 24), "盈康", font=font(28, True, False), fill=GOLD_LT)
 
-    # ONE title + one short line
+    # ONE title + one short line — sit in soft zone
     f_title = font(78, True, True)
     title = "強力炎必清"
-    draw.text(((W - tw(draw, title, f_title)) // 2, 1420), title, font=f_title, fill=INK)
+    draw.text(((W - tw(draw, title, f_title)) // 2, 1440), title, font=f_title, fill=INK)
 
     f_sub = font(32, False, True)
     sub = "草本日常輕養生 · 60粒"
-    soft_chip(draw, sub, W // 2, 1540, f_sub, fill_bg=WHITE, fill_fg=ORANGE_DK)
+    soft_chip(draw, sub, W // 2, 1555, f_sub, fill_bg=(255, 252, 247), fill_fg=ORANGE_DK)
 
     f_ai = font(20, False, False)
     ai = "形象為虛構視覺，非真實名人代言"
@@ -175,10 +187,10 @@ def panel_01_hero() -> Image.Image:
 
 
 def panel_02_benefits() -> Image.Image:
-    """3 big short soft benefits on lifestyle photo cards — not a manual."""
+    """3 big short soft benefits on matching lifestyle photo cards — not a manual."""
     H = 1750
-    # chapter: lifestyle full-bleed darkened
-    bg = cover(AI / "lifestyle-desk.jpg", W, H, focus=(0.5, 0.45))
+    # chapter: cool-morning still darkened (matches 清熱 chapter)
+    bg = cover(AI / "lifestyle-qingre.jpg", W, H, focus=(0.45, 0.40))
     bg = ImageEnhance.Brightness(bg).enhance(0.55)
     bg = ImageEnhance.Color(bg).enhance(0.95)
     # leave photo visible at edges; parchment center less dominant
@@ -190,10 +202,11 @@ def panel_02_benefits() -> Image.Image:
     t = "日常想輕一點"
     draw.text(((W - tw(draw, t, f_h)) // 2, 60), t, font=f_h, fill=INK)
 
+    # v4.1: each photo chapter matches its headline (semantic + visual)
     cards = [
-        (AI / "lifestyle-desk.jpg", (0.3, 0.4), "日常清熱節奏", "寫進作息，先了解再說"),
-        (BUB / "echinacea.jpg", (0.5, 0.45), "換季想舒適", "冷暖交替，留意自己"),
-        (BUB / "melissa.jpg", (0.5, 0.5), "應酬後想輕一點", "外賣應酬多的日子"),
+        (AI / "lifestyle-qingre.jpg", (0.35, 0.40), "日常清熱節奏", "寫進作息，先了解再說"),
+        (AI / "lifestyle-season.jpg", (0.42, 0.35), "換季想舒適", "冷暖交替，留意自己"),
+        (AI / "lifestyle-dining.jpg", (0.45, 0.45), "應酬後想輕一點", "外賣應酬多的日子"),
     ]
     # 3 vertical big cards spanning width with huge photo
     y = 180
@@ -472,7 +485,15 @@ def export(im: Image.Image, stem: str) -> Image.Image:
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    for req in ("spokesperson-v4.jpg", "herbs-hero.jpg", "blister-macro.jpg", "herbs-grid.jpg", "lifestyle-desk.jpg"):
+    for req in (
+        "spokesperson-v4.jpg",
+        "herbs-hero.jpg",
+        "blister-macro.jpg",
+        "herbs-grid.jpg",
+        "lifestyle-qingre.jpg",
+        "lifestyle-season.jpg",
+        "lifestyle-dining.jpg",
+    ):
         assert (AI / req).exists(), req
 
     specs = [
