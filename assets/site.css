@@ -1322,3 +1322,44 @@ body.drawer-open { overflow: hidden; }
   text-decoration: underline;
 }
 .ml-soft { font-size: 0.85rem; color: #888; margin: 0.6rem 0 0; }
+
+
+/* ===== Vita-inspired PDP detail images + tabs (yanbiqing) ===== */
+.pdp-detail-stack {
+  display: flex; flex-direction: column; gap: 0;
+  max-width: 750px; margin: 0 auto;
+  border: 1px solid #f0e0d0; border-radius: 12px; overflow: hidden;
+  background: #fff;
+}
+.pdp-detail-fig { margin: 0; }
+.pdp-detail-fig img {
+  display: block; width: 100%; height: auto;
+  vertical-align: top;
+}
+.pdp-tabs {
+  background: #fff; border: 1px solid var(--line); border-radius: 10px; overflow: hidden;
+}
+.pdp-tabs-head {
+  display: flex; flex-wrap: wrap; gap: 0; border-bottom: 1px solid var(--line);
+  background: #fffaf5;
+}
+.pdp-tab {
+  flex: 1 1 auto; min-width: 6.5rem;
+  appearance: none; border: 0; background: transparent;
+  padding: 0.85rem 0.75rem; font: inherit; font-weight: 800; color: #888;
+  cursor: pointer; border-bottom: 3px solid transparent;
+}
+.pdp-tab.is-on { color: #7E410A; border-bottom-color: var(--orange); background: #fff; }
+.pdp-tab-panel { padding: 1.1rem 1.15rem 1.25rem; color: #444; line-height: 1.65; }
+.pdp-bullets { margin: 0; padding-left: 1.2rem; }
+.pdp-bullets li { margin: 0.35rem 0; }
+.pdp-dose-big { font-size: 1.2rem; font-weight: 900; color: #7E410A; margin: 0 0 0.5rem; }
+.pdp-faq details {
+  background: #fff; border: 1px solid var(--line); border-radius: 8px;
+  padding: 0.75rem 0.95rem; margin: 0.55rem 0;
+}
+.pdp-faq summary {
+  cursor: pointer; font-weight: 800; color: #7E410A; list-style: none;
+}
+.pdp-faq summary::-webkit-details-marker { display: none; }
+.pdp-faq details p { margin: 0.55rem 0 0.15rem; color: #555; font-size: 0.92rem; line-height: 1.55; }
