@@ -154,7 +154,7 @@ def build_chrome(path: Path) -> str:
     </ul>
   </div>
 </aside>
-<div class="announce">香港本地健康品牌｜膏布・口服・噴霧</div>
+<div class="announce">盈康｜膏布・口服・噴霧</div>
 <div class="search-overlay" id="search-overlay" role="dialog" aria-label="搜尋">
   <div class="search-panel">
     <form action="{products}" method="get">
@@ -182,7 +182,7 @@ NEW_PROMO = '''<div class="promo-strip promo-grid-2x2" aria-label="精選入口"
   </a>
   <a class="promo-tile tile-d" href="about.html">
     <h3>關於我們</h3>
-    <p>香港本地健康品牌</p>
+    <p>盈康</p>
     <span class="tile-cta">了解更多 →</span>
   </a>
 </div>

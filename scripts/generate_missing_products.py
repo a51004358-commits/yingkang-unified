@@ -620,7 +620,7 @@ def render_product(p, slug, all_items, missing_images):
 
   <div class="lf-banner">
     <h3>盈康・輕養生日常</h3>
-    <p>香港本地品牌｜說明可查、日常可依｜WhatsApp %s</p>
+    <p>說明可查、日常可依｜WhatsApp %s</p>
   </div>
 
   <div class="lf-section">
@@ -708,7 +708,7 @@ def render_index(items):
     # Use new header with updated count in description via string replace on template head
     head = tpl[:head_end]
     head = re.sub(r'content="盈康全部產品一覽：[^"]*"',
-                  'content="盈康全部產品一覽：膏布、口服、外用噴霧、套裝與周邊。香港本地品牌・HKTVmall 可購。共 %d 件。"' % len(items),
+                  'content="盈康全部產品一覽：膏布、口服、外用噴霧、套裝與周邊。HKTVmall 可購。共 %d 件。"' % len(items),
                   head)
     # rebuild sidebar + main opening
     mid = """<div class="catalog-layout">

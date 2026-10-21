@@ -1365,9 +1365,9 @@ body.drawer-open { overflow: hidden; }
 .pdp-faq summary::-webkit-details-marker { display: none; }
 .pdp-faq details p { margin: 0.55rem 0 0.15rem; color: #555; font-size: 0.92rem; line-height: 1.55; }
 
-/* ===== PDP efficacy / SEO block ===== */
+/* ===== PDP efficacy / SEO block (痛點・功效・好處) ===== */
 #pdp-efficacy .pdp-eff-lead {
-  font-size: 1.02rem; color: #444; line-height: 1.7; max-width: 48em;
+  font-size: 1.08rem; color: #333; line-height: 1.75; max-width: 52em; font-weight: 600;
 }
 #pdp-efficacy .pdp-eff-label {
   display: inline-block; background: #fff7ef; color: #c45e10;
@@ -1377,16 +1377,29 @@ body.drawer-open { overflow: hidden; }
 #pdp-efficacy .pdp-eff-grid {
   display: grid; grid-template-columns: 1fr; gap: 1.2rem;
 }
-@media (min-width: 720px) {
-  #pdp-efficacy .pdp-eff-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+#pdp-efficacy .pdp-eff-grid-3 {
+  display: grid; grid-template-columns: 1fr; gap: 1.15rem;
 }
-#pdp-efficacy .pdp-eff-grid h3 {
-  margin: 0 0 0.5rem; font-size: 1rem; color: #333;
+@media (min-width: 900px) {
+  #pdp-efficacy .pdp-eff-grid-3 { grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
+}
+@media (min-width: 720px) and (max-width: 899px) {
+  #pdp-efficacy .pdp-eff-grid-3 { grid-template-columns: 1fr 1fr; }
+}
+#pdp-efficacy .pdp-eff-col {
+  background: #fffaf5; border: 1px solid #f0d0b0; border-radius: 8px; padding: 1rem 1.05rem;
+}
+#pdp-efficacy .pdp-eff-benefit {
+  background: #fff5eb; border-color: #e87722;
+}
+#pdp-efficacy .pdp-eff-col h3 {
+  margin: 0 0 0.55rem; font-size: 0.98rem; color: #333;
 }
 #pdp-efficacy .pdp-kw {
-  margin-top: 1.1rem; padding: 0.85rem 1rem; background: #f7fafc;
-  border-left: 4px solid #3a9bb8; font-size: 0.9rem; line-height: 1.65; color: #555;
+  margin-top: 1.15rem; padding: 0.9rem 1rem; background: #f7fafc;
+  border-left: 4px solid #3a9bb8; font-size: 0.9rem; line-height: 1.7; color: #555;
 }
 .pdp-buy-blurb {
-  margin-top: 0.85rem; color: #444; line-height: 1.65; font-size: 0.95rem;
+  margin-top: 0.85rem; color: #333; line-height: 1.7; font-size: 0.98rem; font-weight: 600;
 }
+
