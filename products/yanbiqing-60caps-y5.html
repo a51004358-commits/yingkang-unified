@@ -81,8 +81,16 @@
   <p class="crumb"><a href="../index.html">首頁</a> › <a href="index.html">所有產品</a> › 強力炎必清 60粒</p>
 
   <div class="lf-top">
-    <div class="lf-gallery">
-      <img class="main" id="main-img" src="../assets/products/yanbiqing-60caps-y5/primary.png" alt="強力炎必清 60粒">
+    <div class="lf-gallery" data-gallery>
+      <img class="main" id="main-img" src="../assets/products/yanbiqing-60caps-y5/primary.png" alt="強力炎必清 60粒｜泡罩">
+      <div class="lf-thumbs" role="list">
+        <button type="button" class="lf-thumb is-on" role="listitem" data-full="../assets/products/yanbiqing-60caps-y5/gallery-02.png" aria-label="主圖：泡罩">
+          <img src="../assets/products/yanbiqing-60caps-y5/gallery-02.png" alt="">
+        </button>
+        <button type="button" class="lf-thumb" role="listitem" data-full="../assets/products/yanbiqing-60caps-y5/gallery-01.png" aria-label="主圖：產品說明圖">
+          <img src="../assets/products/yanbiqing-60caps-y5/gallery-01.png" alt="">
+        </button>
+      </div>
     </div>
     <div class="lf-buy">
       <h1>強力炎必清 60粒</h1>
@@ -105,31 +113,24 @@
     <div class="ml-trust-item"><div class="t">客服備援</div><div class="s">WhatsApp 6222 7238</div></div>
   </div>
 
-  <!-- Vita-Green / HKTVmall-style long-form 詳圖 stack (layout polish only; no VG trademarks/claims) -->
+  <!-- HKTVmall H6838001_S_y5 主圖／詳圖（店舖自家素材） -->
   <div class="lf-section pdp-detail" id="product-detail-images">
     <h2>產品<span class="accent">詳圖</span></h2>
-    <p class="ml-soft" style="margin-top:0;margin-bottom:0.85rem">長圖說明如下（可直向滑動瀏覽）。內容為盈康自製排版，不含其他品牌商標或未核實療效數字。</p>
+    <p class="ml-soft" style="margin-top:0;margin-bottom:0.85rem">以下詳圖取自 HKTVmall 盈康店舖同一 SKU（H6838001_S_y5），可直向滑動瀏覽。</p>
     <div class="pdp-detail-stack">
       <figure class="pdp-detail-fig">
-        <img src="../assets/products/yanbiqing-60caps-y5/detail/01-hero.jpg" alt="強力炎必清｜主視覺詳圖" width="750" height="1000" loading="eager">
+        <img src="../assets/products/yanbiqing-60caps-y5/detail/hktv-01.png" alt="強力炎必清｜詳圖 1" width="1024" height="1024" loading="eager">
       </figure>
       <figure class="pdp-detail-fig">
-        <img src="../assets/products/yanbiqing-60caps-y5/detail/02-benefits.jpg" alt="日常想輕一點｜節奏詳圖" width="750" height="875" loading="lazy">
+        <img src="../assets/products/yanbiqing-60caps-y5/detail/hktv-02.png" alt="強力炎必清｜詳圖 2" width="1024" height="1024" loading="lazy">
       </figure>
       <figure class="pdp-detail-fig">
-        <img src="../assets/products/yanbiqing-60caps-y5/detail/03-ingredients.jpg" alt="四味草本｜成分詳圖" width="750" height="1100" loading="lazy">
+        <img src="../assets/products/yanbiqing-60caps-y5/detail/hktv-03.png" alt="強力炎必清｜詳圖 3" width="1024" height="1024" loading="lazy">
       </figure>
       <figure class="pdp-detail-fig">
-        <img src="../assets/products/yanbiqing-60caps-y5/detail/04-macro.jpg" alt="看得見的細節｜膠囊特寫" width="750" height="850" loading="lazy">
-      </figure>
-      <figure class="pdp-detail-fig">
-        <img src="../assets/products/yanbiqing-60caps-y5/detail/05-usage.jpg" alt="怎麼服用｜用法詳圖" width="750" height="750" loading="lazy">
-      </figure>
-      <figure class="pdp-detail-fig">
-        <img src="../assets/products/yanbiqing-60caps-y5/detail/06-trust-cta.jpg" alt="理念可依｜查詢詳圖" width="750" height="900" loading="lazy">
+        <img src="../assets/products/yanbiqing-60caps-y5/detail/hktv-04.png" alt="強力炎必清｜詳圖 4" width="1024" height="1024" loading="lazy">
       </figure>
     </div>
-    <p class="ml-soft">亦可一次下載完整長圖：<a href="../assets/products/yanbiqing-60caps-y5/detail/detail-long-full.jpg">detail-long-full.jpg</a>（約 750×5475）。</p>
   </div>
 
   <div class="lf-section" id="pdp-tabs">
@@ -181,7 +182,7 @@
       </details>
       <details>
         <summary>詳圖可否一次看完？</summary>
-        <p>可以。上方「產品詳圖」可逐張滑動；亦可開啟完整長圖 detail-long-full.jpg。</p>
+        <p>可以。上方「產品詳圖」可逐張滑動瀏覽（取自 HKTVmall 同一 SKU）。</p>
       </details>
     </div>
   </div>
@@ -272,20 +273,33 @@
 <script>
 (function(){
   var root=document.querySelector('[data-pdp-tabs]');
-  if(!root) return;
-  var tabs=[].slice.call(root.querySelectorAll('.pdp-tab'));
-  var panels=[].slice.call(root.querySelectorAll('.pdp-tab-panel'));
-  tabs.forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var id=btn.getAttribute('data-tab');
-      tabs.forEach(function(t){ t.classList.toggle('is-on', t===btn); t.setAttribute('aria-selected', t===btn?'true':'false'); });
-      panels.forEach(function(p){
-        var on=p.getAttribute('data-panel')===id;
-        p.classList.toggle('is-on', on);
-        if(on) p.removeAttribute('hidden'); else p.setAttribute('hidden','');
+  if(root){
+    var tabs=[].slice.call(root.querySelectorAll('.pdp-tab'));
+    var panels=[].slice.call(root.querySelectorAll('.pdp-tab-panel'));
+    tabs.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var id=btn.getAttribute('data-tab');
+        tabs.forEach(function(t){ t.classList.toggle('is-on', t===btn); t.setAttribute('aria-selected', t===btn?'true':'false'); });
+        panels.forEach(function(p){
+          var on=p.getAttribute('data-panel')===id;
+          p.classList.toggle('is-on', on);
+          if(on) p.removeAttribute('hidden'); else p.setAttribute('hidden','');
+        });
       });
     });
-  });
+  }
+  var gal=document.querySelector('[data-gallery]');
+  if(gal){
+    var main=gal.querySelector('#main-img');
+    var thumbs=[].slice.call(gal.querySelectorAll('.lf-thumb'));
+    thumbs.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var src=btn.getAttribute('data-full');
+        if(main && src){ main.src=src; }
+        thumbs.forEach(function(t){ t.classList.toggle('is-on', t===btn); });
+      });
+    });
+  }
 })();
 </script>
 <script src="../assets/site.js" defer></script>

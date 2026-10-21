@@ -839,6 +839,18 @@ body.drawer-open { overflow: hidden; }
   width: 100%; aspect-ratio: 1; object-fit: contain;
   border: 1px solid var(--line); background: linear-gradient(160deg,#fff5eb,#f0f7fb 60%,#fafafa);
 }
+.lf-gallery .lf-thumbs {
+  display: flex; gap: 0.5rem; margin-top: 0.65rem; flex-wrap: wrap;
+}
+.lf-gallery .lf-thumb {
+  width: 64px; height: 64px; padding: 0; border: 2px solid var(--line);
+  background: #fff; border-radius: 4px; cursor: pointer; overflow: hidden;
+}
+.lf-gallery .lf-thumb img {
+  width: 100%; height: 100%; object-fit: contain; display: block;
+}
+.lf-gallery .lf-thumb.is-on { border-color: var(--orange); }
+
 .lf-buy h1 { font-size: clamp(1.35rem, 3vw, 1.7rem); color: #333; margin: 0 0 0.4rem; }
 .lf-spec-line { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.6rem; }
 .lf-rating { color: #e8a317; font-size: 0.9rem; margin: 0.3rem 0 0.6rem; }
