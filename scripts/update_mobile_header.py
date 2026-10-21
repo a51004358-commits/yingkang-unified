@@ -63,14 +63,11 @@ PROMO_RE = re.compile(
     re.S,
 )
 
-
 def depth_of(path: Path) -> int:
     return len(path.relative_to(ROOT).parts) - 1
 
-
 def prefix_for(path: Path) -> str:
     return "../" * depth_of(path)
-
 
 def current_key(path: Path) -> str | None:
     rel = str(path.relative_to(ROOT)).replace("\\", "/")
@@ -88,10 +85,8 @@ def current_key(path: Path) -> str | None:
         return "about"
     return None
 
-
 def cur(key: str | None, want: str) -> str:
     return ' aria-current="page"' if key == want else ""
-
 
 def build_chrome(path: Path) -> str:
     p = prefix_for(path)
@@ -169,7 +164,6 @@ def build_chrome(path: Path) -> str:
   </div>
 </div>'''
 
-
 NEW_PROMO = '''<div class="promo-strip promo-grid-2x2" aria-label="精選入口">
   <a class="promo-tile tile-a" href="products/index.html">
     <h3>所有產品</h3>
@@ -198,7 +192,6 @@ FLOAT_CHAT = (
     '<a class="float-chat" href="https://wa.me/85262227238" target="_blank" '
     'rel="noopener" title="WhatsApp 6222 7238" aria-label="WhatsApp 聯絡">💬</a>\n'
 )
-
 
 def process(path: Path) -> bool:
     text = path.read_text(encoding="utf-8")
@@ -231,7 +224,6 @@ def process(path: Path) -> bool:
         return True
     return False
 
-
 def main() -> None:
     changed = 0
     for path in sorted(ROOT.rglob("*.html")):
@@ -248,7 +240,6 @@ def main() -> None:
         else:
             print("UNCH", path.relative_to(ROOT))
     print("Changed:", changed)
-
 
 if __name__ == "__main__":
     main()

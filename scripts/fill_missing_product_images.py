@@ -32,7 +32,6 @@ SIZE_RANK = {
     "65": 65,
 }
 
-
 def parse_missing(path: Path) -> list[tuple[str, str, str]]:
     """Return list of (slug, name, sku)."""
     items = []
@@ -45,12 +44,10 @@ def parse_missing(path: Path) -> list[tuple[str, str, str]]:
             items.append((m.group(1), m.group(2).strip(), m.group(3)))
     return items
 
-
 def fetch_html(url: str) -> str:
     req = Request(url, headers={"User-Agent": UA, "Accept": "text/html,*/*"})
     with urlopen(req, timeout=45) as resp:
         return resp.read().decode("utf-8", errors="replace")
-
 
 def extract_product_image_urls(html: str) -> list[str]:
     """Collect product image URLs from PDP HTML.
@@ -104,7 +101,6 @@ def extract_product_image_urls(html: str) -> list[str]:
         out.append(u)
     return out
 
-
 def pick_primary_url(urls: list[str]) -> str | None:
     if not urls:
         return None
@@ -125,7 +121,6 @@ def pick_primary_url(urls: list[str]) -> str | None:
         if size == 1200:
             return u
     return scored[0][1]
-
 
 def expand_candidates(url: str) -> list[str]:
     candidates = [url]
@@ -167,7 +162,6 @@ def expand_candidates(url: str) -> list[str]:
             out.append(u)
     return out
 
-
 def sniff_ext(data: bytes, url: str) -> str:
     if data[:8] == b"\x89PNG\r\n\x1a\n":
         return "png"
@@ -179,7 +173,6 @@ def sniff_ext(data: bytes, url: str) -> str:
     if m:
         return m.group(1).lower().replace("jpeg", "jpg")
     return "png"
-
 
 def download(url: str, dest_dir: Path) -> Path | None:
     dest_dir.mkdir(parents=True, exist_ok=True)
@@ -206,7 +199,6 @@ def download(url: str, dest_dir: Path) -> Path | None:
         except (URLError, HTTPError, TimeoutError, OSError):
             continue
     return None
-
 
 def process_one(item: tuple[str, str, str]) -> dict:
     slug, name, sku = item
@@ -263,7 +255,6 @@ def process_one(item: tuple[str, str, str]) -> dict:
     result["reason"] = f"downloaded {path.name} from {primary}"
     return result
 
-
 def update_product_page(slug: str, rel_img: str) -> bool:
     page = PRODUCTS_DIR / f"{slug}.html"
     if not page.exists():
@@ -289,7 +280,6 @@ def update_product_page(slug: str, rel_img: str) -> bool:
     page.write_text(new_text, encoding="utf-8")
     return True
 
-
 def update_index(slug: str, rel_img: str, index_text: str) -> str:
     """Replace logo.png inside the card whose href is slug.html."""
     # Match the card block for this slug and swap its img src if logo
@@ -304,7 +294,6 @@ def update_index(slug: str, rel_img: str, index_text: str) -> str:
 
     new_text, n = pat.subn(repl, index_text, count=1)
     return new_text if n else index_text
-
 
 def main():
     items = parse_missing(MISSING)
@@ -374,7 +363,6 @@ def main():
         for r in fail:
             f.write(f"FAIL\t{r['slug']}\t{r['sku']}\t{r['reason']}\n")
     print(f"Report: {report}")
-
 
 if __name__ == "__main__":
     main()

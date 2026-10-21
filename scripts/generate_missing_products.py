@@ -16,12 +16,6 @@ BASE = "https://www.ykimed.com"
 HKTV = "https://www.hktvmall.com/hktv/zh/p/{sku}"
 WA = "https://wa.me/85262227238"
 PHONE = "6222 7238"
-CAP231 = (
-    "此產品沒有根據《藥劑業及毒藥條例》或《中醫藥條例》註冊。"
-    "為此產品作出的任何聲稱亦沒有為進行該等註冊而接受評核。"
-    "此產品並不供作診斷、治療或預防任何疾病之用。"
-)
-
 EXISTING_CODES = {
     "hk102", "hky7389", "k0002", "k0003", "k0008", "k0009", "k0010", "k0012",
     "k0019", "k0020", "k0021", "k0024", "k0025", "k0031", "k0037", "k0038",
@@ -635,7 +629,7 @@ def render_product(p, slug, all_items, missing_images):
       <tr><th>建議用法</th><td>%s</td></tr>
       <tr><th>劑型</th><td>%s</td></tr>
       <tr><th>保存</th><td>請置於陰涼乾爽處（約 25°C 以下），避免陽光直射，並放於兒童接觸不到的地方。</td></tr>
-      <tr><th>注意</th><td>孕婦、兒童及長期病患者請先諮詢專業意見。外用產品避免接觸眼睛與破損皮膚。本頁內容並非醫療建議。</td></tr>
+      <tr><th>注意</th><td>孕婦、兒童及長期病患者請先諮詢專業意見。外用產品避免接觸眼睛與破損皮膚。</td></tr>
     </table>
   </div>
 
@@ -652,8 +646,6 @@ def render_product(p, slug, all_items, missing_images):
     </table>
   </div>
 
-  <div class="lf-cap231">%s</div>
-
   <div class="lf-bottom-cta">
     <a class="lf-cta-wa" href="%s?text=%s" target="_blank" rel="noopener">💬 立即 WhatsApp 查詢 %s</a>
   </div>
@@ -661,7 +653,7 @@ def render_product(p, slug, all_items, missing_images):
   <div class="lf-section">
     <h2>名人<span class="accent">推薦</span></h2>
     <p>尹淑梅中醫師（從醫五十多年・香港註冊中醫師）支持盈康「說明可查、日常可依」的輕養生理念。其榮譽包括香港中國醫藥研究院榮譽院長、香港中國醫藥學會永遠榮譽會長，並榮登《世界名人錄》及傑出英才錄。</p>
-    <p class="muted">推薦反映品牌理念認同，並非對單一療效之醫學保證。</p>
+    <p class="muted">推薦反映品牌理念認同。</p>
   </div>
 
   <div class="lf-section">
@@ -693,7 +685,6 @@ def render_product(p, slug, all_items, missing_images):
         esc(p["sku"]),
         esc(p["current"]),
         PHONE,
-        CAP231,
         WA, wa_q, esc(name),
         related_blocks(all_items, p["sku"], cat),
     )

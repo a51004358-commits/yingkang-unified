@@ -17,7 +17,6 @@ FONT_B = Path("/home/box/.local/share/fonts/LZNotoSansTC-Bold.ttf")
 FONT_CJK_R = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
 FONT_CJK_B = "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"
 
-
 def font(sz: int, bold: bool = False):
     preferred = FONT_B if bold else FONT_R
     if preferred.exists():
@@ -32,7 +31,6 @@ def font(sz: int, bold: bool = False):
             continue
     return ImageFont.load_default()
 
-
 def cover_fit(im: Image.Image, tw: int, th: int) -> Image.Image:
     im = im.convert("RGBA")
     sw, sh = im.size
@@ -43,7 +41,6 @@ def cover_fit(im: Image.Image, tw: int, th: int) -> Image.Image:
     top = (nh - th) // 2
     return im.crop((left, top, left + tw, top + th))
 
-
 def contain_fit(im: Image.Image, tw: int, th: int, pad_rgba=(0, 0, 0, 0)) -> Image.Image:
     im = im.convert("RGBA")
     sw, sh = im.size
@@ -53,7 +50,6 @@ def contain_fit(im: Image.Image, tw: int, th: int, pad_rgba=(0, 0, 0, 0)) -> Ima
     canvas = Image.new("RGBA", (tw, th), pad_rgba)
     canvas.paste(im, ((tw - nw) // 2, (th - nh) // 2), im)
     return canvas
-
 
 def rounded_shadow(product: Image.Image, max_w: int, max_h: int) -> Image.Image:
     product = product.convert("RGBA")
@@ -70,7 +66,6 @@ def rounded_shadow(product: Image.Image, max_w: int, max_h: int) -> Image.Image:
     shadow.paste(fitted, (pad, pad), fitted)
     return shadow
 
-
 def gradient_bg(c1, c2) -> Image.Image:
     """Vertical soft gradient from c1 (top) to c2 (bottom)."""
     img = Image.new("RGB", (W, H), c1)
@@ -86,14 +81,12 @@ def gradient_bg(c1, c2) -> Image.Image:
             px[x, y] = (r, g, b)
     return img.convert("RGBA")
 
-
 def draw_centered_text(d: ImageDraw.ImageDraw, text: str, y: int, fill, fnt, max_w: int = 920):
     bbox = d.textbbox((0, 0), text, font=fnt)
     tw = bbox[2] - bbox[0]
     x = (W - tw) // 2
     d.text((x, y), text, fill=fill, font=fnt)
     return bbox[3] - bbox[1]
-
 
 def draw_wrapped_centered(d, text, y, fill, fnt, max_w=900, line_gap=10):
     """Simple wrap by character count for CJK-friendly lines."""
@@ -115,7 +108,6 @@ def draw_wrapped_centered(d, text, y, fill, fnt, max_w=900, line_gap=10):
         h = draw_centered_text(d, line, cy, fill, fnt, max_w)
         cy += h + line_gap
     return cy
-
 
 def make_square_poster(bg_top, bg_bot, fg, title, subtitle, tip, visual: Image.Image, mode="product"):
     """Text upper third, large visual mid-bottom — Suntory-like product poster cell."""
@@ -186,7 +178,6 @@ def make_square_poster(bg_top, bg_bot, fg, title, subtitle, tip, visual: Image.I
 
     return base
 
-
 def paste_collage(base: Image.Image, packs: list[Image.Image], zone_top=400) -> Image.Image:
     out = base.convert("RGBA")
     n = len(packs)
@@ -207,13 +198,11 @@ def paste_collage(base: Image.Image, packs: list[Image.Image], zone_top=400) -> 
         out.alpha_composite(shadowed, (max(0, sx), max(0, sy)))
     return out
 
-
 def open_img(rel: str) -> Image.Image:
     p = REPO / rel
     if not p.exists():
         raise FileNotFoundError(p)
     return Image.open(p)
-
 
 def save(img: Image.Image, name: str):
     OUT.mkdir(parents=True, exist_ok=True)
@@ -222,7 +211,6 @@ def save(img: Image.Image, name: str):
     rgb.save(path, "JPEG", quality=88, optimize=True)
     print(f"wrote {path} {rgb.size} ({path.stat().st_size} bytes)")
     return path
-
 
 def build_all():
     yan = open_img("assets/products/yanbiqing-60caps-y5/primary.png")
@@ -309,7 +297,6 @@ def build_all():
         save(img, fname)
 
     print("done — canvas", W, "x", H)
-
 
 if __name__ == "__main__":
     build_all()

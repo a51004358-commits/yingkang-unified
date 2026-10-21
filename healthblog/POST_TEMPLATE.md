@@ -4,7 +4,7 @@
 
 ## 必做：推薦產品區塊
 
-放在 `.hb-disclaimer` **之前**（返回健康庫／WhatsApp CTA 之前亦可，但慣例在免責之上）。
+放在返回健康庫／WhatsApp CTA **之前**（文章正文之後）。
 
 ```bash
 # 依標題關鍵字建議產品，並印出 HTML
@@ -16,7 +16,7 @@ python3 scripts/healthblog_rec_product.py --print biyan-60caps-mk368
 
 把輸出的 `<!-- hb-rec:start -->…<!-- hb-rec:end -->` 貼進文章。
 
-主題對照（browse-first，無購買按鈕、無價格、無疾病療效聲稱）：
+主題對照（browse-first，無購買按鈕、無價格；功效與搜尋關鍵字可自由書寫）：
 
 | 主題關鍵字 | 建議產品 |
 |---|---|

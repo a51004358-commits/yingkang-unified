@@ -3,7 +3,7 @@
 """Healthblog 「推薦產品」block — inject into posts + helpers for future daily posts.
 
 Browse-first only (no purchase CTA / price). Soft Traditional Chinese reasons.
-No Cap.231 disease-treatment claims in reason lines.
+Reason lines may describe product benefits freely (private site).
 
 Usage:
   python3 scripts/healthblog_rec_product.py              # inject all mapped posts
@@ -116,7 +116,6 @@ THEME_KEYWORDS: list[tuple[list[str], str]] = [
     (["眼", "螢幕", "乾澀", "冷氣房"], "futeiling-120ml-yk404"),
 ]
 
-
 def pick_product_for_theme(title: str, body: str = "") -> str:
     """Pick a product slug from title/body keywords; default oral flagship."""
     text = f"{title}\n{body}"
@@ -124,7 +123,6 @@ def pick_product_for_theme(title: str, body: str = "") -> str:
         if any(k in text for k in keys):
             return slug
     return "yanbiqing-60caps-y5"
-
 
 def render_block(product_slug: str, *, rel_prefix: str = "../../") -> str:
     p = PRODUCTS[product_slug]
@@ -146,17 +144,14 @@ def render_block(product_slug: str, *, rel_prefix: str = "../../") -> str:
         f'</section>\n'
     )
 
-
 MARKER_START = "<!-- hb-rec:start -->"
 MARKER_END = "<!-- hb-rec:end -->"
-
 
 def wrap_block(html: str) -> str:
     return f"{MARKER_START}\n{html}{MARKER_END}\n"
 
-
 def inject_into_html(html: str, block: str) -> str:
-    """Insert (or replace) recommended block just before .hb-disclaimer."""
+    """Insert (or replace) recommended block before article footer CTAs."""
     wrapped = wrap_block(block)
     # Remove existing block if present
     html = re.sub(
@@ -172,13 +167,14 @@ def inject_into_html(html: str, block: str) -> str:
         html,
         flags=re.DOTALL,
     )
-    m = re.search(r'(\s*)(<p class="hb-disclaimer">)', html)
+    # Prefer anchor before return / WhatsApp CTA near article end
+    m = re.search(
+        r'(\s*)(<p class="hb-back">|<p class="hb-cta"|<div class="hb-cta"|'
+        r'<a class="hb-back"|</article>)',
+        html,
+    )
     if not m:
-        raise ValueError("hb-disclaimer not found")
-    indent = m.group(1)
-    # Prefer two-space indent before disclaimer line
-    insertion = f"\n{indent}{wrapped.replace(chr(10), chr(10) + indent).rstrip()}\n{indent}"
-    # Fix: wrap_block already has newlines; insert cleanly
+        raise ValueError("no insertion anchor found (hb-back/hb-cta/article end)")
     insertion = "\n  " + wrapped.replace("\n", "\n  ").rstrip() + "\n"
     html = html[: m.start(2)] + insertion + html[m.start(2) :]
     # Bump CSS cache query on healthblog posts
@@ -188,7 +184,6 @@ def inject_into_html(html: str, block: str) -> str:
         html,
     )
     return html
-
 
 def process_all() -> list[tuple[str, str]]:
     updated: list[tuple[str, str]] = []
@@ -209,7 +204,6 @@ def process_all() -> list[tuple[str, str]]:
         updated.append((stem, slug))
         print(f"OK {stem} → {slug} ({PRODUCTS[slug]['name']})")
     return updated
-
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
@@ -234,7 +228,6 @@ def main() -> int:
         return 0
     process_all()
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

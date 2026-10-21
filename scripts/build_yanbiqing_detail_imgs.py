@@ -8,7 +8,7 @@ Customer critique fixes:
 - Alternating rhythms (photo / sparse / macro / trust)
 - blister-macro quality chapter; yinshumei philosophy; WA browse-first
 
-Cap.231 soft TC. No Vita marks / #1 / clinical % / disease cure claims.
+Private-site marketing TC. No Vita marks / #1 / clinical % fakes.
 AI person = 虛構視覺.
 """
 from __future__ import annotations
@@ -42,21 +42,17 @@ ORANGE_DK = (126, 72, 28)
 WHITE = (255, 255, 255)
 CREAM = (255, 250, 242)
 
-
 def font(size: int, bold: bool = False, serif: bool = False) -> ImageFont.FreeTypeFont:
     path = (SERIF_B if bold else SERIF_R) if serif else (SANS_B if bold else SANS_R)
     return ImageFont.truetype(path, size, index=IDX)
-
 
 def tw(d, t, f) -> int:
     b = d.textbbox((0, 0), t, font=f)
     return b[2] - b[0]
 
-
 def th(d, t, f) -> int:
     b = d.textbbox((0, 0), t or " ", font=f)
     return b[3] - b[1]
-
 
 def cover(path: Path, w: int, h: int, focus=(0.5, 0.35)) -> Image.Image:
     im = Image.open(path).convert("RGB")
@@ -66,7 +62,6 @@ def cover(path: Path, w: int, h: int, focus=(0.5, 0.35)) -> Image.Image:
     left = max(0, min(int((nw - w) * focus[0]), nw - w))
     top = max(0, min(int((nh - h) * focus[1]), nh - h))
     return im.crop((left, top, left + w, top + h))
-
 
 def bottom_scrim(im: Image.Image, from_ratio=0.62, color=(255, 246, 232), max_a=220) -> Image.Image:
     w, h = im.size
@@ -80,13 +75,11 @@ def bottom_scrim(im: Image.Image, from_ratio=0.62, color=(255, 246, 232), max_a=
             px[x, y] = (*color, a)
     return Image.alpha_composite(im.convert("RGBA"), ov).convert("RGB")
 
-
 def top_bar(im: Image.Image, hbar=88, alpha=200) -> Image.Image:
     w, h = im.size
     ov = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     ImageDraw.Draw(ov).rectangle((0, 0, w, hbar), fill=(28, 22, 18, alpha))
     return Image.alpha_composite(im.convert("RGBA"), ov).convert("RGB")
-
 
 def soft_chip(draw, text, cx, y, fnt, fill_bg=WHITE, fill_fg=ORANGE_DK, pad_x=28, pad_y=14):
     ww = tw(draw, text, fnt)
@@ -95,7 +88,6 @@ def soft_chip(draw, text, cx, y, fnt, fill_bg=WHITE, fill_fg=ORANGE_DK, pad_x=28
     draw.rounded_rectangle(box, radius=18, fill=fill_bg, outline=GOLD, width=2)
     draw.text((cx - ww // 2, y + pad_y), text, font=fnt, fill=fill_fg)
     return box[3]
-
 
 def circle_photo(path: Path, diameter: int) -> Image.Image:
     photo = ImageOps.fit(Image.open(path).convert("RGB"), (diameter, diameter), Image.Resampling.LANCZOS)
@@ -114,7 +106,6 @@ def circle_photo(path: Path, diameter: int) -> Image.Image:
     d.ellipse((pad - 4, pad - 4, pad + diameter + 3, pad + diameter + 3), outline=GOLD, width=5)
     return out
 
-
 def rounded_cover(path: Path, w: int, h: int, radius=28, focus=(0.5, 0.4)) -> Image.Image:
     photo = cover(path, w, h, focus)
     mask = Image.new("L", (w, h), 0)
@@ -126,7 +117,6 @@ def rounded_cover(path: Path, w: int, h: int, radius=28, focus=(0.5, 0.4)) -> Im
     ImageDraw.Draw(ring).rounded_rectangle((2, 2, w - 3, h - 3), radius=radius, outline=(*GOLD, 255), width=3)
     return Image.alpha_composite(out, ring)
 
-
 def parchment_strip(h: int) -> Image.Image:
     yy, xx = np.mgrid[0:h, 0:W].astype(np.float32)
     r = np.sqrt((xx - W * 0.5) ** 2 + (yy - h * 0.2) ** 2)
@@ -136,7 +126,6 @@ def parchment_strip(h: int) -> Image.Image:
     out = c1 * (1 - r)[:, :, None] + c2 * r[:, :, None]
     out += np.random.default_rng(5).normal(0, 2.0, out.shape)
     return Image.fromarray(np.clip(out, 0, 255).astype(np.uint8), "RGB")
-
 
 # ---- panels ----
 
@@ -184,7 +173,6 @@ def panel_01_hero() -> Image.Image:
     ai = "形象為虛構視覺，非真實名人代言"
     draw.text(((W - tw(draw, ai, f_ai)) // 2, 1900), ai, font=f_ai, fill=MUTED)
     return im
-
 
 def panel_02_benefits() -> Image.Image:
     """3 big short soft benefits on matching lifestyle photo cards — not a manual."""
@@ -253,10 +241,9 @@ def panel_02_benefits() -> Image.Image:
         y += card_h + gap
 
     f_cap = font(20, False, False)
-    cap = "生活節奏描述 · 非診斷治療之用（Cap.231）"
+    cap = "生活節奏描述 · 日常養生參考"
     draw.text(((W - tw(draw, cap, f_cap)) // 2, H - 55), cap, font=f_cap, fill=MUTED)
     return im
-
 
 def panel_03_ingredients() -> Image.Image:
     """Full-bleed herbs-hero + 4 LARGE photo bubbles — not a form table."""
@@ -305,10 +292,9 @@ def panel_03_ingredients() -> Image.Image:
         soft_chip(draw, why, cx, cy + 260, f_why, fill_bg=(255, 244, 228), fill_fg=ORANGE_DK, pad_x=22, pad_y=10)
 
     f_foot = font(20, False, False)
-    foot = "※ 不構成診斷、治療或預防疾病之聲稱"
+    foot = "※ 實際規格與食用方法請以包裝標籤為準"
     draw.text(((W - tw(draw, foot, f_foot)) // 2, H - 55), foot, font=f_foot, fill=MUTED)
     return im
-
 
 def panel_04_macro() -> Image.Image:
     """blister-macro full chapter + sparse quality overlays."""
@@ -338,9 +324,8 @@ def panel_04_macro() -> Image.Image:
     draw.text(((W - tw(draw, sub, f_sub)) // 2, 1520), sub, font=f_sub, fill=MUTED)
     return im
 
-
 def panel_05_usage() -> Image.Image:
-    """Huge margins dosage — Cap.231 once. Sparse, not crowded."""
+    """Huge margins dosage. Sparse, not crowded."""
     H = 1500
     # soft macro wash
     bg = cover(AI / "blister-macro.jpg", W, H, focus=(0.55, 0.45))
@@ -380,16 +365,14 @@ def panel_05_usage() -> Image.Image:
         draw.text((x + 32 - tw(draw, ns, f_num) // 2, 834), ns, font=f_num, fill=WHITE)
         draw.text((x + 84, 836), st, font=f_s, fill=INK)
 
-    # Cap.231 once
     draw.rectangle((0, H - 180, W, H), fill=(42, 36, 32))
     f_c = font(20, False, False)
-    cap = "此產品並不供作診斷、治療或預防任何疾病之用。（Cap.231）"
+    cap = "實際規格請以包裝標籤為準"
     draw.text(((W - tw(draw, cap, f_c)) // 2, H - 110), cap, font=f_c, fill=(220, 214, 208))
     return im
 
-
 def panel_06_trust() -> Image.Image:
-    """Yinshumei philosophy ONLY + WA; AI disclaimer again."""
+    """Yinshumei philosophy ONLY + WA."""
     H = 1800
     # soft lifestyle / spokesperson blur chapter
     bg = cover(AI / "spokesperson-v4.jpg", W, H, focus=(0.48, 0.25))
@@ -452,7 +435,7 @@ def panel_06_trust() -> Image.Image:
     draw.rectangle((0, 1280, W, H), fill=(40, 34, 30))
     f_c = font(20, False, False)
     lines = [
-        "此產品並不供作診斷、治療或預防任何疾病之用。",
+        "",
         "詳圖人物為虛構視覺，非真實名人代言。",
     ]
     yy = 1400
@@ -460,7 +443,6 @@ def panel_06_trust() -> Image.Image:
         draw.text(((W - tw(draw, ln, f_c)) // 2, yy), ln, font=f_c, fill=(220, 214, 208))
         yy += 50
     return im
-
 
 def stitch(panels):
     total = sum(p.height for p in panels)
@@ -471,7 +453,6 @@ def stitch(panels):
         y += p.height
     return out
 
-
 def export(im: Image.Image, stem: str) -> Image.Image:
     im2 = ImageEnhance.Sharpness(im).enhance(1.04)
     im2.save(OUT / f"{stem}.png", "PNG", optimize=True)
@@ -481,7 +462,6 @@ def export(im: Image.Image, stem: str) -> Image.Image:
     jpg.save(jp, "JPEG", quality=92, optimize=True, progressive=True)
     print(f"wrote {jp.name} {jpg.size} {jp.stat().st_size // 1024}KB")
     return im2
-
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
@@ -531,7 +511,6 @@ def main():
     tall750.save(longp, "JPEG", quality=91, optimize=True, progressive=True)
     print(f"wrote {longp.name} {tall750.size} {longp.stat().st_size // 1024}KB")
     (OUT / "detail-long-full.png").unlink(missing_ok=True)
-
 
 if __name__ == "__main__":
     main()

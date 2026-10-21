@@ -54,17 +54,14 @@ SIZE_PREF = {
     "300Wx300H": 300,
 }
 
-
 def list_products() -> list[Path]:
     return sorted(
         p for p in PRODUCTS_DIR.glob("*.html") if p.name != "index.html"
     )
 
-
 def parse_sku(html: str) -> str | None:
     m = SKU_RE.search(html)
     return m.group(1) if m else None
-
 
 def parse_h1(html: str) -> str:
     m = H1_RE.search(html)
@@ -73,7 +70,6 @@ def parse_h1(html: str) -> str:
     text = re.sub(r"<[^>]+>", "", m.group(1))
     text = re.sub(r"\s+", " ", text).strip()
     return text or "產品"
-
 
 def short_name(full: str) -> str:
     """Strip common pack-size suffixes for alt text (match yanbiqing style)."""
@@ -86,17 +82,14 @@ def short_name(full: str) -> str:
     s = re.sub(r"\s*[xX×]\s*\d+\s*.*$", "", s).strip()
     return s or full
 
-
 def cache_path(sku: str) -> Path:
     return CACHE_DIR / f"{sku}.html"
-
 
 def cache_fresh(path: Path) -> bool:
     if not path.exists() or path.stat().st_size < 1000:
         return False
     age = time.time() - path.stat().st_mtime
     return age < CACHE_MAX_AGE_HOURS * 3600
-
 
 def fetch_html(url: str) -> str:
     req = Request(
@@ -109,7 +102,6 @@ def fetch_html(url: str) -> str:
     )
     with urlopen(req, timeout=45) as resp:
         return resp.read().decode("utf-8", errors="replace")
-
 
 def get_pdp_html(sku: str) -> tuple[str | None, str]:
     """Return (html, status) where status is cached|fetched|failed:..."""
@@ -135,7 +127,6 @@ def get_pdp_html(sku: str) -> tuple[str | None, str]:
     if path.exists() and path.stat().st_size > 1000:
         return path.read_text(encoding="utf-8", errors="replace"), "stale-cache"
     return None, f"failed:{last_err}"
-
 
 def extract_product_data_blob(html: str) -> dict | None:
     """Extract productData JSON object from PDP HTML."""
@@ -178,7 +169,6 @@ def extract_product_data_blob(html: str) -> dict | None:
                             return None
         i += 1
     return None
-
 
 def extract_photos_tab_images(html: str) -> list[dict]:
     """Return list of {format, url} from photosTabImages, preserving order."""
@@ -244,13 +234,11 @@ def extract_photos_tab_images(html: str) -> list[dict]:
         i += 1
     return []
 
-
 def image_basename_key(url: str) -> str:
     """Dedupe key: basename without size suffix like _1200 / _600."""
     name = url.split("?")[0].rstrip("/").split("/")[-1]
     name = re.sub(r"_(?:1200|600|515|300|96|65)(?=\.(?:png|jpe?g|webp)$)", "", name, flags=re.I)
     return name.lower()
-
 
 def pick_best_urls(items: list[dict]) -> list[str]:
     """Prefer 1200Wx1200H / highest-res unique by basename, keep first-seen order."""
@@ -283,7 +271,6 @@ def pick_best_urls(items: list[dict]) -> list[str]:
         urls.append(best["url"])
     return urls
 
-
 def sniff_ext(data: bytes, url: str) -> str:
     if data[:8] == b"\x89PNG\r\n\x1a\n":
         return "png"
@@ -295,7 +282,6 @@ def sniff_ext(data: bytes, url: str) -> str:
     if m:
         return m.group(1).lower().replace("jpeg", "jpg")
     return "png"
-
 
 def download_bytes(url: str) -> bytes | None:
     candidates = [url]
@@ -322,7 +308,6 @@ def download_bytes(url: str) -> bytes | None:
             continue
     return None
 
-
 def save_detail_images(slug: str, urls: list[str]) -> list[Path]:
     dest_dir = ASSETS / slug / "detail"
     dest_dir.mkdir(parents=True, exist_ok=True)
@@ -341,7 +326,6 @@ def save_detail_images(slug: str, urls: list[str]) -> list[Path]:
         saved.append(path)
         time.sleep(0.1)
     return saved
-
 
 def build_detail_html(slug: str, sku: str, name: str, images: list[Path]) -> str:
     alt_base = short_name(name)
@@ -367,7 +351,6 @@ def build_detail_html(slug: str, sku: str, name: str, images: list[Path]) -> str
         f"    </div>\n"
         f"  </div>\n"
     )
-
 
 def insert_or_replace_detail(html: str, block: str) -> str:
     # Replace existing detail block if present
@@ -433,7 +416,6 @@ def insert_or_replace_detail(html: str, block: str) -> str:
         return html[: m_foot.start()] + block + "\n" + html[m_foot.start() :]
     return html.rstrip() + "\n" + block + "\n"
 
-
 def process_one(page: Path) -> dict:
     slug = page.stem
     html = page.read_text(encoding="utf-8", errors="replace")
@@ -485,7 +467,6 @@ def process_one(page: Path) -> dict:
     result["n_images"] = len(saved)
     result["reason"] = f"{fetch_status}; {len(saved)} images"
     return result
-
 
 def main() -> None:
     pages = list_products()
@@ -545,7 +526,6 @@ def main() -> None:
     REPORT.write_text("\n".join(lines), encoding="utf-8")
     print(f"\nDone. updated={len(updated)} skipped={len(skipped)} failed={len(failed)}")
     print(f"Report: {REPORT}")
-
 
 if __name__ == "__main__":
     main()
