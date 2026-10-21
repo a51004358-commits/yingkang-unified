@@ -1364,3 +1364,29 @@ body.drawer-open { overflow: hidden; }
 }
 .pdp-faq summary::-webkit-details-marker { display: none; }
 .pdp-faq details p { margin: 0.55rem 0 0.15rem; color: #555; font-size: 0.92rem; line-height: 1.55; }
+
+/* ===== PDP efficacy / SEO block ===== */
+#pdp-efficacy .pdp-eff-lead {
+  font-size: 1.02rem; color: #444; line-height: 1.7; max-width: 48em;
+}
+#pdp-efficacy .pdp-eff-label {
+  display: inline-block; background: #fff7ef; color: #c45e10;
+  font-weight: 800; font-size: 0.85rem; padding: 0.25rem 0.7rem;
+  border-radius: 999px; margin: 0.4rem 0 1rem;
+}
+#pdp-efficacy .pdp-eff-grid {
+  display: grid; grid-template-columns: 1fr; gap: 1.2rem;
+}
+@media (min-width: 720px) {
+  #pdp-efficacy .pdp-eff-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+}
+#pdp-efficacy .pdp-eff-grid h3 {
+  margin: 0 0 0.5rem; font-size: 1rem; color: #333;
+}
+#pdp-efficacy .pdp-kw {
+  margin-top: 1.1rem; padding: 0.85rem 1rem; background: #f7fafc;
+  border-left: 4px solid #3a9bb8; font-size: 0.9rem; line-height: 1.65; color: #555;
+}
+.pdp-buy-blurb {
+  margin-top: 0.85rem; color: #444; line-height: 1.65; font-size: 0.95rem;
+}
