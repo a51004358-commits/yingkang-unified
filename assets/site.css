@@ -1403,3 +1403,50 @@ body.drawer-open { overflow: hidden; }
   margin-top: 0.85rem; color: #333; line-height: 1.7; font-size: 0.98rem; font-weight: 600;
 }
 
+/* ===== Business / corporate services ===== */
+.biz-hero {
+  background: linear-gradient(120deg, #1a4a5c 0%, #2a7a8a 45%, #5aafc0 100%);
+  color: #fff; padding: 2.2rem 0 2rem;
+}
+.biz-hero h1 { margin: 0 0 0.55rem; font-size: 1.85rem; color: #fff; }
+.biz-hero .lead { max-width: 42em; font-size: 1.05rem; opacity: 0.95; line-height: 1.7; margin: 0 0 1rem; }
+.biz-hero .btn-primary { background: #e87722; border-color: #e87722; }
+.biz-hero .btn-outline { background: transparent; color: #fff; border-color: #fff; }
+.biz-hero .btn-outline:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.biz-toc { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+.biz-toc a {
+  display: inline-block; padding: 0.35rem 0.75rem; border-radius: 999px;
+  background: #fff7ef; color: #c45e10; font-weight: 700; font-size: 0.85rem;
+  text-decoration: none; border: 1px solid #f0d0b0;
+}
+.biz-toc a:hover { background: #ffe8d0; }
+.biz-block { margin: 2rem 0; }
+.biz-block h2 { color: var(--brown); margin: 0 0 0.75rem; font-size: 1.35rem; }
+.biz-block > p { color: #444; line-height: 1.75; max-width: 52em; }
+.biz-grid { display: grid; grid-template-columns: 1fr; gap: 0.85rem; margin-top: 1rem; }
+@media (min-width: 700px) { .biz-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1000px) { .biz-grid.biz-grid-3 { grid-template-columns: 1fr 1fr 1fr; } }
+.biz-card {
+  background: #fffaf5; border: 1px solid #f0d0b0; border-radius: 8px;
+  padding: 1.05rem 1.15rem;
+}
+.biz-card h3 { margin: 0 0 0.45rem; color: var(--orange); font-size: 1.05rem; }
+.biz-card ul { margin: 0.4rem 0 0; padding-left: 1.15rem; color: #444; line-height: 1.65; }
+.biz-card li { margin: 0.25rem 0; }
+.biz-pkg {
+  background: #fff; border: 2px solid #e87722; border-radius: 10px;
+  padding: 1.2rem 1.25rem;
+}
+.biz-pkg h3 { margin: 0 0 0.4rem; color: #7E410A; }
+.biz-pkg .tag {
+  display: inline-block; font-size: 0.75rem; font-weight: 800;
+  background: #e87722; color: #fff; padding: 0.15rem 0.5rem; border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+.biz-pkg ul { margin: 0.4rem 0 0; padding-left: 1.15rem; color: #444; line-height: 1.65; }
+.biz-contact-bar {
+  background: #f7fafc; border-left: 4px solid #3a9bb8;
+  padding: 1rem 1.15rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;
+  line-height: 1.8;
+}
+.biz-contact-bar a { font-weight: 700; }
