@@ -1450,3 +1450,34 @@ body.drawer-open { overflow: hidden; }
   line-height: 1.8;
 }
 .biz-contact-bar a { font-weight: 700; }
+
+.biz-hero .lead-sub { max-width: 46em; font-size: 0.95rem; opacity: 0.88; line-height: 1.65; margin: -0.35rem 0 1rem; }
+.biz-toc a.biz-toc-featured {
+  background: #e87722; color: #fff; border-color: #e87722;
+}
+.biz-toc a.biz-toc-featured:hover { background: #c45e10; color: #fff; }
+.biz-price {
+  margin: 0.15rem 0 0.55rem; padding: 0.55rem 0.7rem;
+  background: #fff; border-left: 3px solid #e87722; border-radius: 0 6px 6px 0;
+  color: #7E410A; font-size: 0.95rem; line-height: 1.55; font-weight: 600;
+}
+.biz-price strong { color: #c45e10; font-size: 1.05em; }
+.biz-price-sub { display: inline-block; margin-top: 0.2rem; font-weight: 500; color: #666; font-size: 0.86rem; }
+.biz-price-note {
+  margin: 0.75rem 0 1rem; padding: 0.7rem 0.95rem;
+  background: #f7fafc; border: 1px dashed #9bb8c4; border-radius: 8px;
+  color: #3a5560; font-size: 0.9rem; line-height: 1.65; max-width: 52em;
+}
+.biz-price-note a { font-weight: 700; color: #c45e10; }
+.biz-leverage {
+  margin: 0 0 0.55rem; color: #1a4a5c; font-size: 0.88rem; font-weight: 700;
+  line-height: 1.45;
+}
+.biz-pkg-featured {
+  background: linear-gradient(180deg, #fffaf5 0%, #fff 55%);
+  border-width: 2px; border-color: #c45e10;
+  box-shadow: 0 6px 18px rgba(196, 94, 16, 0.12);
+  position: relative;
+}
+.biz-pkg-featured .tag { background: #1a4a5c; }
+
