@@ -552,6 +552,7 @@ body.drawer-open { overflow: hidden; }
   display: grid; grid-template-columns: 1fr; gap: 1rem; justify-items: center;
 }
 @media (min-width: 700px) { .footer-phones { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .footer-phones.footer-phones-biz { grid-template-columns: 1fr 1fr 1fr; } }
 .phone-box {
   display: flex; align-items: center; gap: 0.85rem;
   border: 2px solid var(--orange); border-radius: 6px;
@@ -561,6 +562,14 @@ body.drawer-open { overflow: hidden; }
 .phone-box .icon { font-size: 1.7rem; color: var(--blue-icon); }
 .phone-box .label { font-size: 0.95rem; text-decoration: underline; color: #444; }
 .phone-box .num { font-size: 1.45rem; font-weight: 900; color: var(--orange); line-height: 1.2; }
+.phone-box-wechat { cursor: default; }
+.phone-box-wechat .label { text-decoration: none; }
+.phone-box-wechat .wechat-sub { font-size: 0.85rem; color: #666; margin-top: 0.15rem; font-weight: 600; }
+.wechat-qr-thumb {
+  width: 72px; height: 72px; object-fit: contain;
+  border-radius: 6px; background: #fff; flex-shrink: 0;
+  border: 1px solid #e6eef2;
+}
 
 /* ===== 11. Footer ===== */
 .pay-logos {
@@ -1450,6 +1459,17 @@ body.drawer-open { overflow: hidden; }
   line-height: 1.8;
 }
 .biz-contact-bar a { font-weight: 700; }
+.biz-wechat-row {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.85rem 1.25rem;
+  margin: 0.55rem 0 0.35rem;
+}
+.biz-wechat-text { font-size: 1.02rem; }
+.biz-wechat-qr {
+  width: 160px; height: 160px; object-fit: contain;
+  border-radius: 8px; background: #fff;
+  border: 1px solid #d7e4ea; padding: 0.35rem;
+  box-shadow: 0 1px 4px rgba(26, 74, 92, 0.08);
+}
 
 .biz-hero .lead-sub { max-width: 46em; font-size: 0.95rem; opacity: 0.88; line-height: 1.65; margin: -0.35rem 0 1rem; }
 .biz-toc a.biz-toc-featured {
