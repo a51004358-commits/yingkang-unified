@@ -1584,6 +1584,48 @@ body.drawer-open { overflow: hidden; }
 .biz-card-featured-soft {
   border-color: #c45e10; box-shadow: 0 4px 14px rgba(196, 94, 16, 0.1);
 }
+.biz-rate-wrap {
+  margin: 0.75rem 0 1rem; max-width: 36em;
+}
+.biz-rate-table {
+  width: 100%; border-collapse: collapse; background: #fff;
+  border: 1px solid #f0d0b0; border-radius: 8px; overflow: hidden;
+  font-size: 0.95rem;
+}
+.biz-rate-table th,
+.biz-rate-table td {
+  padding: 0.65rem 0.85rem; text-align: left;
+  border-bottom: 1px solid #f0d0b0;
+}
+.biz-rate-table th {
+  background: #1a4a5c; color: #fff; font-weight: 700;
+}
+.biz-rate-table tr:last-child td { border-bottom: none; }
+.biz-rate-table td strong { color: #c45e10; }
+.biz-rate-note {
+  margin: 0.45rem 0 0; color: #666; font-size: 0.86rem; line-height: 1.55;
+}
+.biz-pay-methods {
+  margin: 0.35rem 0 1rem; padding: 0.75rem 0.95rem;
+  background: #fffaf5; border: 1px solid #f0d0b0; border-radius: 8px;
+  color: #333; line-height: 1.7; max-width: 52em; font-size: 0.95rem;
+}
+.biz-flyer-grid {
+  display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1rem 0 0.5rem;
+}
+@media (min-width: 700px) {
+  .biz-flyer-grid { grid-template-columns: 1fr 1fr; }
+}
+.biz-flyer {
+  margin: 0; background: #fff; border: 1px solid #e0c4a8; border-radius: 10px;
+  overflow: hidden; box-shadow: 0 2px 10px rgba(126, 65, 10, 0.06);
+}
+.biz-flyer img {
+  display: block; width: 100%; height: auto;
+}
+.biz-flyer figcaption {
+  padding: 0.55rem 0.75rem 0.7rem; color: #666; font-size: 0.84rem; line-height: 1.45;
+}
 .home-consult { margin: 1.5rem auto 2rem; }
 .home-consult-title { color: #1a4a5c; margin: 0 0 0.4rem; font-size: 1.35rem; }
 .home-consult-lead { color: #444; margin: 0 0 0.85rem; line-height: 1.65; max-width: 40em; }
