@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:55:57+08:00",
+  "updated_at": "2026-10-23T19:58:08+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 79,
+    "done": 81,
     "pending": 41,
-    "queued": 1,
+    "queued": 0,
     "failed": 0,
-    "in_progress": 1
+    "in_progress": 0
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -1368,24 +1368,26 @@
       "completed_at": "2026-10-23T19:55:57+08:00"
     },
     "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300": {
-      "status": "in_progress",
+      "status": "done",
       "name": "UTR 靈芝孢子 80粒 300mg",
       "sku": "H6838001_S_UTR",
       "primary": "primary.png",
       "updated_at": "2026-10-23T19:45:03+08:00",
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": 8
+      "batch": 8,
+      "completed_at": "2026-10-23T19:58:08+08:00"
     },
     "weimeng-shenyou-10ml-yk473": {
-      "status": "queued",
+      "status": "done",
       "name": "威猛神油 10ml 噴霧",
       "sku": "H6838001_S_yk473",
       "primary": "primary.jpg",
       "updated_at": "2026-10-23T19:45:03+08:00",
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": 8
+      "batch": 8,
+      "completed_at": "2026-10-23T19:58:08+08:00"
     },
     "wireless-mouse-mk401": {
       "status": "pending",
@@ -1851,5 +1853,18 @@
       "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300"
+  "next_pending": "wireless-mouse-mk401",
+  "batch8_completed_at": "2026-10-23T19:58:08+08:00",
+  "batch8_slugs": [
+    "qianli-zhuifeng-huoluoling-50ml-x3-k0045",
+    "qianli-zhuifeng-huoluoling-50ml-yk410",
+    "rimachi-wan-100caps-mk344",
+    "shitong-gucidan-60caps-k0039",
+    "storage-bag-mk341",
+    "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025",
+    "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024",
+    "tongxue-wan-60caps-k0029",
+    "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300",
+    "weimeng-shenyou-10ml-yk473"
+  ]
 }
