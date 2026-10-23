@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:43:36+08:00",
+  "updated_at": "2026-10-23T18:47:20+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 31,
-    "pending": 91,
-    "queued": 0,
+    "done": 33,
+    "pending": 81,
+    "queued": 7,
     "failed": 0,
-    "in_progress": 0
+    "in_progress": 1
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -444,34 +444,48 @@
       "commit": "2dab1e0"
     },
     "forehead-thermometer-yk245": {
-      "status": "pending",
+      "status": "done",
       "name": "紅外線額探溫度計",
       "sku": "H6838001_S_yk245",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:45:48+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "futeiling-120ml-yk404": {
-      "status": "pending",
+      "status": "done",
       "name": "膚特靈 120ml 噴霧",
       "sku": "H6838001_S_yk404",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:47:20+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "futeiling-tokyo-tower-120ml-x3-k0037": {
-      "status": "pending",
+      "status": "in_progress",
       "name": "東京塔牌膚特靈 120ml×3",
       "sku": "H6838001_S_k0037",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "gutongling-60caps-k0026": {
       "status": "done",
@@ -491,34 +505,34 @@
       "batch": 1
     },
     "gutongling-60caps-k0049": {
-      "status": "pending",
+      "status": "queued",
       "name": "骨痛靈 60粒（德國里哈明）",
       "sku": "H6838001_S_k0049",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "huatatang-50caps-x4-yk470": {
-      "status": "pending",
+      "status": "queued",
       "name": "花塔糖 50粒×4支",
       "sku": "H6838001_S_yk470",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "huoluoling-60caps-k0021": {
-      "status": "pending",
+      "status": "queued",
       "name": "活絡靈 2（60粒）",
       "sku": "H6838001_S_K0021",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "huoluoling-60caps-y23": {
       "status": "done",
@@ -538,44 +552,44 @@
       "batch": 1
     },
     "jianbu-huqian-320caps-mk370": {
-      "status": "pending",
+      "status": "queued",
       "name": "健步虎潛丸 320粒",
       "sku": "H6838001_S_MK370",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "jianchiling-60caps-mk285": {
-      "status": "pending",
+      "status": "queued",
       "name": "健齒靈 60粒",
       "sku": "H6838001_S_MK285",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "jingang-shenyou-10ml-yk474": {
-      "status": "pending",
+      "status": "queued",
       "name": "金鋼神油 10ml 噴霧",
       "sku": "H6838001_S_yk474",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "jinhuwang-50ml-mk386": {
-      "status": "pending",
+      "status": "queued",
       "name": "金虎王活絡油 50ml",
       "sku": "H6838001_S_MK386",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 4
     },
     "jinmaomao-hongcha-mk346": {
       "status": "pending",
@@ -1478,7 +1492,18 @@
       "batch": null
     }
   },
-  "current_batch": [],
+  "current_batch": [
+    "forehead-thermometer-yk245",
+    "futeiling-120ml-yk404",
+    "futeiling-tokyo-tower-120ml-x3-k0037",
+    "gutongling-60caps-k0049",
+    "huatatang-50caps-x4-yk470",
+    "huoluoling-60caps-k0021",
+    "jianbu-huqian-320caps-mk370",
+    "jianchiling-60caps-mk285",
+    "jingang-shenyou-10ml-yk474",
+    "jinhuwang-50ml-mk386"
+  ],
   "last_run": {
     "completed_at": "2026-10-23T18:43:34+08:00",
     "zone": "Asia/Hong_Kong",
