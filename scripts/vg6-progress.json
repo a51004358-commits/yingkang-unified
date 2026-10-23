@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:43:34+08:00",
+  "updated_at": "2026-10-23T18:43:36+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
@@ -404,7 +404,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 3
+      "batch": 3,
+      "commit": "2dab1e0"
     },
     "fengse-gutong-oil-y26": {
       "status": "done",
@@ -421,7 +422,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 3
+      "batch": 3,
+      "commit": "2dab1e0"
     },
     "fengtong-gucidan-60caps-k0023": {
       "status": "done",
@@ -438,7 +440,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 3
+      "batch": 3,
+      "commit": "2dab1e0"
     },
     "forehead-thermometer-yk245": {
       "status": "pending",
