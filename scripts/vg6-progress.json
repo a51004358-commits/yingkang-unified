@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:59:22+08:00",
+  "updated_at": "2026-10-23T20:00:30+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 80,
+    "done": 81,
     "pending": 41,
     "queued": 0,
     "failed": 0,
-    "in_progress": 1
+    "in_progress": 0
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -1257,17 +1257,11 @@
       "sku": "H6838001_S_k0045",
       "primary": "primary.jpg",
       "updated_at": "2026-10-23T19:47:48+08:00",
-      "panels": {
-        "vg6-01": "ok",
-        "vg6-02": "ok",
-        "vg6-03": "ok",
-        "vg6-04": "ok",
-        "vg6-05": "ok",
-        "vg6-06": "ok"
-      },
+      "panels": 6,
       "error": null,
       "batch": 8,
-      "commit": "e6f58ec"
+      "commit": "e6f58ec",
+      "completed_at": "2026-10-23T20:00:30+08:00"
     },
     "qianli-zhuifeng-huoluoling-50ml-yk410": {
       "status": "done",
@@ -1275,17 +1269,11 @@
       "sku": "H6838001_S_yk410",
       "primary": "primary.jpg",
       "updated_at": "2026-10-23T19:47:48+08:00",
-      "panels": {
-        "vg6-01": "ok",
-        "vg6-02": "ok",
-        "vg6-03": "ok",
-        "vg6-04": "ok",
-        "vg6-05": "ok",
-        "vg6-06": "ok"
-      },
+      "panels": 6,
       "error": null,
       "batch": 8,
-      "commit": "e6f58ec"
+      "commit": "e6f58ec",
+      "completed_at": "2026-10-23T20:00:30+08:00"
     },
     "rimachi-wan-100caps-mk344": {
       "status": "done",
@@ -1293,17 +1281,11 @@
       "sku": "H6838001_S_MK344",
       "primary": "primary.png",
       "updated_at": "2026-10-23T19:50:58+08:00",
-      "panels": {
-        "vg6-01": "ok",
-        "vg6-02": "ok",
-        "vg6-03": "ok",
-        "vg6-04": "ok",
-        "vg6-05": "ok",
-        "vg6-06": "ok"
-      },
+      "panels": 6,
       "error": null,
       "batch": 8,
-      "commit": "6d9646b"
+      "commit": "6d9646b",
+      "completed_at": "2026-10-23T20:00:30+08:00"
     },
     "shitong-gucidan-60caps-k0039": {
       "status": "done",
@@ -1311,17 +1293,11 @@
       "sku": "H6838001_S_k0039",
       "primary": "primary.png",
       "updated_at": "2026-10-23T19:50:58+08:00",
-      "panels": {
-        "vg6-01": "ok",
-        "vg6-02": "ok",
-        "vg6-03": "ok",
-        "vg6-04": "ok",
-        "vg6-05": "ok",
-        "vg6-06": "ok"
-      },
+      "panels": 6,
       "error": null,
       "batch": 8,
-      "commit": "6d9646b"
+      "commit": "6d9646b",
+      "completed_at": "2026-10-23T20:00:30+08:00"
     },
     "storage-bag-mk341": {
       "status": "done",
@@ -1346,7 +1322,7 @@
       "completed_at": "2026-10-23T19:59:22+08:00"
     },
     "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024": {
-      "status": "in_progress",
+      "status": "done",
       "name": "台灣一條根坐骨神經膏布 30片",
       "sku": "H6838001_S_K0024",
       "primary": "primary.png",
@@ -1853,7 +1829,7 @@
       "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024",
+  "next_pending": "wireless-mouse-mk401",
   "batch8_completed_at": "2026-10-23T19:58:08+08:00",
   "batch8_slugs": [
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045",
@@ -1866,5 +1842,6 @@
     "tongxue-wan-60caps-k0029",
     "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300",
     "weimeng-shenyou-10ml-yk473"
-  ]
+  ],
+  "last_batch": 8
 }
