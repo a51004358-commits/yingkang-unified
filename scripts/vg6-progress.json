@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:03:22+08:00",
+  "updated_at": "2026-10-23T19:06:08+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 43,
+    "done": 45,
     "pending": 71,
-    "queued": 8,
+    "queued": 6,
     "failed": 0,
     "in_progress": 0
   },
@@ -673,7 +673,7 @@
       },
       "error": null,
       "batch": 5,
-      "commit": "pending"
+      "commit": "efa3f99"
     },
     "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401": {
       "status": "done",
@@ -709,27 +709,43 @@
       },
       "error": null,
       "batch": 5,
-      "commit": "pending"
+      "commit": "efa3f99"
     },
     "jiuke-tiaoli-yinshumei-hk011": {
-      "status": "queued",
+      "status": "done",
       "name": "尹淑梅久咳調理丸 12盒",
       "sku": "H6838001_S_HK011",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T19:06:08+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 5
+      "batch": 5,
+      "commit": "pending"
     },
     "jiuke-wan-60caps-hk100": {
-      "status": "queued",
+      "status": "done",
       "name": "強力特效久咳丸 60粒",
       "sku": "H6838001_S_HK100",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T19:06:08+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 5
+      "batch": 5,
+      "commit": "pending"
     },
     "jiuke-wan-720caps-mk390": {
       "status": "queued",
