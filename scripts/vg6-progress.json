@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:38:46+08:00",
+  "updated_at": "2026-10-23T18:43:34+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 28,
+    "done": 31,
     "pending": 91,
-    "queued": 2,
+    "queued": 0,
     "failed": 0,
-    "in_progress": 1
+    "in_progress": 0
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -350,7 +350,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 3
+      "batch": 3,
+      "commit": "d2d53c9"
     },
     "fengse-gucidan-60caps-k0002": {
       "status": "done",
@@ -385,35 +386,57 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 3
+      "batch": 3,
+      "commit": "d2d53c9"
     },
     "fengse-gutong-oil-50ml-yk409": {
-      "status": "in_progress",
+      "status": "done",
       "name": "風澀骨刺痛油 50ml",
       "sku": "H6838001_S_yk409",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:40:12+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 3
     },
     "fengse-gutong-oil-y26": {
-      "status": "queued",
+      "status": "done",
       "name": "風澀骨剌痛油＋骨剌丹",
       "sku": "H6838001_S_y26",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:41:58+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 3
     },
     "fengtong-gucidan-60caps-k0023": {
-      "status": "queued",
+      "status": "done",
       "name": "風痛骨剌丹 60粒",
       "sku": "H6838001_S_K0023",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:43:34+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 3
     },
@@ -1452,34 +1475,23 @@
       "batch": null
     }
   },
-  "current_batch": [
-    "benmingfo-mk356",
-    "benmingfo-mk358",
-    "benmingfo-mk359",
-    "benmingfo-mk360",
-    "bluetooth-speaker-mk402",
-    "fengse-gucidan-150caps-k0006",
-    "fengse-gutong-oil-50ml-x3-k0044",
-    "fengse-gutong-oil-50ml-yk409",
-    "fengse-gutong-oil-y26",
-    "fengtong-gucidan-60caps-k0023"
-  ],
+  "current_batch": [],
   "last_run": {
-    "completed_at": "2026-10-23T18:26:44+08:00",
+    "completed_at": "2026-10-23T18:43:34+08:00",
     "zone": "Asia/Hong_Kong",
     "commits_note": "see git log",
-    "batch2_complete": true,
+    "batch3_complete": true,
     "new_slugs": [
-      "angong-niuhuang-1pills-mk380",
-      "angong-niuhuang-3pills-mk382",
-      "angong-niuhuang-6pills-hk01",
-      "baqi-she-fengshi-zuogu-oil-50ml-mk385",
-      "baqi-she-jianjing-cigu-oil-50ml-mk383",
-      "baqi-she-jingyaozhui-oil-50ml-mk389",
-      "baqi-she-potong-oil-50ml-mk384",
-      "dianqishi-tiebu-70pcs-tt-ts-10-001",
-      "difugen-15ml-yk395",
-      "difugen-15ml-x3-k0034"
+      "benmingfo-mk356",
+      "benmingfo-mk358",
+      "benmingfo-mk359",
+      "benmingfo-mk360",
+      "bluetooth-speaker-mk402",
+      "fengse-gucidan-150caps-k0006",
+      "fengse-gutong-oil-50ml-x3-k0044",
+      "fengse-gutong-oil-50ml-yk409",
+      "fengse-gutong-oil-y26",
+      "fengtong-gucidan-60caps-k0023"
     ],
     "failed": []
   }
