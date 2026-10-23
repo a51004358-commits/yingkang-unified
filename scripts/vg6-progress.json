@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:08:55+08:00",
+  "updated_at": "2026-10-23T19:10:34+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 47,
+    "done": 48,
     "pending": 71,
-    "queued": 4,
+    "queued": 3,
     "failed": 0,
     "in_progress": 0
   },
@@ -763,7 +763,7 @@
       },
       "error": null,
       "batch": 5,
-      "commit": "pending"
+      "commit": "7cf7847"
     },
     "jiuke-wan-720caps-mk391": {
       "status": "done",
@@ -781,17 +781,25 @@
       },
       "error": null,
       "batch": 5,
-      "commit": "pending"
+      "commit": "7cf7847"
     },
     "jiuke-wan-huaxiatang-60caps-hk101": {
-      "status": "queued",
+      "status": "done",
       "name": "華霞堂久咳丸 60粒",
       "sku": "H6838001_S_HK101",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T19:10:34+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 5
+      "batch": 5,
+      "commit": "pending"
     },
     "jiuke-wan-huaxiatang-mk400": {
       "status": "queued",
