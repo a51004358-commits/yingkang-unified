@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:35:58+08:00",
+  "updated_at": "2026-10-23T20:40:36+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 105,
+    "done": 107,
     "pending": 11,
-    "queued": 6,
+    "queued": 3,
     "failed": 0,
-    "in_progress": 0
+    "in_progress": 1
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -1727,7 +1727,7 @@
       },
       "error": null,
       "batch": 11,
-      "commit": "pending"
+      "commit": "ca949a1"
     },
     "zuogu-tongwan-60caps-k0003": {
       "status": "done",
@@ -1763,37 +1763,51 @@
       },
       "error": null,
       "batch": 11,
-      "commit": "pending"
+      "commit": "ca949a1"
     },
     "zuogu-tongwan-60caps-x3-y18": {
-      "status": "queued",
+      "status": "done",
       "name": "坐骨神徑痛丸 60粒×3＋膏布",
       "sku": "H6838001_S_y18",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:40:36+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 11
     },
     "zuogu-tongwan-y12": {
-      "status": "queued",
+      "status": "done",
       "name": "坐骨神徑痛丸＋膏布＋痛油",
       "sku": "H6838001_S_y12",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:40:36+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 11
     },
     "zuogu-tongwan-yanbiqing-150caps-x2-y22": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "坐骨神徑痛丸 150粒×2＋炎必清",
       "sku": "H6838001_S_y22",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T20:40:36+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 11
     },
     "zuogu-tongwan-yanbiqing-150caps-y7": {
       "status": "queued",
@@ -1936,7 +1950,7 @@
       "batch": null
     }
   },
-  "current_batch": 8,
+  "current_batch": 11,
   "last_run": {
     "batch": 7,
     "completed_at": "2026-10-23T19:43:45+08:00",
@@ -1953,7 +1967,7 @@
       "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "zuogu-4pcs-set-y4",
+  "next_pending": "zuogu-tongwan-yanbiqing-150caps-x2-y22",
   "batch8_completed_at": "2026-10-23T19:58:08+08:00",
   "batch8_slugs": [
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045",
@@ -1967,5 +1981,5 @@
     "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300",
     "weimeng-shenyou-10ml-yk473"
   ],
-  "last_batch": 9
+  "last_batch": 11
 }
