@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:59:40+08:00",
+  "updated_at": "2026-10-23T18:59:46+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
@@ -655,7 +655,7 @@
       },
       "error": null,
       "batch": 4,
-      "commit": "9b30787"
+      "commit": "901513b"
     },
     "jinmaomao-hongcha-mk346": {
       "status": "pending",
@@ -1582,7 +1582,7 @@
       "ab524cb",
       "20c75c7",
       "bb25cab",
-      "9b30787"
+      "901513b"
     ]
   }
 }
