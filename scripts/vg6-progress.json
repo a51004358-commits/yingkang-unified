@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:58:08+08:00",
+  "updated_at": "2026-10-23T19:59:22+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 81,
+    "done": 80,
     "pending": 41,
     "queued": 0,
     "failed": 0,
-    "in_progress": 0
+    "in_progress": 1
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -1332,7 +1332,7 @@
       "panels": 6,
       "error": null,
       "batch": 8,
-      "completed_at": "2026-10-23T19:54:15+08:00"
+      "completed_at": "2026-10-23T19:59:22+08:00"
     },
     "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025": {
       "status": "done",
@@ -1343,10 +1343,10 @@
       "panels": 6,
       "error": null,
       "batch": 8,
-      "completed_at": "2026-10-23T19:54:15+08:00"
+      "completed_at": "2026-10-23T19:59:22+08:00"
     },
     "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024": {
-      "status": "done",
+      "status": "in_progress",
       "name": "台灣一條根坐骨神經膏布 30片",
       "sku": "H6838001_S_K0024",
       "primary": "primary.png",
@@ -1853,7 +1853,7 @@
       "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "wireless-mouse-mk401",
+  "next_pending": "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024",
   "batch8_completed_at": "2026-10-23T19:58:08+08:00",
   "batch8_slugs": [
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045",
