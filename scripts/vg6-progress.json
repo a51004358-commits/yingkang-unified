@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:50:04+08:00",
+  "updated_at": "2026-10-23T20:54:05+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 114,
-    "pending": 8,
+    "done": 117,
+    "pending": 5,
     "queued": 0,
     "failed": 0,
     "in_progress": 0
@@ -1888,7 +1888,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 12
+      "batch": 12,
+      "commit": "6378e10"
     },
     "zuogu-tongyou-qianli-zhuifeng-50ml-x3-k0043": {
       "status": "done",
@@ -1905,7 +1906,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 12
+      "batch": 12,
+      "commit": "6378e10"
     },
     "zuogu-tongyou-qianli-zhuifeng-50ml-yk408": {
       "status": "done",
@@ -1922,37 +1924,59 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 12
+      "batch": 12,
+      "commit": "6378e10"
     },
     "zuogu-wan-150caps-k0008": {
-      "status": "pending",
+      "status": "done",
       "name": "坐骨神經丸 150粒",
       "sku": "H6838001_S_K0008",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:54:05+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 12
     },
     "zuogu-wan-150caps-y2": {
-      "status": "pending",
+      "status": "done",
       "name": "坐骨神經丸 150粒＋膏布",
       "sku": "H6838001_S_y2",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:54:05+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 12
     },
     "zuogu-wan-60caps-hky7389": {
-      "status": "pending",
+      "status": "done",
       "name": "坐骨神經丸 60粒",
       "sku": "H6838001_S_HKY7389",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:54:05+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 12
     },
     "zuogu-yaotong-oil-50ml-x3-k0042": {
       "status": "pending",
@@ -2022,7 +2046,7 @@
       "zuogu-tongwan-yanbiqing-60caps-y15"
     ]
   },
-  "next_pending": "zuogu-wan-150caps-k0008",
+  "next_pending": "zuogu-yaotong-oil-50ml-x3-k0042",
   "batch8_completed_at": "2026-10-23T19:58:08+08:00",
   "batch8_slugs": [
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045",
