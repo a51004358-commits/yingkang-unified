@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:14:57+08:00",
+  "updated_at": "2026-10-23T19:15:05+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
@@ -853,7 +853,7 @@
       },
       "error": null,
       "batch": 5,
-      "commit": "pending"
+      "commit": "cbada6f"
     },
     "jiuxin-dan-100caps-k0014": {
       "status": "pending",
