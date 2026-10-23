@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:57:53+08:00",
+  "updated_at": "2026-10-23T18:59:40+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 40,
+    "done": 41,
     "pending": 81,
-    "queued": 1,
+    "queued": 0,
     "failed": 0,
     "in_progress": 0
   },
@@ -458,7 +458,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 4
+      "batch": 4,
+      "commit": "71b29d0"
     },
     "futeiling-120ml-yk404": {
       "status": "done",
@@ -475,7 +476,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 4
+      "batch": 4,
+      "commit": "71b29d0"
     },
     "futeiling-tokyo-tower-120ml-x3-k0037": {
       "status": "done",
@@ -617,7 +619,7 @@
       },
       "error": null,
       "batch": 4,
-      "commit": "pending"
+      "commit": "bb25cab"
     },
     "jingang-shenyou-10ml-yk474": {
       "status": "done",
@@ -635,17 +637,25 @@
       },
       "error": null,
       "batch": 4,
-      "commit": "pending"
+      "commit": "bb25cab"
     },
     "jinhuwang-50ml-mk386": {
-      "status": "queued",
+      "status": "done",
       "name": "金虎王活絡油 50ml",
       "sku": "H6838001_S_MK386",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:59:30+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 4
+      "batch": 4,
+      "commit": "9b30787"
     },
     "jinmaomao-hongcha-mk346": {
       "status": "pending",
@@ -1548,35 +1558,31 @@
       "batch": null
     }
   },
-  "current_batch": [
-    "forehead-thermometer-yk245",
-    "futeiling-120ml-yk404",
-    "futeiling-tokyo-tower-120ml-x3-k0037",
-    "gutongling-60caps-k0049",
-    "huatatang-50caps-x4-yk470",
-    "huoluoling-60caps-k0021",
-    "jianbu-huqian-320caps-mk370",
-    "jianchiling-60caps-mk285",
-    "jingang-shenyou-10ml-yk474",
-    "jinhuwang-50ml-mk386"
-  ],
+  "current_batch": [],
   "last_run": {
-    "completed_at": "2026-10-23T18:43:34+08:00",
+    "completed_at": "2026-10-23T18:59:30+08:00",
     "zone": "Asia/Hong_Kong",
-    "commits_note": "see git log",
-    "batch3_complete": true,
+    "batch4_complete": true,
     "new_slugs": [
-      "benmingfo-mk356",
-      "benmingfo-mk358",
-      "benmingfo-mk359",
-      "benmingfo-mk360",
-      "bluetooth-speaker-mk402",
-      "fengse-gucidan-150caps-k0006",
-      "fengse-gutong-oil-50ml-x3-k0044",
-      "fengse-gutong-oil-50ml-yk409",
-      "fengse-gutong-oil-y26",
-      "fengtong-gucidan-60caps-k0023"
+      "forehead-thermometer-yk245",
+      "futeiling-120ml-yk404",
+      "futeiling-tokyo-tower-120ml-x3-k0037",
+      "gutongling-60caps-k0049",
+      "huatatang-50caps-x4-yk470",
+      "huoluoling-60caps-k0021",
+      "jianbu-huqian-320caps-mk370",
+      "jianchiling-60caps-mk285",
+      "jingang-shenyou-10ml-yk474",
+      "jinhuwang-50ml-mk386"
     ],
-    "failed": []
+    "failed": [],
+    "commits": [
+      "71b29d0",
+      "e00e742",
+      "ab524cb",
+      "20c75c7",
+      "bb25cab",
+      "9b30787"
+    ]
   }
 }
