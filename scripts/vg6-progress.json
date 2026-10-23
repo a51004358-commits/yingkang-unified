@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:20:38+08:00",
+  "updated_at": "2026-10-23T20:23:14+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 95,
+    "done": 97,
     "pending": 21,
-    "queued": 6,
+    "queued": 4,
     "failed": 0,
     "in_progress": 0
   },
@@ -1547,7 +1547,7 @@
       },
       "error": null,
       "batch": 10,
-      "commit": "pending"
+      "commit": "b92f011"
     },
     "zuogu-gaobu-y8": {
       "status": "done",
@@ -1565,27 +1565,43 @@
       },
       "error": null,
       "batch": 10,
-      "commit": "pending"
+      "commit": "b92f011"
     },
     "zuogu-gaobu-y9": {
-      "status": "queued",
+      "status": "done",
       "name": "坐骨神經膏布＋痛油（小）",
       "sku": "H6838001_S_y9",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:23:14+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 10,
+      "commit": "pending"
     },
     "zuogu-gaobu-yanbiqing-y1": {
-      "status": "queued",
+      "status": "done",
       "name": "坐骨神經膏布＋炎必清",
       "sku": "H6838001_S_y1",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:23:14+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 10,
+      "commit": "pending"
     },
     "zuogu-gaobu-yanbiqing-y10": {
       "status": "queued",
