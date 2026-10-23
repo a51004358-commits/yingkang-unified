@@ -170,7 +170,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 2
+      "batch": 2,
+      "commit": "f990d42"
     },
     "benmingfo-mk356": {
       "status": "pending",
@@ -255,7 +256,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 2
+      "batch": 2,
+      "commit": "f990d42"
     },
     "difugen-15ml-x3-k0034": {
       "status": "done",
@@ -272,7 +274,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 2
+      "batch": 2,
+      "commit": "f990d42"
     },
     "difugen-15ml-yk395": {
       "status": "done",
@@ -289,7 +292,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 2
+      "batch": 2,
+      "commit": "f990d42"
     },
     "fengse-gucidan-150caps-k0006": {
       "status": "pending",
