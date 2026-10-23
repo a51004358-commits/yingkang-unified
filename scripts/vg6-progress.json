@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:52:23+08:00",
+  "updated_at": "2026-10-23T18:55:08+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 36,
+    "done": 38,
     "pending": 81,
-    "queued": 5,
+    "queued": 3,
     "failed": 0,
     "in_progress": 0
   },
@@ -528,7 +528,7 @@
       },
       "error": null,
       "batch": 4,
-      "commit": "pending"
+      "commit": "ab524cb"
     },
     "huatatang-50caps-x4-yk470": {
       "status": "done",
@@ -546,17 +546,25 @@
       },
       "error": null,
       "batch": 4,
-      "commit": "pending"
+      "commit": "ab524cb"
     },
     "huoluoling-60caps-k0021": {
-      "status": "queued",
+      "status": "done",
       "name": "活絡靈 2（60粒）",
       "sku": "H6838001_S_K0021",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:53:42+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 4
+      "batch": 4,
+      "commit": "pending"
     },
     "huoluoling-60caps-y23": {
       "status": "done",
@@ -576,14 +584,22 @@
       "batch": 1
     },
     "jianbu-huqian-320caps-mk370": {
-      "status": "queued",
+      "status": "done",
       "name": "健步虎潛丸 320粒",
       "sku": "H6838001_S_MK370",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:55:08+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 4
+      "batch": 4,
+      "commit": "pending"
     },
     "jianchiling-60caps-mk285": {
       "status": "queued",
