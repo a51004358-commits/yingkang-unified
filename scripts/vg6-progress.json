@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:33:08+08:00",
+  "updated_at": "2026-10-23T20:35:58+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 103,
+    "done": 105,
     "pending": 11,
-    "queued": 8,
+    "queued": 6,
     "failed": 0,
     "in_progress": 0
   },
@@ -1691,7 +1691,7 @@
       },
       "error": null,
       "batch": 11,
-      "commit": "pending"
+      "commit": "d9f29c8"
     },
     "zuogu-tongwan-60caps-10pcs-y11": {
       "status": "done",
@@ -1709,17 +1709,25 @@
       },
       "error": null,
       "batch": 11,
-      "commit": "pending"
+      "commit": "d9f29c8"
     },
     "zuogu-tongwan-60caps-50ml-y14": {
-      "status": "queued",
+      "status": "done",
       "name": "坐骨神徑痛丸 60粒＋痛油 50ml",
       "sku": "H6838001_S_y14",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:35:58+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 11,
+      "commit": "pending"
     },
     "zuogu-tongwan-60caps-k0003": {
       "status": "done",
@@ -1740,14 +1748,22 @@
       "commit": "deccf74"
     },
     "zuogu-tongwan-60caps-x3-y17": {
-      "status": "queued",
+      "status": "done",
       "name": "坐骨神徑痛丸 60粒×3＋痛油",
       "sku": "H6838001_S_y17",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:35:58+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 11,
+      "commit": "pending"
     },
     "zuogu-tongwan-60caps-x3-y18": {
       "status": "queued",
