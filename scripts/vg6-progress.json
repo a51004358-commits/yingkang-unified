@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:57:53+08:00",
+  "updated_at": "2026-10-23T21:01:53+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 120,
-    "pending": 2,
+    "done": 122,
+    "pending": 0,
     "queued": 0,
     "failed": 0,
     "in_progress": 0
@@ -2033,44 +2033,47 @@
       "batch": 12
     },
     "zuogu-yaotong-wan-150caps-mk292": {
-      "status": "pending",
+      "status": "done",
       "name": "強力濃縮坐骨腰痛丸 150粒",
       "sku": "H6838001_S_MK292",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T21:01:53+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 12
     },
     "zuogu-yaotong-wan-60caps-mk290": {
-      "status": "pending",
+      "status": "done",
       "name": "坐骨腰痛丸 60粒",
       "sku": "H6838001_S_MK290",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T21:01:53+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 12
     }
   },
-  "current_batch": 12,
+  "current_batch": null,
   "last_run": {
-    "batch": 11,
-    "completed_at": "2026-10-23T20:44:31+08:00",
-    "slugs_done": [
-      "zuogu-tongwan-150caps-x2-y21",
-      "zuogu-tongwan-60caps-10pcs-y11",
-      "zuogu-tongwan-60caps-50ml-y14",
-      "zuogu-tongwan-60caps-x3-y17",
-      "zuogu-tongwan-60caps-x3-y18",
-      "zuogu-tongwan-y12",
-      "zuogu-tongwan-yanbiqing-150caps-x2-y22",
-      "zuogu-tongwan-yanbiqing-150caps-y7",
-      "zuogu-tongwan-yanbiqing-60caps-x3-y19",
-      "zuogu-tongwan-yanbiqing-60caps-y15"
-    ]
+    "batch": 12,
+    "completed_at": "2026-10-23T21:01:53+08:00",
+    "note": "FINAL batch 12 complete — 122/122"
   },
-  "next_pending": "zuogu-yaotong-wan-150caps-mk292",
+  "next_pending": null,
   "batch8_completed_at": "2026-10-23T19:58:08+08:00",
   "batch8_slugs": [
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045",
@@ -2097,5 +2100,19 @@
     "zuogu-tongwan-yanbiqing-60caps-x3-y19",
     "zuogu-tongwan-yanbiqing-60caps-y15"
   ],
-  "batch11_completed_at": "2026-10-23T20:44:31+08:00"
+  "batch11_completed_at": "2026-10-23T20:44:31+08:00",
+  "batch12_slugs": [
+    "zuogu-tongyou-50ml-x2-sp3",
+    "zuogu-tongyou-50ml-x3-k0043",
+    "zuogu-tongyou-50ml-yk408",
+    "zuogu-wan-300caps-k0008",
+    "zuogu-wan-150caps-y2",
+    "zuogu-wan-60caps-hky7389",
+    "zuogu-yaotong-oil-50ml-x3-k0042",
+    "zuogu-yaotong-oil-50ml-yk407",
+    "zuogu-yaotong-oil-y27",
+    "zuogu-yaotong-wan-150caps-mk292",
+    "zuogu-yaotong-wan-60caps-mk290"
+  ],
+  "batch12_completed_at": "2026-10-23T21:01:53+08:00"
 }
