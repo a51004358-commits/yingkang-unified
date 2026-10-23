@@ -72,7 +72,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 1
+      "batch": 1,
+      "commit": "deccf74"
     },
     "baqi-she-fengshi-zuogu-oil-50ml-mk385": {
       "status": "pending",
@@ -169,7 +170,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 1
+      "batch": 1,
+      "commit": "deccf74"
     },
     "bluetooth-speaker-mk402": {
       "status": "pending",
@@ -236,7 +238,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 1
+      "batch": 1,
+      "commit": "deccf74"
     },
     "fengse-gutong-oil-50ml-x3-k0044": {
       "status": "pending",
@@ -424,7 +427,7 @@
       },
       "error": null,
       "batch": 1,
-      "commit": "pending"
+      "commit": "deccf74"
     },
     "jiuke-tiaoli-60caps-hk102": {
       "status": "pending",
@@ -571,7 +574,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 1
+      "batch": 1,
+      "commit": "deccf74"
     },
     "maitong-100caps-mk395": {
       "status": "pending",
@@ -648,7 +652,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 1
+      "batch": 1,
+      "commit": "deccf74"
     },
     "mieshitong-oil-50ml-mk349": {
       "status": "pending",
@@ -915,7 +920,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 1
+      "batch": 1,
+      "commit": "deccf74"
     },
     "yanbiqing-oil-set-y16": {
       "status": "pending",
@@ -1112,7 +1118,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 1
+      "batch": 1,
+      "commit": "deccf74"
     },
     "zuogu-tongwan-60caps-x3-y17": {
       "status": "pending",
