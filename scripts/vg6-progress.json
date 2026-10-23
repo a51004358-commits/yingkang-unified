@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:09:39+08:00",
+  "updated_at": "2026-10-23T18:12:14+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 9,
+    "done": 11,
     "pending": 111,
-    "queued": 2,
+    "queued": 0,
     "failed": 0,
     "in_progress": 0
   },
@@ -314,12 +314,19 @@
       "batch": null
     },
     "gutongling-60caps-k0026": {
-      "status": "queued",
+      "status": "done",
       "name": "骨痛靈 60粒",
       "sku": "H6838001_S_k0026",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:12:14+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 1
     },
@@ -354,12 +361,19 @@
       "batch": null
     },
     "huoluoling-60caps-y23": {
-      "status": "queued",
+      "status": "done",
       "name": "活絡靈油＋活絡靈2 60粒",
       "sku": "H6838001_S_y23",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:12:14+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 1
     },
@@ -1304,35 +1318,24 @@
       "batch": null
     }
   },
-  "current_batch": [
-    "gutongling-60caps-k0026",
-    "huoluoling-60caps-y23"
-  ],
+  "current_batch": [],
   "last_run": {
-    "completed_at": "2026-10-23T18:09:39+08:00",
+    "completed_at": "2026-10-23T18:12:14+08:00",
     "zone": "Asia/Hong_Kong",
-    "commits": [
-      "69ff36f",
-      "849f979",
-      "2235fea",
-      "12c1bde",
-      "deccf74",
-      "b55c2ed"
-    ],
-    "this_run_new_slugs": [
+    "commits_note": "see git log; latest after this push",
+    "batch1_complete": true,
+    "new_slugs_excluding_seed": [
       "baitongdi-60caps-k0019",
       "biyan-60caps-mk368",
       "fengse-gucidan-60caps-k0002",
+      "gutongling-60caps-k0026",
+      "huoluoling-60caps-y23",
       "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401",
       "liuwei-dihuang-350caps-yk396",
       "mieshitong-gaobu-bevidan-10pcs-yk402",
       "yanbiqing-130caps-yk471",
       "zuogu-tongwan-60caps-k0003"
     ],
-    "remaining_batch1": [
-      "gutongling-60caps-k0026",
-      "huoluoling-60caps-y23"
-    ],
-    "note": "Parallel agents may share the box; always reconcile progress from filesystem before resume."
+    "failed": []
   }
 }
