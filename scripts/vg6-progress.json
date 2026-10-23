@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:54:15+08:00",
+  "updated_at": "2026-10-23T19:55:57+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 77,
+    "done": 79,
     "pending": 41,
-    "queued": 3,
+    "queued": 1,
     "failed": 0,
     "in_progress": 1
   },
@@ -1346,27 +1346,29 @@
       "completed_at": "2026-10-23T19:54:15+08:00"
     },
     "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024": {
-      "status": "in_progress",
+      "status": "done",
       "name": "台灣一條根坐骨神經膏布 30片",
       "sku": "H6838001_S_K0024",
       "primary": "primary.png",
       "updated_at": "2026-10-23T19:45:03+08:00",
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": 8
+      "batch": 8,
+      "completed_at": "2026-10-23T19:55:57+08:00"
     },
     "tongxue-wan-60caps-k0029": {
-      "status": "queued",
+      "status": "done",
       "name": "通血丸 60粒",
       "sku": "H6838001_S_k0029",
       "primary": "primary.png",
       "updated_at": "2026-10-23T19:45:03+08:00",
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": 8
+      "batch": 8,
+      "completed_at": "2026-10-23T19:55:57+08:00"
     },
     "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "UTR 靈芝孢子 80粒 300mg",
       "sku": "H6838001_S_UTR",
       "primary": "primary.png",
@@ -1849,5 +1851,5 @@
       "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024"
+  "next_pending": "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300"
 }
