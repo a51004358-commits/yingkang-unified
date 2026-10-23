@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:50:58+08:00",
+  "updated_at": "2026-10-23T19:54:15+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 75,
+    "done": 77,
     "pending": 41,
-    "queued": 5,
+    "queued": 3,
     "failed": 0,
     "in_progress": 1
   },
@@ -1303,7 +1303,7 @@
       },
       "error": null,
       "batch": 8,
-      "commit": "e6f58ec"
+      "commit": "6d9646b"
     },
     "shitong-gucidan-60caps-k0039": {
       "status": "done",
@@ -1320,30 +1320,33 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 8
+      "batch": 8,
+      "commit": "6d9646b"
     },
     "storage-bag-mk341": {
-      "status": "in_progress",
+      "status": "done",
       "name": "懸掛式家居收納袋",
       "sku": "H6838001_S_MK341",
       "primary": "primary.jpg",
       "updated_at": "2026-10-23T19:50:58+08:00",
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": 8
+      "batch": 8,
+      "completed_at": "2026-10-23T19:54:15+08:00"
     },
     "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025": {
-      "status": "queued",
+      "status": "done",
       "name": "台灣一條根坐骨神經膏布 20片",
       "sku": "H6838001_S_K0025",
       "primary": "primary.png",
       "updated_at": "2026-10-23T19:45:03+08:00",
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": 8
+      "batch": 8,
+      "completed_at": "2026-10-23T19:54:15+08:00"
     },
     "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "台灣一條根坐骨神經膏布 30片",
       "sku": "H6838001_S_K0024",
       "primary": "primary.png",
@@ -1846,5 +1849,5 @@
       "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "storage-bag-mk341"
+  "next_pending": "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024"
 }
