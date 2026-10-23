@@ -1,13 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:06:20+08:00",
+  "updated_at": "2026-10-23T18:09:39+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
     "done": 9,
-    "pending": 113,
+    "pending": 111,
+    "queued": 2,
     "failed": 0,
     "in_progress": 0
   },
@@ -17,15 +18,16 @@
       "name": "強力炎必清 60粒",
       "updated_at": "2026-10-23T17:55:43+08:00",
       "commit": "cf4a1b5",
-      "panels": [
-        "vg6-01",
-        "vg6-02",
-        "vg6-03",
-        "vg6-04",
-        "vg6-05",
-        "vg6-06"
-      ],
-      "note": "seed template; do not regenerate"
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
+      "note": "seed template; do not regenerate",
+      "error": null
     },
     "angong-niuhuang-1pills-mk380": {
       "status": "pending",
@@ -160,7 +162,7 @@
       "name": "鼻炎素 60粒",
       "sku": "H6838001_S_MK368",
       "primary": "primary.jpg",
-      "updated_at": "2026-10-23T18:02:31+08:00",
+      "updated_at": "2026-10-23T18:09:12+08:00",
       "panels": {
         "vg6-01": "ok",
         "vg6-02": "ok",
@@ -312,14 +314,14 @@
       "batch": null
     },
     "gutongling-60caps-k0026": {
-      "status": "pending",
+      "status": "queued",
       "name": "骨痛靈 60粒",
       "sku": "H6838001_S_k0026",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 1
     },
     "gutongling-60caps-k0049": {
       "status": "pending",
@@ -352,14 +354,14 @@
       "batch": null
     },
     "huoluoling-60caps-y23": {
-      "status": "pending",
+      "status": "queued",
       "name": "活絡靈油＋活絡靈2 60粒",
       "sku": "H6838001_S_y23",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 1
     },
     "jianbu-huqian-320caps-mk370": {
       "status": "pending",
@@ -1108,7 +1110,7 @@
       "name": "坐骨神徑痛丸 60粒",
       "sku": "H6838001_S_K0003",
       "primary": "primary.png",
-      "updated_at": "2026-10-23T18:02:31+08:00",
+      "updated_at": "2026-10-23T18:07:56+08:00",
       "panels": {
         "vg6-01": "ok",
         "vg6-02": "ok",
@@ -1302,25 +1304,35 @@
       "batch": null
     }
   },
-  "current_batch": [],
+  "current_batch": [
+    "gutongling-60caps-k0026",
+    "huoluoling-60caps-y23"
+  ],
   "last_run": {
-    "completed_at": "2026-10-23T18:06:20+08:00",
-    "completed_slugs": [
-      "yanbiqing-130caps-yk471",
-      "mieshitong-gaobu-bevidan-10pcs-yk402",
-      "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401",
-      "zuogu-tongwan-60caps-k0003",
-      "biyan-60caps-mk368",
-      "baitongdi-60caps-k0019",
-      "fengse-gucidan-60caps-k0002",
-      "liuwei-dihuang-350caps-yk396"
-    ],
+    "completed_at": "2026-10-23T18:09:39+08:00",
+    "zone": "Asia/Hong_Kong",
     "commits": [
       "69ff36f",
       "849f979",
       "2235fea",
-      "12c1bde"
+      "12c1bde",
+      "deccf74",
+      "b55c2ed"
     ],
-    "note": "seed yanbiqing-60caps-y5 already done (cf4a1b5)"
+    "this_run_new_slugs": [
+      "baitongdi-60caps-k0019",
+      "biyan-60caps-mk368",
+      "fengse-gucidan-60caps-k0002",
+      "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401",
+      "liuwei-dihuang-350caps-yk396",
+      "mieshitong-gaobu-bevidan-10pcs-yk402",
+      "yanbiqing-130caps-yk471",
+      "zuogu-tongwan-60caps-k0003"
+    ],
+    "remaining_batch1": [
+      "gutongling-60caps-k0026",
+      "huoluoling-60caps-y23"
+    ],
+    "note": "Parallel agents may share the box; always reconcile progress from filesystem before resume."
   }
 }
