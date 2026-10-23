@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T21:01:53+08:00",
+  "updated_at": "2026-10-23T21:01:59+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
@@ -2047,7 +2047,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 12
+      "batch": 12,
+      "commit": "c4b4552"
     },
     "zuogu-yaotong-wan-60caps-mk290": {
       "status": "done",
@@ -2064,7 +2065,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 12
+      "batch": 12,
+      "commit": "c4b4552"
     }
   },
   "current_batch": null,
