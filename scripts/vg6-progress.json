@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:26:44+08:00",
+  "updated_at": "2026-10-23T18:32:43+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 21,
-    "pending": 101,
-    "queued": 0,
+    "done": 24,
+    "pending": 91,
+    "queued": 6,
     "failed": 0,
-    "in_progress": 0
+    "in_progress": 1
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -174,44 +174,68 @@
       "commit": "f990d42"
     },
     "benmingfo-mk356": {
-      "status": "pending",
+      "status": "done",
       "name": "朱砂本命佛（狗／豬）",
       "sku": "H6838001_S_MK356",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:30:27+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 3,
+      "commit": "pending_push"
     },
     "benmingfo-mk358": {
-      "status": "pending",
+      "status": "done",
       "name": "朱砂本命佛（雞）",
       "sku": "H6838001_S_MK358",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:31:19+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 3,
+      "commit": "pending_push"
     },
     "benmingfo-mk359": {
-      "status": "pending",
+      "status": "done",
       "name": "朱砂本命佛（馬）",
       "sku": "H6838001_S_MK359",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:32:43+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 3,
+      "commit": "pending_push"
     },
     "benmingfo-mk360": {
-      "status": "pending",
+      "status": "in_progress",
       "name": "朱砂本命佛（鼠）",
       "sku": "H6838001_S_MK360",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 3
     },
     "biyan-60caps-mk368": {
       "status": "done",
@@ -232,14 +256,14 @@
       "commit": "deccf74"
     },
     "bluetooth-speaker-mk402": {
-      "status": "pending",
+      "status": "queued",
       "name": "Rocktech 藍牙喇叭",
       "sku": "H6838001_S_MK402",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 3
     },
     "dianqishi-tiebu-70pcs-tt-ts-10-001": {
       "status": "done",
@@ -296,14 +320,14 @@
       "commit": "f990d42"
     },
     "fengse-gucidan-150caps-k0006": {
-      "status": "pending",
+      "status": "queued",
       "name": "風澀骨剌丹 150粒",
       "sku": "H6838001_S_K0006",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 3
     },
     "fengse-gucidan-60caps-k0002": {
       "status": "done",
@@ -324,44 +348,44 @@
       "commit": "deccf74"
     },
     "fengse-gutong-oil-50ml-x3-k0044": {
-      "status": "pending",
+      "status": "queued",
       "name": "風澀骨剌痛油 50ml×3",
       "sku": "H6838001_S_K0044",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 3
     },
     "fengse-gutong-oil-50ml-yk409": {
-      "status": "pending",
+      "status": "queued",
       "name": "風澀骨刺痛油 50ml",
       "sku": "H6838001_S_yk409",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 3
     },
     "fengse-gutong-oil-y26": {
-      "status": "pending",
+      "status": "queued",
       "name": "風澀骨剌痛油＋骨剌丹",
       "sku": "H6838001_S_y26",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 3
     },
     "fengtong-gucidan-60caps-k0023": {
-      "status": "pending",
+      "status": "queued",
       "name": "風痛骨剌丹 60粒",
       "sku": "H6838001_S_K0023",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 3
     },
     "forehead-thermometer-yk245": {
       "status": "pending",
@@ -1398,7 +1422,18 @@
       "batch": null
     }
   },
-  "current_batch": [],
+  "current_batch": [
+    "benmingfo-mk356",
+    "benmingfo-mk358",
+    "benmingfo-mk359",
+    "benmingfo-mk360",
+    "bluetooth-speaker-mk402",
+    "fengse-gucidan-150caps-k0006",
+    "fengse-gutong-oil-50ml-x3-k0044",
+    "fengse-gutong-oil-50ml-yk409",
+    "fengse-gutong-oil-y26",
+    "fengtong-gucidan-60caps-k0023"
+  ],
   "last_run": {
     "completed_at": "2026-10-23T18:26:44+08:00",
     "zone": "Asia/Hong_Kong",
