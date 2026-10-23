@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:09:21+08:00",
+  "updated_at": "2026-10-23T20:11:59+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 87,
+    "done": 89,
     "pending": 31,
-    "queued": 3,
+    "queued": 1,
     "failed": 0,
     "in_progress": 1
   },
@@ -1451,27 +1451,29 @@
       "completed_at": "2026-10-23T20:09:21+08:00"
     },
     "zhuifeng-fgu-gaobu-yitiaogen-x11-mk387": {
-      "status": "in_progress",
+      "status": "done",
       "name": "一條根追風F骨膏布 7×11cm",
       "sku": "H6838001_S_MK387",
       "primary": "primary.png",
       "updated_at": null,
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": null
+      "batch": null,
+      "completed_at": "2026-10-23T20:11:59+08:00"
     },
     "zhuifeng-fgu-gaobu-yitiaogen-x15-mk388": {
-      "status": "queued",
+      "status": "done",
       "name": "一條根追風F骨膏布 11×15cm",
       "sku": "H6838001_S_MK388",
       "primary": "primary.png",
       "updated_at": null,
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": null
+      "batch": null,
+      "completed_at": "2026-10-23T20:11:59+08:00"
     },
     "zuogu-3pcs-set-y3": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "坐骨舒緩三件組",
       "sku": "H6838001_S_y3",
       "primary": "primary.jpg",
@@ -1836,7 +1838,7 @@
       "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "zhuifeng-fgu-gaobu-yitiaogen-x11-mk387",
+  "next_pending": "zuogu-3pcs-set-y3",
   "batch8_completed_at": "2026-10-23T19:58:08+08:00",
   "batch8_slugs": [
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045",
