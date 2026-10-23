@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:24:24+08:00",
+  "updated_at": "2026-10-23T19:27:24+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 57,
+    "done": 59,
     "pending": 61,
-    "queued": 3,
+    "queued": 1,
     "failed": 0,
     "in_progress": 1
   },
@@ -961,7 +961,7 @@
       },
       "error": null,
       "batch": 6,
-      "commit": "pending"
+      "commit": "ed76ec8"
     },
     "mieshitong-bevidan-150caps-k0009": {
       "status": "done",
@@ -979,30 +979,46 @@
       },
       "error": null,
       "batch": 6,
-      "commit": "pending"
+      "commit": "ed76ec8"
     },
     "mieshitong-bevidan-60caps-k0031": {
-      "status": "in_progress",
+      "status": "done",
       "name": "BEVIDAN 滅濕痛風痛 60粒",
       "sku": "H6838001_S_K0031",
       "primary": "primary.png",
-      "updated_at": "2026-10-23T19:15:48+08:00",
-      "panels": {},
+      "updated_at": "2026-10-23T19:27:24+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 6
+      "batch": 6,
+      "commit": "pending"
     },
     "mieshitong-gaobu-10pcs-x11-k0032": {
-      "status": "queued",
+      "status": "done",
       "name": "滅濕痛風痛膏布 7×11cm（10片×3）",
       "sku": "H6838001_S_k0032",
       "primary": "primary.png",
-      "updated_at": "2026-10-23T19:15:48+08:00",
-      "panels": {},
+      "updated_at": "2026-10-23T19:27:24+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 6
+      "batch": 6,
+      "commit": "pending"
     },
     "mieshitong-gaobu-10pcs-x15-k0033": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "滅濕痛風痛膏布 11×15cm（10片×2）",
       "sku": "H6838001_S_K0033",
       "primary": "primary.png",
