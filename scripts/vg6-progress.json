@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:54:05+08:00",
+  "updated_at": "2026-10-23T20:57:53+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 117,
-    "pending": 5,
+    "done": 120,
+    "pending": 2,
     "queued": 0,
     "failed": 0,
     "in_progress": 0
@@ -1942,7 +1942,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 12
+      "batch": 12,
+      "commit": "28a0ed5"
     },
     "zuogu-wan-150caps-y2": {
       "status": "done",
@@ -1959,7 +1960,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 12
+      "batch": 12,
+      "commit": "28a0ed5"
     },
     "zuogu-wan-60caps-hky7389": {
       "status": "done",
@@ -1976,37 +1978,59 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 12
+      "batch": 12,
+      "commit": "28a0ed5"
     },
     "zuogu-yaotong-oil-50ml-x3-k0042": {
-      "status": "pending",
+      "status": "done",
       "name": "坐骨腰痛油 50ml×3",
       "sku": "H6838001_S_K0042",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:57:53+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 12
     },
     "zuogu-yaotong-oil-50ml-yk407": {
-      "status": "pending",
+      "status": "done",
       "name": "濃縮坐骨腰痛油 50ml",
       "sku": "H6838001_S_yk407",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:57:53+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 12
     },
     "zuogu-yaotong-oil-y27": {
-      "status": "pending",
+      "status": "done",
       "name": "坐骨腰痛油＋腰痛丸",
       "sku": "H6838001_S_y27",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:57:53+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 12
     },
     "zuogu-yaotong-wan-150caps-mk292": {
       "status": "pending",
@@ -2046,7 +2070,7 @@
       "zuogu-tongwan-yanbiqing-60caps-y15"
     ]
   },
-  "next_pending": "zuogu-yaotong-oil-50ml-x3-k0042",
+  "next_pending": "zuogu-yaotong-wan-150caps-mk292",
   "batch8_completed_at": "2026-10-23T19:58:08+08:00",
   "batch8_slugs": [
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045",
