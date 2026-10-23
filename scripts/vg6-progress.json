@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:28:22+08:00",
+  "updated_at": "2026-10-23T20:28:24+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
@@ -1655,7 +1655,7 @@
       },
       "error": null,
       "batch": 10,
-      "commit": "pending"
+      "commit": "9f662bb"
     },
     "zuogu-tongwan-150caps-x2-y20": {
       "status": "done",
@@ -1673,7 +1673,7 @@
       },
       "error": null,
       "batch": 10,
-      "commit": "pending"
+      "commit": "9f662bb"
     },
     "zuogu-tongwan-150caps-x2-y21": {
       "status": "pending",
