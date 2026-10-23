@@ -1248,7 +1248,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 7
+      "batch": 7,
+      "commit": "c2e285a"
     },
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045": {
       "status": "pending",
