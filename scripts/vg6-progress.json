@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:43:45+08:00",
+  "updated_at": "2026-10-23T19:47:48+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 71,
-    "pending": 51,
-    "queued": 0,
+    "done": 73,
+    "pending": 41,
+    "queued": 7,
     "failed": 0,
-    "in_progress": 0
+    "in_progress": 1
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -1252,104 +1252,118 @@
       "commit": "c2e285a"
     },
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045": {
-      "status": "pending",
+      "status": "done",
       "name": "活絡靈千里追風油 50ml×3",
       "sku": "H6838001_S_k0045",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T19:47:48+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "qianli-zhuifeng-huoluoling-50ml-yk410": {
-      "status": "pending",
+      "status": "done",
       "name": "活絡靈千里追風油 50ml",
       "sku": "H6838001_S_yk410",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T19:47:48+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "rimachi-wan-100caps-mk344": {
-      "status": "pending",
+      "status": "in_progress",
       "name": "坐骨神經リマチ痛丸 100粒",
       "sku": "H6838001_S_MK344",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:47:48+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "shitong-gucidan-60caps-k0039": {
-      "status": "pending",
+      "status": "queued",
       "name": "濕痛骨剌丹 60粒",
       "sku": "H6838001_S_k0039",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:45:03+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "storage-bag-mk341": {
-      "status": "pending",
+      "status": "queued",
       "name": "懸掛式家居收納袋",
       "sku": "H6838001_S_MK341",
       "primary": "primary.jpg",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:45:03+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025": {
-      "status": "pending",
+      "status": "queued",
       "name": "台灣一條根坐骨神經膏布 20片",
       "sku": "H6838001_S_K0025",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:45:03+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024": {
-      "status": "pending",
+      "status": "queued",
       "name": "台灣一條根坐骨神經膏布 30片",
       "sku": "H6838001_S_K0024",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:45:03+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "tongxue-wan-60caps-k0029": {
-      "status": "pending",
+      "status": "queued",
       "name": "通血丸 60粒",
       "sku": "H6838001_S_k0029",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:45:03+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300": {
-      "status": "pending",
+      "status": "queued",
       "name": "UTR 靈芝孢子 80粒 300mg",
       "sku": "H6838001_S_UTR",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:45:03+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "weimeng-shenyou-10ml-yk473": {
-      "status": "pending",
+      "status": "queued",
       "name": "威猛神油 10ml 噴霧",
       "sku": "H6838001_S_yk473",
       "primary": "primary.jpg",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:45:03+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 8
     },
     "wireless-mouse-mk401": {
       "status": "pending",
@@ -1798,7 +1812,7 @@
       "batch": null
     }
   },
-  "current_batch": 7,
+  "current_batch": 8,
   "last_run": {
     "batch": 7,
     "completed_at": "2026-10-23T19:43:45+08:00",
@@ -1815,5 +1829,5 @@
       "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "qianli-zhuifeng-huoluoling-50ml-x3-k0045"
+  "next_pending": "rimachi-wan-100caps-mk344"
 }
