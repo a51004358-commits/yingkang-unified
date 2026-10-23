@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:19:05+08:00",
+  "updated_at": "2026-10-23T19:21:52+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 53,
+    "done": 55,
     "pending": 61,
-    "queued": 7,
+    "queued": 5,
     "failed": 0,
     "in_progress": 1
   },
@@ -871,7 +871,7 @@
       },
       "error": null,
       "batch": 6,
-      "commit": "pending"
+      "commit": "2ad78cc"
     },
     "liaoshitong-60caps-mk284": {
       "status": "done",
@@ -889,27 +889,43 @@
       },
       "error": null,
       "batch": 6,
-      "commit": "pending"
+      "commit": "2ad78cc"
     },
     "lingzhi-naohuosu-150caps-k0011": {
-      "status": "in_progress",
+      "status": "done",
       "name": "兒童蟲草靈芝孢子腦活素 150粒",
       "sku": "H6838001_S_K0011",
       "primary": "primary.png",
-      "updated_at": "2026-10-23T19:15:48+08:00",
-      "panels": {},
+      "updated_at": "2026-10-23T19:21:52+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 6
+      "batch": 6,
+      "commit": "pending"
     },
     "liuwei-dihuang-350caps-x2-k0012": {
-      "status": "queued",
+      "status": "done",
       "name": "強力濃縮六味地黃丸 350粒×2",
       "sku": "H6838001_S_K0012",
       "primary": "primary.png",
-      "updated_at": "2026-10-23T19:15:48+08:00",
-      "panels": {},
+      "updated_at": "2026-10-23T19:21:52+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 6
+      "batch": 6,
+      "commit": "pending"
     },
     "liuwei-dihuang-350caps-yk396": {
       "status": "done",
@@ -930,7 +946,7 @@
       "commit": "deccf74"
     },
     "maitong-100caps-mk395": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "美國脈通心脈通 100粒",
       "sku": "H6838001_S_MK395",
       "primary": "primary.png",
