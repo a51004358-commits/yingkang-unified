@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:59:46+08:00",
+  "updated_at": "2026-10-23T19:03:22+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 41,
-    "pending": 81,
-    "queued": 0,
+    "done": 43,
+    "pending": 71,
+    "queued": 8,
     "failed": 0,
     "in_progress": 0
   },
@@ -658,14 +658,22 @@
       "commit": "901513b"
     },
     "jinmaomao-hongcha-mk346": {
-      "status": "pending",
+      "status": "done",
       "name": "特供金毫毛紅茶 30克",
       "sku": "H6838001_S_MK346",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T19:01:54+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 5,
+      "commit": "pending"
     },
     "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401": {
       "status": "done",
@@ -686,94 +694,102 @@
       "commit": "deccf74"
     },
     "jiuke-tiaoli-60caps-hk102": {
-      "status": "pending",
+      "status": "done",
       "name": "尹淑梅久咳調理丸 60粒",
       "sku": "H6838001_S_HK102",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T19:03:22+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 5,
+      "commit": "pending"
     },
     "jiuke-tiaoli-yinshumei-hk011": {
-      "status": "pending",
+      "status": "queued",
       "name": "尹淑梅久咳調理丸 12盒",
       "sku": "H6838001_S_HK011",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 5
     },
     "jiuke-wan-60caps-hk100": {
-      "status": "pending",
+      "status": "queued",
       "name": "強力特效久咳丸 60粒",
       "sku": "H6838001_S_HK100",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 5
     },
     "jiuke-wan-720caps-mk390": {
-      "status": "pending",
+      "status": "queued",
       "name": "強力特效久咳丸 720粒",
       "sku": "H6838001_S_MK390",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 5
     },
     "jiuke-wan-720caps-mk391": {
-      "status": "pending",
+      "status": "queued",
       "name": "特效強力久咳丸 720粒",
       "sku": "H6838001_S_MK391",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 5
     },
     "jiuke-wan-huaxiatang-60caps-hk101": {
-      "status": "pending",
+      "status": "queued",
       "name": "華霞堂久咳丸 60粒",
       "sku": "H6838001_S_HK101",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 5
     },
     "jiuke-wan-huaxiatang-mk400": {
-      "status": "pending",
+      "status": "queued",
       "name": "華霞堂久咳丸 3樽",
       "sku": "H6838001_S_MK400",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 5
     },
     "jiuke-wan-mk399": {
-      "status": "pending",
+      "status": "queued",
       "name": "強力特效久咳丸 6樽",
       "sku": "H6838001_S_MK399",
       "primary": "primary.jpg",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 5
     },
     "jiuke-wan-yinshumei-120caps-mk369": {
-      "status": "pending",
+      "status": "queued",
       "name": "尹淑梅久咳丸 120粒",
       "sku": "H6838001_S_MK369",
       "primary": "primary.png",
       "updated_at": null,
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 5
     },
     "jiuxin-dan-100caps-k0014": {
       "status": "pending",
@@ -1558,7 +1574,18 @@
       "batch": null
     }
   },
-  "current_batch": [],
+  "current_batch": [
+    "jinmaomao-hongcha-mk346",
+    "jiuke-tiaoli-60caps-hk102",
+    "jiuke-tiaoli-yinshumei-hk011",
+    "jiuke-wan-60caps-hk100",
+    "jiuke-wan-720caps-mk390",
+    "jiuke-wan-720caps-mk391",
+    "jiuke-wan-huaxiatang-60caps-hk101",
+    "jiuke-wan-huaxiatang-mk400",
+    "jiuke-wan-mk399",
+    "jiuke-wan-yinshumei-120caps-mk369"
+  ],
   "last_run": {
     "completed_at": "2026-10-23T18:59:30+08:00",
     "zone": "Asia/Hong_Kong",
