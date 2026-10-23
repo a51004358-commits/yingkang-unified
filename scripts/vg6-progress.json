@@ -1,0 +1,1267 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-23T17:58:45+08:00",
+  "template_slug": "yanbiqing-60caps-y5",
+  "template_commit": "cf4a1b5",
+  "total_skus": 122,
+  "batch_size_hint": 10,
+  "stats": {
+    "done": 3,
+    "pending": 119,
+    "failed": 0,
+    "in_progress": 0
+  },
+  "products": {
+    "yanbiqing-60caps-y5": {
+      "status": "done",
+      "name": "強力炎必清 60粒",
+      "updated_at": "2026-10-23T17:55:43+08:00",
+      "commit": "cf4a1b5",
+      "panels": [
+        "vg6-01",
+        "vg6-02",
+        "vg6-03",
+        "vg6-04",
+        "vg6-05",
+        "vg6-06"
+      ],
+      "note": "seed template; do not regenerate"
+    },
+    "angong-niuhuang-1pills-mk380": {
+      "status": "pending",
+      "name": "北京安宮牛黃丸 1丸",
+      "sku": "H6838001_S_MK380",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "angong-niuhuang-3pills-mk382": {
+      "status": "pending",
+      "name": "北京安宮牛黃丸 3丸錦盒裝",
+      "sku": "H6838001_S_MK382",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "angong-niuhuang-6pills-hk01": {
+      "status": "pending",
+      "name": "北京安宮牛黃丸 6丸",
+      "sku": "H6838001_S_HK01",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "baitongdi-60caps-k0019": {
+      "status": "queued",
+      "name": "百痛敵 60粒",
+      "sku": "H6838001_S_k0019",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": 1
+    },
+    "baqi-she-fengshi-zuogu-oil-50ml-mk385": {
+      "status": "pending",
+      "name": "八岐蛇楓濕坐骨靈油 50ml",
+      "sku": "H6838001_S_MK385",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "baqi-she-jianjing-cigu-oil-50ml-mk383": {
+      "status": "pending",
+      "name": "八岐蛇肩頸刺骨靈油 50ml",
+      "sku": "H6838001_S_MK383",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "baqi-she-jingyaozhui-oil-50ml-mk389": {
+      "status": "pending",
+      "name": "八岐蛇頸腰椎坐骨靈油 50ml",
+      "sku": "H6838001_S_MK389",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "baqi-she-potong-oil-50ml-mk384": {
+      "status": "pending",
+      "name": "八岐蛇破痛油 50ml",
+      "sku": "H6838001_S_MK384",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "benmingfo-mk356": {
+      "status": "pending",
+      "name": "朱砂本命佛（狗／豬）",
+      "sku": "H6838001_S_MK356",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "benmingfo-mk358": {
+      "status": "pending",
+      "name": "朱砂本命佛（雞）",
+      "sku": "H6838001_S_MK358",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "benmingfo-mk359": {
+      "status": "pending",
+      "name": "朱砂本命佛（馬）",
+      "sku": "H6838001_S_MK359",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "benmingfo-mk360": {
+      "status": "pending",
+      "name": "朱砂本命佛（鼠）",
+      "sku": "H6838001_S_MK360",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "biyan-60caps-mk368": {
+      "status": "queued",
+      "name": "鼻炎素 60粒",
+      "sku": "H6838001_S_MK368",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": 1
+    },
+    "bluetooth-speaker-mk402": {
+      "status": "pending",
+      "name": "Rocktech 藍牙喇叭",
+      "sku": "H6838001_S_MK402",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "dianqishi-tiebu-70pcs-tt-ts-10-001": {
+      "status": "pending",
+      "name": "電氣石貼布 7盒70片",
+      "sku": "H6838001_S_TT",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "difugen-15ml-x3-k0034": {
+      "status": "pending",
+      "name": "滴膚堅 15ml×3",
+      "sku": "H6838001_S_k0034",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "difugen-15ml-yk395": {
+      "status": "pending",
+      "name": "滴膚堅 Difugen 15ml",
+      "sku": "H6838001_S_yk395",
+      "primary": "primary.webp",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "fengse-gucidan-150caps-k0006": {
+      "status": "pending",
+      "name": "風澀骨剌丹 150粒",
+      "sku": "H6838001_S_K0006",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "fengse-gucidan-60caps-k0002": {
+      "status": "queued",
+      "name": "風澀骨剌丹 60粒",
+      "sku": "H6838001_S_k0002",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": 1
+    },
+    "fengse-gutong-oil-50ml-x3-k0044": {
+      "status": "pending",
+      "name": "風澀骨剌痛油 50ml×3",
+      "sku": "H6838001_S_K0044",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "fengse-gutong-oil-50ml-yk409": {
+      "status": "pending",
+      "name": "風澀骨刺痛油 50ml",
+      "sku": "H6838001_S_yk409",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "fengse-gutong-oil-y26": {
+      "status": "pending",
+      "name": "風澀骨剌痛油＋骨剌丹",
+      "sku": "H6838001_S_y26",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "fengtong-gucidan-60caps-k0023": {
+      "status": "pending",
+      "name": "風痛骨剌丹 60粒",
+      "sku": "H6838001_S_K0023",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "forehead-thermometer-yk245": {
+      "status": "pending",
+      "name": "紅外線額探溫度計",
+      "sku": "H6838001_S_yk245",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "futeiling-120ml-yk404": {
+      "status": "pending",
+      "name": "膚特靈 120ml 噴霧",
+      "sku": "H6838001_S_yk404",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "futeiling-tokyo-tower-120ml-x3-k0037": {
+      "status": "pending",
+      "name": "東京塔牌膚特靈 120ml×3",
+      "sku": "H6838001_S_k0037",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "gutongling-60caps-k0026": {
+      "status": "queued",
+      "name": "骨痛靈 60粒",
+      "sku": "H6838001_S_k0026",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": 1
+    },
+    "gutongling-60caps-k0049": {
+      "status": "pending",
+      "name": "骨痛靈 60粒（德國里哈明）",
+      "sku": "H6838001_S_k0049",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "huatatang-50caps-x4-yk470": {
+      "status": "pending",
+      "name": "花塔糖 50粒×4支",
+      "sku": "H6838001_S_yk470",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "huoluoling-60caps-k0021": {
+      "status": "pending",
+      "name": "活絡靈 2（60粒）",
+      "sku": "H6838001_S_K0021",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "huoluoling-60caps-y23": {
+      "status": "queued",
+      "name": "活絡靈油＋活絡靈2 60粒",
+      "sku": "H6838001_S_y23",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": 1
+    },
+    "jianbu-huqian-320caps-mk370": {
+      "status": "pending",
+      "name": "健步虎潛丸 320粒",
+      "sku": "H6838001_S_MK370",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jianchiling-60caps-mk285": {
+      "status": "pending",
+      "name": "健齒靈 60粒",
+      "sku": "H6838001_S_MK285",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jingang-shenyou-10ml-yk474": {
+      "status": "pending",
+      "name": "金鋼神油 10ml 噴霧",
+      "sku": "H6838001_S_yk474",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jinhuwang-50ml-mk386": {
+      "status": "pending",
+      "name": "金虎王活絡油 50ml",
+      "sku": "H6838001_S_MK386",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jinmaomao-hongcha-mk346": {
+      "status": "pending",
+      "name": "特供金毫毛紅茶 30克",
+      "sku": "H6838001_S_MK346",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401": {
+      "status": "queued",
+      "name": "金門一條根坐骨神經膏布 10片",
+      "sku": "H6838001_S_yk401",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": 1
+    },
+    "jiuke-tiaoli-60caps-hk102": {
+      "status": "pending",
+      "name": "尹淑梅久咳調理丸 60粒",
+      "sku": "H6838001_S_HK102",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jiuke-tiaoli-yinshumei-hk011": {
+      "status": "pending",
+      "name": "尹淑梅久咳調理丸 12盒",
+      "sku": "H6838001_S_HK011",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jiuke-wan-60caps-hk100": {
+      "status": "pending",
+      "name": "強力特效久咳丸 60粒",
+      "sku": "H6838001_S_HK100",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jiuke-wan-720caps-mk390": {
+      "status": "pending",
+      "name": "強力特效久咳丸 720粒",
+      "sku": "H6838001_S_MK390",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jiuke-wan-720caps-mk391": {
+      "status": "pending",
+      "name": "特效強力久咳丸 720粒",
+      "sku": "H6838001_S_MK391",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jiuke-wan-huaxiatang-60caps-hk101": {
+      "status": "pending",
+      "name": "華霞堂久咳丸 60粒",
+      "sku": "H6838001_S_HK101",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jiuke-wan-huaxiatang-mk400": {
+      "status": "pending",
+      "name": "華霞堂久咳丸 3樽",
+      "sku": "H6838001_S_MK400",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jiuke-wan-mk399": {
+      "status": "pending",
+      "name": "強力特效久咳丸 6樽",
+      "sku": "H6838001_S_MK399",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jiuke-wan-yinshumei-120caps-mk369": {
+      "status": "pending",
+      "name": "尹淑梅久咳丸 120粒",
+      "sku": "H6838001_S_MK369",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "jiuxin-dan-100caps-k0014": {
+      "status": "pending",
+      "name": "日本救心丹 100粒",
+      "sku": "H6838001_S_K0014",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "liaoshitong-60caps-mk284": {
+      "status": "pending",
+      "name": "療濕痛 60粒",
+      "sku": "H6838001_S_MK284",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "lingzhi-naohuosu-150caps-k0011": {
+      "status": "pending",
+      "name": "兒童蟲草靈芝孢子腦活素 150粒",
+      "sku": "H6838001_S_K0011",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "liuwei-dihuang-350caps-x2-k0012": {
+      "status": "pending",
+      "name": "強力濃縮六味地黃丸 350粒×2",
+      "sku": "H6838001_S_K0012",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "liuwei-dihuang-350caps-yk396": {
+      "status": "queued",
+      "name": "強力濃縮六味地黃丸 350粒",
+      "sku": "H6838001_S_yk396",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": 1
+    },
+    "maitong-100caps-mk395": {
+      "status": "pending",
+      "name": "美國脈通心脈通 100粒",
+      "sku": "H6838001_S_MK395",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "mieshitong-bevidan-150caps-k0009": {
+      "status": "pending",
+      "name": "BEVIDAN 滅濕痛風痛 150粒",
+      "sku": "H6838001_S_K0009",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "mieshitong-bevidan-60caps-k0031": {
+      "status": "pending",
+      "name": "BEVIDAN 滅濕痛風痛 60粒",
+      "sku": "H6838001_S_K0031",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "mieshitong-gaobu-10pcs-x11-k0032": {
+      "status": "pending",
+      "name": "滅濕痛風痛膏布 7×11cm（10片×3）",
+      "sku": "H6838001_S_k0032",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "mieshitong-gaobu-10pcs-x15-k0033": {
+      "status": "pending",
+      "name": "滅濕痛風痛膏布 11×15cm（10片×2）",
+      "sku": "H6838001_S_K0033",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "mieshitong-gaobu-10pcs-x15-yk403": {
+      "status": "pending",
+      "name": "滅濕痛風痛膏布 11×15cm（10片）",
+      "sku": "H6838001_S_yk403",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "mieshitong-gaobu-bevidan-10pcs-yk402": {
+      "status": "done",
+      "name": "BEVIDAN 滅濕痛風痛膏布 10片",
+      "sku": "H6838001_S_yk402",
+      "primary": "primary.png",
+      "updated_at": "2026-10-23T17:58:45+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
+      "error": null,
+      "batch": 1
+    },
+    "mieshitong-oil-50ml-mk349": {
+      "status": "pending",
+      "name": "滅濕痛風痛活絡油 50ml",
+      "sku": "H6838001_S_MK349",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "mieshitong-oil-50ml-x3-k0047": {
+      "status": "pending",
+      "name": "滅濕痛活絡油 50ml×3",
+      "sku": "H6838001_S_k0047",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "mieshitong-oil-60caps-y25": {
+      "status": "pending",
+      "name": "滅濕痛風痛油＋60粒",
+      "sku": "H6838001_S_y25",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "naobaijin-lingzhi-naohuosu-150caps-k0010": {
+      "status": "pending",
+      "name": "腦白金靈芝孢子腦活素 150粒",
+      "sku": "H6838001_S_K0010",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "naobaijin-lingzhi-naohuosu-150caps-x2-yk135": {
+      "status": "pending",
+      "name": "腦白金靈芝孢子腦活素 150粒×2",
+      "sku": "H6838001_S_yk135",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "niaosuanqing-60caps-k0020": {
+      "status": "pending",
+      "name": "尿酸清 GOUBUNE 60粒",
+      "sku": "H6838001_S_K0020",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "niuhuang-jiedu-120caps-x3-k0017": {
+      "status": "pending",
+      "name": "北京牛黃解毒片 120粒×3",
+      "sku": "H6838001_S_K0017",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "niuhuang-jiedu-120caps-x7-yk472": {
+      "status": "pending",
+      "name": "北京牛黃解毒片 120粒×7",
+      "sku": "H6838001_S_yk472",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "niuhuang-jiedu-120pcs-yk398": {
+      "status": "pending",
+      "name": "北京牛黃解毒片 120片",
+      "sku": "H6838001_S_yk398",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "qianli-zhuifeng-baqi-she-50ml-mk381": {
+      "status": "pending",
+      "name": "八岐蛇千里追風油 50ml",
+      "sku": "H6838001_S_MK381",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "qianli-zhuifeng-huoluoling-50ml-x3-k0045": {
+      "status": "pending",
+      "name": "活絡靈千里追風油 50ml×3",
+      "sku": "H6838001_S_k0045",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "qianli-zhuifeng-huoluoling-50ml-yk410": {
+      "status": "pending",
+      "name": "活絡靈千里追風油 50ml",
+      "sku": "H6838001_S_yk410",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "rimachi-wan-100caps-mk344": {
+      "status": "pending",
+      "name": "坐骨神經リマチ痛丸 100粒",
+      "sku": "H6838001_S_MK344",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "shitong-gucidan-60caps-k0039": {
+      "status": "pending",
+      "name": "濕痛骨剌丹 60粒",
+      "sku": "H6838001_S_k0039",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "storage-bag-mk341": {
+      "status": "pending",
+      "name": "懸掛式家居收納袋",
+      "sku": "H6838001_S_MK341",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025": {
+      "status": "pending",
+      "name": "台灣一條根坐骨神經膏布 20片",
+      "sku": "H6838001_S_K0025",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024": {
+      "status": "pending",
+      "name": "台灣一條根坐骨神經膏布 30片",
+      "sku": "H6838001_S_K0024",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "tongxue-wan-60caps-k0029": {
+      "status": "pending",
+      "name": "通血丸 60粒",
+      "sku": "H6838001_S_k0029",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300": {
+      "status": "pending",
+      "name": "UTR 靈芝孢子 80粒 300mg",
+      "sku": "H6838001_S_UTR",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "weimeng-shenyou-10ml-yk473": {
+      "status": "pending",
+      "name": "威猛神油 10ml 噴霧",
+      "sku": "H6838001_S_yk473",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "wireless-mouse-mk401": {
+      "status": "pending",
+      "name": "ROCKTECH 無線靜音滑鼠",
+      "sku": "H6838001_S_MK401",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "wubian-haigou-350caps-mk396": {
+      "status": "pending",
+      "name": "金龍五鞭海狗丸 350粒",
+      "sku": "H6838001_S_MK396",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "wubian-haigou-350caps-mk397": {
+      "status": "pending",
+      "name": "五鞭海狗丸 350粒",
+      "sku": "H6838001_S_MK397",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "xiangshui-50caps-k0035": {
+      "status": "pending",
+      "name": "想睡就睡 50粒",
+      "sku": "H6838001_S_k0035",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "yahuanxian-60caps-k0038": {
+      "status": "pending",
+      "name": "蕥歡仙 60粒",
+      "sku": "H6838001_S_k0038",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "yanbiqing-130caps-yk471": {
+      "status": "done",
+      "name": "強力炎必清 130粒珍寶裝",
+      "sku": "H6838001_S_yk471",
+      "primary": "primary.png",
+      "updated_at": "2026-10-23T17:57:25+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
+      "error": null,
+      "batch": 1
+    },
+    "yanbiqing-oil-set-y16": {
+      "status": "pending",
+      "name": "炎必清＋活絡油雙效組",
+      "sku": "H6838001_S_y16",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zhuifeng-fgu-gaobu-yitiaogen-x11-mk387": {
+      "status": "pending",
+      "name": "一條根追風F骨膏布 7×11cm",
+      "sku": "H6838001_S_MK387",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zhuifeng-fgu-gaobu-yitiaogen-x15-mk388": {
+      "status": "pending",
+      "name": "一條根追風F骨膏布 11×15cm",
+      "sku": "H6838001_S_MK388",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-3pcs-set-y3": {
+      "status": "pending",
+      "name": "坐骨舒緩三件組",
+      "sku": "H6838001_S_y3",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-4in1-y13": {
+      "status": "pending",
+      "name": "坐骨四合一舒緩套裝",
+      "sku": "H6838001_S_y13",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-4pcs-set-y4": {
+      "status": "pending",
+      "name": "坐骨舒緩四件組",
+      "sku": "H6838001_S_y4",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-gaobu-10pcs-x11-mk294": {
+      "status": "pending",
+      "name": "坐骨神經膏布 10片（7.5×11cm）",
+      "sku": "H6838001_S_MK294",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-gaobu-10pcs-x11-yk400": {
+      "status": "pending",
+      "name": "坐骨神經膏布 7×11cm（10片）",
+      "sku": "H6838001_S_yk400",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-gaobu-y8": {
+      "status": "pending",
+      "name": "坐骨神經膏布＋痛油（大）",
+      "sku": "H6838001_S_y8",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-gaobu-y9": {
+      "status": "pending",
+      "name": "坐骨神經膏布＋痛油（小）",
+      "sku": "H6838001_S_y9",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-gaobu-yanbiqing-y1": {
+      "status": "pending",
+      "name": "坐骨神經膏布＋炎必清",
+      "sku": "H6838001_S_y1",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-gaobu-yanbiqing-y10": {
+      "status": "pending",
+      "name": "坐骨神經膏布＋炎必清",
+      "sku": "H6838001_S_y10",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-150caps-50ml-y6": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 150粒＋痛油 50ml",
+      "sku": "H6838001_S_y6",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-150caps-k0007": {
+      "status": "pending",
+      "name": "速效坐骨神徑痛丸 150粒",
+      "sku": "H6838001_S_k0007",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-150caps-x2-y20": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 150粒×2＋大膏布",
+      "sku": "H6838001_S_y20",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-150caps-x2-y21": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 150粒×2＋痛油",
+      "sku": "H6838001_S_y21",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-60caps-10pcs-y11": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 60粒＋膏布 10片",
+      "sku": "H6838001_S_y11",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-60caps-50ml-y14": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 60粒＋痛油 50ml",
+      "sku": "H6838001_S_y14",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-60caps-k0003": {
+      "status": "queued",
+      "name": "坐骨神徑痛丸 60粒",
+      "sku": "H6838001_S_K0003",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": 1
+    },
+    "zuogu-tongwan-60caps-x3-y17": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 60粒×3＋痛油",
+      "sku": "H6838001_S_y17",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-60caps-x3-y18": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 60粒×3＋膏布",
+      "sku": "H6838001_S_y18",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-y12": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸＋膏布＋痛油",
+      "sku": "H6838001_S_y12",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-yanbiqing-150caps-x2-y22": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 150粒×2＋炎必清",
+      "sku": "H6838001_S_y22",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-yanbiqing-150caps-y7": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 150粒＋炎必清",
+      "sku": "H6838001_S_y7",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-yanbiqing-60caps-x3-y19": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 60粒×3＋炎必清",
+      "sku": "H6838001_S_y19",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongwan-yanbiqing-60caps-y15": {
+      "status": "pending",
+      "name": "坐骨神徑痛丸 60粒＋炎必清",
+      "sku": "H6838001_S_y15",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongyou-50ml-x2-sp3": {
+      "status": "pending",
+      "name": "坐骨神徑痛油 50ml×2",
+      "sku": "H6838001_S_SP3",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongyou-qianli-zhuifeng-50ml-x3-k0043": {
+      "status": "pending",
+      "name": "千里追風坐骨神徑痛油 50ml×3",
+      "sku": "H6838001_S_k0043",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-tongyou-qianli-zhuifeng-50ml-yk408": {
+      "status": "pending",
+      "name": "千里追風坐骨神徑痛油 50ml",
+      "sku": "H6838001_S_yk408",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-wan-150caps-k0008": {
+      "status": "pending",
+      "name": "坐骨神經丸 150粒",
+      "sku": "H6838001_S_K0008",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-wan-150caps-y2": {
+      "status": "pending",
+      "name": "坐骨神經丸 150粒＋膏布",
+      "sku": "H6838001_S_y2",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-wan-60caps-hky7389": {
+      "status": "pending",
+      "name": "坐骨神經丸 60粒",
+      "sku": "H6838001_S_HKY7389",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-yaotong-oil-50ml-x3-k0042": {
+      "status": "pending",
+      "name": "坐骨腰痛油 50ml×3",
+      "sku": "H6838001_S_K0042",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-yaotong-oil-50ml-yk407": {
+      "status": "pending",
+      "name": "濃縮坐骨腰痛油 50ml",
+      "sku": "H6838001_S_yk407",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-yaotong-oil-y27": {
+      "status": "pending",
+      "name": "坐骨腰痛油＋腰痛丸",
+      "sku": "H6838001_S_y27",
+      "primary": "primary.jpg",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-yaotong-wan-150caps-mk292": {
+      "status": "pending",
+      "name": "強力濃縮坐骨腰痛丸 150粒",
+      "sku": "H6838001_S_MK292",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    },
+    "zuogu-yaotong-wan-60caps-mk290": {
+      "status": "pending",
+      "name": "坐骨腰痛丸 60粒",
+      "sku": "H6838001_S_MK290",
+      "primary": "primary.png",
+      "updated_at": null,
+      "panels": {},
+      "error": null,
+      "batch": null
+    }
+  },
+  "current_batch": [
+    "yanbiqing-130caps-yk471",
+    "mieshitong-gaobu-bevidan-10pcs-yk402",
+    "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401",
+    "zuogu-tongwan-60caps-k0003",
+    "biyan-60caps-mk368",
+    "baitongdi-60caps-k0019",
+    "fengse-gucidan-60caps-k0002",
+    "gutongling-60caps-k0026",
+    "huoluoling-60caps-y23",
+    "liuwei-dihuang-350caps-yk396"
+  ]
+}
