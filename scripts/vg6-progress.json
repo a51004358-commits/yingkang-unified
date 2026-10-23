@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:35:48+08:00",
+  "updated_at": "2026-10-23T19:38:01+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 64,
+    "done": 66,
     "pending": 51,
-    "queued": 6,
+    "queued": 4,
     "failed": 0,
     "in_progress": 1
   },
@@ -1122,34 +1122,49 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 7
+      "batch": 7,
+      "commit": "5d9adb9"
     },
     "naobaijin-lingzhi-naohuosu-150caps-k0010": {
-      "status": "in_progress",
+      "status": "done",
       "name": "腦白金靈芝孢子腦活素 150粒",
       "sku": "H6838001_S_K0010",
       "primary": "primary.png",
-      "updated_at": "2026-10-23T19:35:48+08:00",
-      "panels": {},
+      "updated_at": "2026-10-23T19:38:01+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 7
     },
     "naobaijin-lingzhi-naohuosu-150caps-x2-yk135": {
-      "status": "queued",
+      "status": "done",
       "name": "腦白金靈芝孢子腦活素 150粒×2",
       "sku": "H6838001_S_yk135",
       "primary": "primary.png",
-      "updated_at": "2026-10-23T19:30:40+08:00",
-      "panels": {},
+      "updated_at": "2026-10-23T19:38:01+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 7
     },
     "niaosuanqing-60caps-k0020": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "尿酸清 GOUBUNE 60粒",
       "sku": "H6838001_S_K0020",
       "primary": "primary.png",
-      "updated_at": "2026-10-23T19:30:40+08:00",
+      "updated_at": "2026-10-23T19:38:01+08:00",
       "panels": {},
       "error": null,
       "batch": 7
@@ -1779,5 +1794,5 @@
       "901513b"
     ]
   },
-  "next_pending": "naobaijin-lingzhi-naohuosu-150caps-k0010"
+  "next_pending": "niaosuanqing-60caps-k0020"
 }
