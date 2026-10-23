@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:35:39+08:00",
+  "updated_at": "2026-10-23T18:38:46+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 26,
+    "done": 28,
     "pending": 91,
-    "queued": 4,
+    "queued": 2,
     "failed": 0,
     "in_progress": 1
   },
@@ -243,7 +243,7 @@
       },
       "error": null,
       "batch": 3,
-      "commit": null
+      "commit": "a331d7e"
     },
     "biyan-60caps-mk368": {
       "status": "done",
@@ -278,7 +278,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 3
+      "batch": 3,
+      "commit": "a331d7e"
     },
     "dianqishi-tiebu-70pcs-tt-ts-10-001": {
       "status": "done",
@@ -335,12 +336,19 @@
       "commit": "f990d42"
     },
     "fengse-gucidan-150caps-k0006": {
-      "status": "in_progress",
+      "status": "done",
       "name": "風澀骨剌丹 150粒",
       "sku": "H6838001_S_K0006",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:37:04+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 3
     },
@@ -363,17 +371,24 @@
       "commit": "deccf74"
     },
     "fengse-gutong-oil-50ml-x3-k0044": {
-      "status": "queued",
+      "status": "done",
       "name": "風澀骨剌痛油 50ml×3",
       "sku": "H6838001_S_K0044",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:38:46+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 3
     },
     "fengse-gutong-oil-50ml-yk409": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "風澀骨刺痛油 50ml",
       "sku": "H6838001_S_yk409",
       "primary": "primary.jpg",
