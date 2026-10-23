@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:38:01+08:00",
+  "updated_at": "2026-10-23T19:39:55+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 66,
+    "done": 68,
     "pending": 51,
-    "queued": 4,
+    "queued": 2,
     "failed": 0,
     "in_progress": 1
   },
@@ -1140,7 +1140,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 7
+      "batch": 7,
+      "commit": "0d60466"
     },
     "naobaijin-lingzhi-naohuosu-150caps-x2-yk135": {
       "status": "done",
@@ -1157,34 +1158,49 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 7
+      "batch": 7,
+      "commit": "0d60466"
     },
     "niaosuanqing-60caps-k0020": {
-      "status": "in_progress",
+      "status": "done",
       "name": "尿酸清 GOUBUNE 60粒",
       "sku": "H6838001_S_K0020",
       "primary": "primary.png",
-      "updated_at": "2026-10-23T19:38:01+08:00",
-      "panels": {},
+      "updated_at": "2026-10-23T19:39:55+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 7
     },
     "niuhuang-jiedu-120caps-x3-k0017": {
-      "status": "queued",
+      "status": "done",
       "name": "北京牛黃解毒片 120粒×3",
       "sku": "H6838001_S_K0017",
       "primary": "primary.jpg",
-      "updated_at": "2026-10-23T19:30:40+08:00",
-      "panels": {},
+      "updated_at": "2026-10-23T19:39:55+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 7
     },
     "niuhuang-jiedu-120caps-x7-yk472": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "北京牛黃解毒片 120粒×7",
       "sku": "H6838001_S_yk472",
       "primary": "primary.jpg",
-      "updated_at": "2026-10-23T19:30:40+08:00",
+      "updated_at": "2026-10-23T19:39:55+08:00",
       "panels": {},
       "error": null,
       "batch": 7
@@ -1794,5 +1810,5 @@
       "901513b"
     ]
   },
-  "next_pending": "niaosuanqing-60caps-k0020"
+  "next_pending": "niuhuang-jiedu-120caps-x7-yk472"
 }
