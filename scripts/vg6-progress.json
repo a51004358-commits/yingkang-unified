@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:23:14+08:00",
+  "updated_at": "2026-10-23T20:25:43+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 97,
+    "done": 99,
     "pending": 21,
-    "queued": 4,
+    "queued": 2,
     "failed": 0,
     "in_progress": 0
   },
@@ -1583,7 +1583,7 @@
       },
       "error": null,
       "batch": 10,
-      "commit": "pending"
+      "commit": "d55c299"
     },
     "zuogu-gaobu-yanbiqing-y1": {
       "status": "done",
@@ -1601,27 +1601,43 @@
       },
       "error": null,
       "batch": 10,
-      "commit": "pending"
+      "commit": "d55c299"
     },
     "zuogu-gaobu-yanbiqing-y10": {
-      "status": "queued",
+      "status": "done",
       "name": "坐骨神經膏布＋炎必清",
       "sku": "H6838001_S_y10",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:25:43+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 10,
+      "commit": "pending"
     },
     "zuogu-tongwan-150caps-50ml-y6": {
-      "status": "queued",
+      "status": "done",
       "name": "坐骨神徑痛丸 150粒＋痛油 50ml",
       "sku": "H6838001_S_y6",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T20:25:43+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 10,
+      "commit": "pending"
     },
     "zuogu-tongwan-150caps-k0007": {
       "status": "queued",
