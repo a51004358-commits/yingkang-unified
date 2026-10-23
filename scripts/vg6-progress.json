@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:30:07+08:00",
+  "updated_at": "2026-10-23T19:34:24+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 61,
-    "pending": 61,
-    "queued": 0,
+    "done": 63,
+    "pending": 51,
+    "queued": 7,
     "failed": 0,
-    "in_progress": 0
+    "in_progress": 1
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -1072,104 +1072,118 @@
       "commit": "deccf74"
     },
     "mieshitong-oil-50ml-mk349": {
-      "status": "pending",
+      "status": "done",
       "name": "滅濕痛風痛活絡油 50ml",
       "sku": "H6838001_S_MK349",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T19:34:24+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "mieshitong-oil-50ml-x3-k0047": {
-      "status": "pending",
+      "status": "done",
       "name": "滅濕痛活絡油 50ml×3",
       "sku": "H6838001_S_k0047",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T19:34:24+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "mieshitong-oil-60caps-y25": {
-      "status": "pending",
+      "status": "in_progress",
       "name": "滅濕痛風痛油＋60粒",
       "sku": "H6838001_S_y25",
       "primary": "primary.jpg",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:34:24+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "naobaijin-lingzhi-naohuosu-150caps-k0010": {
-      "status": "pending",
+      "status": "queued",
       "name": "腦白金靈芝孢子腦活素 150粒",
       "sku": "H6838001_S_K0010",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:30:40+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "naobaijin-lingzhi-naohuosu-150caps-x2-yk135": {
-      "status": "pending",
+      "status": "queued",
       "name": "腦白金靈芝孢子腦活素 150粒×2",
       "sku": "H6838001_S_yk135",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:30:40+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "niaosuanqing-60caps-k0020": {
-      "status": "pending",
+      "status": "queued",
       "name": "尿酸清 GOUBUNE 60粒",
       "sku": "H6838001_S_K0020",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:30:40+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "niuhuang-jiedu-120caps-x3-k0017": {
-      "status": "pending",
+      "status": "queued",
       "name": "北京牛黃解毒片 120粒×3",
       "sku": "H6838001_S_K0017",
       "primary": "primary.jpg",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:30:40+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "niuhuang-jiedu-120caps-x7-yk472": {
-      "status": "pending",
+      "status": "queued",
       "name": "北京牛黃解毒片 120粒×7",
       "sku": "H6838001_S_yk472",
       "primary": "primary.jpg",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:30:40+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "niuhuang-jiedu-120pcs-yk398": {
-      "status": "pending",
+      "status": "queued",
       "name": "北京牛黃解毒片 120片",
       "sku": "H6838001_S_yk398",
       "primary": "primary.png",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:30:40+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "qianli-zhuifeng-baqi-she-50ml-mk381": {
-      "status": "pending",
+      "status": "queued",
       "name": "八岐蛇千里追風油 50ml",
       "sku": "H6838001_S_MK381",
       "primary": "primary.jpg",
-      "updated_at": null,
+      "updated_at": "2026-10-23T19:30:40+08:00",
       "panels": {},
       "error": null,
-      "batch": null
+      "batch": 7
     },
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045": {
       "status": "pending",
@@ -1756,5 +1770,5 @@
       "901513b"
     ]
   },
-  "next_pending": "mieshitong-oil-50ml-mk349"
+  "next_pending": "mieshitong-oil-60caps-y25"
 }
