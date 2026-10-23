@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T20:05:48+08:00",
+  "updated_at": "2026-10-23T20:09:21+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 85,
+    "done": 87,
     "pending": 31,
-    "queued": 5,
+    "queued": 3,
     "failed": 0,
     "in_progress": 1
   },
@@ -1411,14 +1411,15 @@
       "completed_at": "2026-10-23T20:05:48+08:00"
     },
     "yahuanxian-60caps-k0038": {
-      "status": "in_progress",
+      "status": "done",
       "name": "蕥歡仙 60粒",
       "sku": "H6838001_S_k0038",
       "primary": "primary.png",
       "updated_at": null,
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": null
+      "batch": null,
+      "completed_at": "2026-10-23T20:09:21+08:00"
     },
     "yanbiqing-130caps-yk471": {
       "status": "done",
@@ -1439,17 +1440,18 @@
       "commit": "deccf74"
     },
     "yanbiqing-oil-set-y16": {
-      "status": "queued",
+      "status": "done",
       "name": "炎必清＋活絡油雙效組",
       "sku": "H6838001_S_y16",
       "primary": "primary.jpg",
       "updated_at": null,
-      "panels": {},
+      "panels": 6,
       "error": null,
-      "batch": null
+      "batch": null,
+      "completed_at": "2026-10-23T20:09:21+08:00"
     },
     "zhuifeng-fgu-gaobu-yitiaogen-x11-mk387": {
-      "status": "queued",
+      "status": "in_progress",
       "name": "一條根追風F骨膏布 7×11cm",
       "sku": "H6838001_S_MK387",
       "primary": "primary.png",
@@ -1834,7 +1836,7 @@
       "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "yahuanxian-60caps-k0038",
+  "next_pending": "zhuifeng-fgu-gaobu-yitiaogen-x11-mk387",
   "batch8_completed_at": "2026-10-23T19:58:08+08:00",
   "batch8_slugs": [
     "qianli-zhuifeng-huoluoling-50ml-x3-k0045",
