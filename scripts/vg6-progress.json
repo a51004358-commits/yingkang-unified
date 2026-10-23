@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T18:17:37+08:00",
+  "updated_at": "2026-10-23T18:21:33+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 14,
+    "done": 17,
     "pending": 101,
-    "queued": 7,
+    "queued": 4,
     "failed": 0,
     "in_progress": 0
   },
@@ -44,7 +44,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 2
+      "batch": 2,
+      "commit": "78e7a23"
     },
     "angong-niuhuang-3pills-mk382": {
       "status": "done",
@@ -61,7 +62,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 2
+      "batch": 2,
+      "commit": "78e7a23"
     },
     "angong-niuhuang-6pills-hk01": {
       "status": "done",
@@ -79,7 +81,7 @@
       },
       "error": null,
       "batch": 2,
-      "commit": null
+      "commit": "78e7a23"
     },
     "baitongdi-60caps-k0019": {
       "status": "done",
@@ -100,32 +102,53 @@
       "commit": "deccf74"
     },
     "baqi-she-fengshi-zuogu-oil-50ml-mk385": {
-      "status": "queued",
+      "status": "done",
       "name": "八岐蛇楓濕坐骨靈油 50ml",
       "sku": "H6838001_S_MK385",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:21:33+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 2
     },
     "baqi-she-jianjing-cigu-oil-50ml-mk383": {
-      "status": "queued",
+      "status": "done",
       "name": "八岐蛇肩頸刺骨靈油 50ml",
       "sku": "H6838001_S_MK383",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:21:33+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 2
     },
     "baqi-she-jingyaozhui-oil-50ml-mk389": {
-      "status": "queued",
+      "status": "done",
       "name": "八岐蛇頸腰椎坐骨靈油 50ml",
       "sku": "H6838001_S_MK389",
       "primary": "primary.jpg",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:21:33+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 2
     },
