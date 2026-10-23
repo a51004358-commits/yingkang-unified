@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T17:58:45+08:00",
+  "updated_at": "2026-10-23T18:00:05+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 3,
-    "pending": 119,
+    "done": 4,
+    "pending": 118,
     "failed": 0,
     "in_progress": 0
   },
@@ -388,14 +388,22 @@
       "batch": null
     },
     "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401": {
-      "status": "queued",
+      "status": "done",
       "name": "金門一條根坐骨神經膏布 10片",
       "sku": "H6838001_S_yk401",
       "primary": "primary.png",
-      "updated_at": null,
-      "panels": {},
+      "updated_at": "2026-10-23T18:00:05+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
-      "batch": 1
+      "batch": 1,
+      "commit": "pending"
     },
     "jiuke-tiaoli-60caps-hk102": {
       "status": "pending",
