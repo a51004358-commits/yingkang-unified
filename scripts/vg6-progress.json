@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T19:42:36+08:00",
+  "updated_at": "2026-10-23T19:43:45+08:00",
   "template_slug": "yanbiqing-60caps-y5",
   "template_commit": "cf4a1b5",
   "total_skus": 122,
   "batch_size_hint": 10,
   "stats": {
-    "done": 70,
+    "done": 71,
     "pending": 51,
     "queued": 0,
     "failed": 0,
-    "in_progress": 1
+    "in_progress": 0
   },
   "products": {
     "yanbiqing-60caps-y5": {
@@ -1212,7 +1212,8 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 7
+      "batch": 7,
+      "commit": "f28a2af"
     },
     "niuhuang-jiedu-120pcs-yk398": {
       "status": "done",
@@ -1229,15 +1230,23 @@
         "vg6-06": "ok"
       },
       "error": null,
-      "batch": 7
+      "batch": 7,
+      "commit": "f28a2af"
     },
     "qianli-zhuifeng-baqi-she-50ml-mk381": {
-      "status": "in_progress",
+      "status": "done",
       "name": "八岐蛇千里追風油 50ml",
       "sku": "H6838001_S_MK381",
       "primary": "primary.jpg",
-      "updated_at": "2026-10-23T19:42:36+08:00",
-      "panels": {},
+      "updated_at": "2026-10-23T19:43:45+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
       "error": null,
       "batch": 7
     },
@@ -1788,43 +1797,22 @@
       "batch": null
     }
   },
-  "current_batch": [
-    "jinmaomao-hongcha-mk346",
-    "jiuke-tiaoli-60caps-hk102",
-    "jiuke-tiaoli-yinshumei-hk011",
-    "jiuke-wan-60caps-hk100",
-    "jiuke-wan-720caps-mk390",
-    "jiuke-wan-720caps-mk391",
-    "jiuke-wan-huaxiatang-60caps-hk101",
-    "jiuke-wan-huaxiatang-mk400",
-    "jiuke-wan-mk399",
-    "jiuke-wan-yinshumei-120caps-mk369"
-  ],
+  "current_batch": 7,
   "last_run": {
-    "completed_at": "2026-10-23T18:59:30+08:00",
-    "zone": "Asia/Hong_Kong",
-    "batch4_complete": true,
-    "new_slugs": [
-      "forehead-thermometer-yk245",
-      "futeiling-120ml-yk404",
-      "futeiling-tokyo-tower-120ml-x3-k0037",
-      "gutongling-60caps-k0049",
-      "huatatang-50caps-x4-yk470",
-      "huoluoling-60caps-k0021",
-      "jianbu-huqian-320caps-mk370",
-      "jianchiling-60caps-mk285",
-      "jingang-shenyou-10ml-yk474",
-      "jinhuwang-50ml-mk386"
-    ],
-    "failed": [],
-    "commits": [
-      "71b29d0",
-      "e00e742",
-      "ab524cb",
-      "20c75c7",
-      "bb25cab",
-      "901513b"
+    "batch": 7,
+    "completed_at": "2026-10-23T19:43:45+08:00",
+    "slugs_done": [
+      "mieshitong-oil-50ml-mk349",
+      "mieshitong-oil-50ml-x3-k0047",
+      "mieshitong-oil-60caps-y25",
+      "naobaijin-lingzhi-naohuosu-150caps-k0010",
+      "naobaijin-lingzhi-naohuosu-150caps-x2-yk135",
+      "niaosuanqing-60caps-k0020",
+      "niuhuang-jiedu-120caps-x3-k0017",
+      "niuhuang-jiedu-120caps-x7-yk472",
+      "niuhuang-jiedu-120pcs-yk398",
+      "qianli-zhuifeng-baqi-she-50ml-mk381"
     ]
   },
-  "next_pending": "qianli-zhuifeng-baqi-she-50ml-mk381"
+  "next_pending": "qianli-zhuifeng-huoluoling-50ml-x3-k0045"
 }
