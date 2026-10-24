@@ -1,0 +1,37 @@
+{
+  "slug": "angong-niuhuang-1pills-mk380",
+  "source_template": "scripts/vg6-master-prompt.md",
+  "blurb": "六段直向詳圖（Vita主模板改寫・本產品文案），可直向滑動瀏覽。",
+  "panels": [
+    {
+      "id": "vg6-01",
+      "alt": "【清熱名方】北京安宮牛黃丸 1丸 – 熱盛心煩・咽喉暴痛，HK$1080 加入購物車",
+      "prompt": "Premium Hong Kong health supplement / TCM product page top section for 盈康 北京安宮牛黃丸 1丸, clean beige and white background, elegant gold accents. Large faithful packshot of the red dragon-motif tin and gold-foil pill in open white wax shell from the reference photo, 1丸 circular badge. Top banner text 傳統名方 and 家庭常備. Product title below: 【清熱名方】北京安宮牛黃丸 1丸 – 熱盛、心煩、咽喉腫痛. Price HK$1080.00 with original price HK$1300.00 crossed out, quantity selector, prominent orange 加入購物車 button. Right side gold checkmark benefits: 熱盛心煩；咽喉腫痛；關鍵時刻清熱解毒；港人家庭常備. Brand 盈康. Professional commercial photography, sharp Traditional Chinese text, high-end e-commerce style, soft lighting, mobile vertical portrait 9:16. Use attached packshot as accurate product appearance. No 五色靈芝."
+    },
+    {
+      "id": "vg6-02",
+      "alt": "關鍵時刻有備無患・牛黃清熱傳統急救名方",
+      "prompt": "Elegant Asian woman in her 30s wearing a yellow jacket, smiling gently while carefully holding the red 北京安宮牛黃丸 tin matching the reference packshot, soft natural lighting, beige background. Large Traditional Chinese text 關鍵時刻 有備無患 and 牛黃清熱・傳統急救名方, 家庭常備應急. Golden traditional-formula badge. Brand 盈康. Premium health commercial photography, warm trustworthy atmosphere, high detail, sharp focus on face and product, mobile vertical portrait 9:16. No Lingzhi, no immunity No.1 claims about 五色靈芝."
+    },
+    {
+      "id": "vg6-03",
+      "alt": "名方核心・牛黃清熱（以包裝標示為準）",
+      "prompt": "Clean scientific/TCM formula infographic for 北京安宮牛黃丸 on white/beige background, mobile vertical portrait. Title 名方核心・牛黃清熱. ONE large central callout for 牛黃 with note 傳統中成藥常見敘述成分. Secondary parchment card: 其餘藥味與用量請以包裝標示為準 — do NOT invent a six-mushroom or 清熱四寶 herb grid; do NOT list 黃連梔子鬱金麝香 as verified. Small red tin + gold foil pill packshot. Footer 傳統急救名方思路・非檢測報告. Gold and brown accents, clear Traditional Chinese, premium medical aesthetic. Forbidden: Lingzhi types 赤芝青芝 etc."
+    },
+    {
+      "id": "vg6-04",
+      "alt": "熱盛三步驟：心煩暴痛 → 清熱名方思路 → 家庭常備可查",
+      "prompt": "Clean medical infographic for 北京安宮牛黃丸, vertical mobile portrait. Three-step flow tailored to heat distress (NOT free-radical/Lingzhi cell repair): ① 熱盛心煩・咽喉暴痛 — body shouting for relief ② 傳統牛黃清熱解毒名方思路 — classic emergency formula approach ③ 家庭常備・關鍵時刻用得着 — red tin as household standby. Chinese titles 熱!!是身體在喊救命!! and 安宮牛黃清熱應急. Scientific/TCM diagrams with arrows, shield icons. White/beige background, gold and red accents, professional healthcare style, clear Traditional Chinese. No Lingzhi, no free-radical cell oxidation copy."
+    },
+    {
+      "id": "vg6-05",
+      "alt": "明星分享：陳貝兒・胡定欣・毛舜筠談安宮家庭常備（形象視覺）",
+      "prompt": "Three professional Asian female celebrities in business attire, arranged vertically stacked for mobile on light beige background. Names: 陳貝兒, 胡定欣, 毛舜筠. Each has a short Traditional Chinese quote about 北京安宮牛黃丸 as household standby for heat distress / peace of mind (NOT Lingzhi anti-aging quotes). Example vibe: 陳貝兒「家有常備，熱盛心煩時更安心」；胡定欣「傳統名方，關鍵時刻想有備無患」；毛舜筠「港人家庭常備之選」. Clean luxury endorsement layout, soft studio lighting, trustworthy elegant atmosphere, high detail portraits, premium 盈康 brand style, vertical mobile portrait 9:16. Small red Angong tin optional."
+    },
+    {
+      "id": "vg6-06",
+      "alt": "為何選擇北京安宮牛黃丸而非普通涼茶／來歷不明",
+      "prompt": "Clean comparison infographic for 北京安宮牛黃丸 1丸, vertical mobile portrait. Title 為何選擇安宮牛黃丸 而非普通涼茶？. Comparison table with Chinese headers: 效力思路, 使用場景, 家庭常備感, 通路可查. Columns: 普通涼茶 | 臨時亂買來歷不明 | 北京安宮牛黃丸1丸（本產品）. Highlight Angong column with gold. Show red tin + gold foil pill packshot. White/beige background, gold accents, clear Traditional Chinese, medical product style. Price HK$1080. No Lingzhi fruiting-body vs spore comparison."
+    }
+  ]
+}
