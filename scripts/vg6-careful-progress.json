@@ -1,0 +1,448 @@
+{
+  "version": 1,
+  "mode": "careful-per-sku",
+  "updated_at": "2026-10-24T10:17:03+08:00",
+  "keep_as_is": [
+    "yanbiqing-60caps-y5"
+  ],
+  "stats": {
+    "done": 3,
+    "pilot_done": 3,
+    "pending": 118,
+    "failed": 0,
+    "keep": 1
+  },
+  "pilot": [
+    "angong-niuhuang-1pills-mk380",
+    "baitongdi-60caps-k0019",
+    "wireless-mouse-mk401"
+  ],
+  "products": {
+    "yanbiqing-60caps-y5": {
+      "status": "keep",
+      "note": "hand-crafted gold standard — never regenerate"
+    },
+    "angong-niuhuang-1pills-mk380": {
+      "status": "done",
+      "batch": "pilot",
+      "updated_at": "2026-10-24T10:17:03+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
+      "prompts": "scripts/vg6-careful/prompts/angong-niuhuang-1pills-mk380.json"
+    },
+    "baitongdi-60caps-k0019": {
+      "status": "done",
+      "batch": "pilot",
+      "updated_at": "2026-10-24T10:17:03+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
+      "prompts": "scripts/vg6-careful/prompts/baitongdi-60caps-k0019.json"
+    },
+    "wireless-mouse-mk401": {
+      "status": "done",
+      "batch": "pilot",
+      "updated_at": "2026-10-24T10:17:03+08:00",
+      "panels": {
+        "vg6-01": "ok",
+        "vg6-02": "ok",
+        "vg6-03": "ok",
+        "vg6-04": "ok",
+        "vg6-05": "ok",
+        "vg6-06": "ok"
+      },
+      "prompts": "scripts/vg6-careful/prompts/wireless-mouse-mk401.json"
+    },
+    "angong-niuhuang-3pills-mk382": {
+      "status": "pending"
+    },
+    "angong-niuhuang-6pills-hk01": {
+      "status": "pending"
+    },
+    "baqi-she-fengshi-zuogu-oil-50ml-mk385": {
+      "status": "pending"
+    },
+    "baqi-she-jianjing-cigu-oil-50ml-mk383": {
+      "status": "pending"
+    },
+    "baqi-she-jingyaozhui-oil-50ml-mk389": {
+      "status": "pending"
+    },
+    "baqi-she-potong-oil-50ml-mk384": {
+      "status": "pending"
+    },
+    "benmingfo-mk356": {
+      "status": "pending"
+    },
+    "benmingfo-mk358": {
+      "status": "pending"
+    },
+    "benmingfo-mk359": {
+      "status": "pending"
+    },
+    "benmingfo-mk360": {
+      "status": "pending"
+    },
+    "biyan-60caps-mk368": {
+      "status": "pending"
+    },
+    "bluetooth-speaker-mk402": {
+      "status": "pending"
+    },
+    "dianqishi-tiebu-70pcs-tt-ts-10-001": {
+      "status": "pending"
+    },
+    "difugen-15ml-x3-k0034": {
+      "status": "pending"
+    },
+    "difugen-15ml-yk395": {
+      "status": "pending"
+    },
+    "fengse-gucidan-150caps-k0006": {
+      "status": "pending"
+    },
+    "fengse-gucidan-60caps-k0002": {
+      "status": "pending"
+    },
+    "fengse-gutong-oil-50ml-x3-k0044": {
+      "status": "pending"
+    },
+    "fengse-gutong-oil-50ml-yk409": {
+      "status": "pending"
+    },
+    "fengse-gutong-oil-y26": {
+      "status": "pending"
+    },
+    "fengtong-gucidan-60caps-k0023": {
+      "status": "pending"
+    },
+    "forehead-thermometer-yk245": {
+      "status": "pending"
+    },
+    "futeiling-120ml-yk404": {
+      "status": "pending"
+    },
+    "futeiling-tokyo-tower-120ml-x3-k0037": {
+      "status": "pending"
+    },
+    "gutongling-60caps-k0026": {
+      "status": "pending"
+    },
+    "gutongling-60caps-k0049": {
+      "status": "pending"
+    },
+    "huatatang-50caps-x4-yk470": {
+      "status": "pending"
+    },
+    "huoluoling-60caps-k0021": {
+      "status": "pending"
+    },
+    "huoluoling-60caps-y23": {
+      "status": "pending"
+    },
+    "jianbu-huqian-320caps-mk370": {
+      "status": "pending"
+    },
+    "jianchiling-60caps-mk285": {
+      "status": "pending"
+    },
+    "jingang-shenyou-10ml-yk474": {
+      "status": "pending"
+    },
+    "jinhuwang-50ml-mk386": {
+      "status": "pending"
+    },
+    "jinmaomao-hongcha-mk346": {
+      "status": "pending"
+    },
+    "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401": {
+      "status": "pending"
+    },
+    "jiuke-tiaoli-60caps-hk102": {
+      "status": "pending"
+    },
+    "jiuke-tiaoli-yinshumei-hk011": {
+      "status": "pending"
+    },
+    "jiuke-wan-60caps-hk100": {
+      "status": "pending"
+    },
+    "jiuke-wan-720caps-mk390": {
+      "status": "pending"
+    },
+    "jiuke-wan-720caps-mk391": {
+      "status": "pending"
+    },
+    "jiuke-wan-huaxiatang-60caps-hk101": {
+      "status": "pending"
+    },
+    "jiuke-wan-huaxiatang-mk400": {
+      "status": "pending"
+    },
+    "jiuke-wan-mk399": {
+      "status": "pending"
+    },
+    "jiuke-wan-yinshumei-120caps-mk369": {
+      "status": "pending"
+    },
+    "jiuxin-dan-100caps-k0014": {
+      "status": "pending"
+    },
+    "liaoshitong-60caps-mk284": {
+      "status": "pending"
+    },
+    "lingzhi-naohuosu-150caps-k0011": {
+      "status": "pending"
+    },
+    "liuwei-dihuang-350caps-x2-k0012": {
+      "status": "pending"
+    },
+    "liuwei-dihuang-350caps-yk396": {
+      "status": "pending"
+    },
+    "maitong-100caps-mk395": {
+      "status": "pending"
+    },
+    "mieshitong-bevidan-150caps-k0009": {
+      "status": "pending"
+    },
+    "mieshitong-bevidan-60caps-k0031": {
+      "status": "pending"
+    },
+    "mieshitong-gaobu-10pcs-x11-k0032": {
+      "status": "pending"
+    },
+    "mieshitong-gaobu-10pcs-x15-k0033": {
+      "status": "pending"
+    },
+    "mieshitong-gaobu-10pcs-x15-yk403": {
+      "status": "pending"
+    },
+    "mieshitong-gaobu-bevidan-10pcs-yk402": {
+      "status": "pending"
+    },
+    "mieshitong-oil-50ml-mk349": {
+      "status": "pending"
+    },
+    "mieshitong-oil-50ml-x3-k0047": {
+      "status": "pending"
+    },
+    "mieshitong-oil-60caps-y25": {
+      "status": "pending"
+    },
+    "naobaijin-lingzhi-naohuosu-150caps-k0010": {
+      "status": "pending"
+    },
+    "naobaijin-lingzhi-naohuosu-150caps-x2-yk135": {
+      "status": "pending"
+    },
+    "niaosuanqing-60caps-k0020": {
+      "status": "pending"
+    },
+    "niuhuang-jiedu-120caps-x3-k0017": {
+      "status": "pending"
+    },
+    "niuhuang-jiedu-120caps-x7-yk472": {
+      "status": "pending"
+    },
+    "niuhuang-jiedu-120pcs-yk398": {
+      "status": "pending"
+    },
+    "qianli-zhuifeng-baqi-she-50ml-mk381": {
+      "status": "pending"
+    },
+    "qianli-zhuifeng-huoluoling-50ml-x3-k0045": {
+      "status": "pending"
+    },
+    "qianli-zhuifeng-huoluoling-50ml-yk410": {
+      "status": "pending"
+    },
+    "rimachi-wan-100caps-mk344": {
+      "status": "pending"
+    },
+    "shitong-gucidan-60caps-k0039": {
+      "status": "pending"
+    },
+    "storage-bag-mk341": {
+      "status": "pending"
+    },
+    "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025": {
+      "status": "pending"
+    },
+    "taiwan-yitiaogen-zuogu-gaobu-30pcs-k0024": {
+      "status": "pending"
+    },
+    "tongxue-wan-60caps-k0029": {
+      "status": "pending"
+    },
+    "utr-lingzhi-spore-80caps-300mg-utr-gs-80-300": {
+      "status": "pending"
+    },
+    "weimeng-shenyou-10ml-yk473": {
+      "status": "pending"
+    },
+    "wubian-haigou-350caps-mk396": {
+      "status": "pending"
+    },
+    "wubian-haigou-350caps-mk397": {
+      "status": "pending"
+    },
+    "xiangshui-50caps-k0035": {
+      "status": "pending"
+    },
+    "yahuanxian-60caps-k0038": {
+      "status": "pending"
+    },
+    "yanbiqing-130caps-yk471": {
+      "status": "pending"
+    },
+    "yanbiqing-oil-set-y16": {
+      "status": "pending"
+    },
+    "zhuifeng-fgu-gaobu-yitiaogen-x11-mk387": {
+      "status": "pending"
+    },
+    "zhuifeng-fgu-gaobu-yitiaogen-x15-mk388": {
+      "status": "pending"
+    },
+    "zuogu-3pcs-set-y3": {
+      "status": "pending"
+    },
+    "zuogu-4in1-y13": {
+      "status": "pending"
+    },
+    "zuogu-4pcs-set-y4": {
+      "status": "pending"
+    },
+    "zuogu-gaobu-10pcs-x11-mk294": {
+      "status": "pending"
+    },
+    "zuogu-gaobu-10pcs-x11-yk400": {
+      "status": "pending"
+    },
+    "zuogu-gaobu-y8": {
+      "status": "pending"
+    },
+    "zuogu-gaobu-y9": {
+      "status": "pending"
+    },
+    "zuogu-gaobu-yanbiqing-y1": {
+      "status": "pending"
+    },
+    "zuogu-gaobu-yanbiqing-y10": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-150caps-50ml-y6": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-150caps-k0007": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-150caps-x2-y20": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-150caps-x2-y21": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-60caps-10pcs-y11": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-60caps-50ml-y14": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-60caps-k0003": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-60caps-x3-y17": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-60caps-x3-y18": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-y12": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-yanbiqing-150caps-x2-y22": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-yanbiqing-150caps-y7": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-yanbiqing-60caps-x3-y19": {
+      "status": "pending"
+    },
+    "zuogu-tongwan-yanbiqing-60caps-y15": {
+      "status": "pending"
+    },
+    "zuogu-tongyou-50ml-x2-sp3": {
+      "status": "pending"
+    },
+    "zuogu-tongyou-qianli-zhuifeng-50ml-x3-k0043": {
+      "status": "pending"
+    },
+    "zuogu-tongyou-qianli-zhuifeng-50ml-yk408": {
+      "status": "pending"
+    },
+    "zuogu-wan-150caps-k0008": {
+      "status": "pending"
+    },
+    "zuogu-wan-150caps-y2": {
+      "status": "pending"
+    },
+    "zuogu-wan-60caps-hky7389": {
+      "status": "pending"
+    },
+    "zuogu-yaotong-oil-50ml-x3-k0042": {
+      "status": "pending"
+    },
+    "zuogu-yaotong-oil-50ml-yk407": {
+      "status": "pending"
+    },
+    "zuogu-yaotong-oil-y27": {
+      "status": "pending"
+    },
+    "zuogu-yaotong-wan-150caps-mk292": {
+      "status": "pending"
+    },
+    "zuogu-yaotong-wan-60caps-mk290": {
+      "status": "pending"
+    }
+  },
+  "last_run": {
+    "at": "2026-10-24T10:17:03+08:00",
+    "slugs": [
+      "angong-niuhuang-1pills-mk380",
+      "baitongdi-60caps-k0019",
+      "wireless-mouse-mk401"
+    ],
+    "note": "careful per-SKU pilot"
+  },
+  "next_pending": [
+    "angong-niuhuang-3pills-mk382",
+    "angong-niuhuang-6pills-hk01",
+    "baqi-she-fengshi-zuogu-oil-50ml-mk385",
+    "baqi-she-jianjing-cigu-oil-50ml-mk383",
+    "baqi-she-jingyaozhui-oil-50ml-mk389",
+    "baqi-she-potong-oil-50ml-mk384",
+    "benmingfo-mk356",
+    "benmingfo-mk358",
+    "benmingfo-mk359",
+    "benmingfo-mk360",
+    "biyan-60caps-mk368",
+    "bluetooth-speaker-mk402",
+    "dianqishi-tiebu-70pcs-tt-ts-10-001",
+    "difugen-15ml-x3-k0034",
+    "difugen-15ml-yk395"
+  ]
+}

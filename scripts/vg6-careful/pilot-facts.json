@@ -1,0 +1,87 @@
+{
+  "angong-niuhuang-1pills-mk380": {
+    "slug": "angong-niuhuang-1pills-mk380",
+    "name": "北京安宮牛黃丸 1丸",
+    "sku": "H6838001_S_MK380",
+    "price_now": "HK$1080",
+    "price_was": "HK$1300",
+    "tagline": "",
+    "lead": "",
+    "pain_points": [
+      "熱盛心煩、神疲、咽喉暴痛，需要強效清熱？",
+      "想家中常備傳統安宮牛黃／牛黃解毒應急？",
+      "外感熱症、上火頭痛，普通涼茶不夠力？"
+    ],
+    "benefits": [
+      "傳統牛黃清熱解毒名方思路，效力強勁",
+      "針對熱盛、心煩、咽喉腫痛等急劇不適",
+      "多規格可選（丸劑／膠囊），應急與調理皆宜",
+      "港人家庭常備之選，關鍵時刻用得着",
+      "品質通路可查，WhatsApp 確認批次庫存",
+      "熱盛心煩"
+    ],
+    "ingredients_raw_candidates": [],
+    "primary": "assets/products/angong-niuhuang-1pills-mk380/primary.png",
+    "is_peripheral": false,
+    "forbid_yanbiqing_mold": true
+  },
+  "baitongdi-60caps-k0019": {
+    "slug": "baitongdi-60caps-k0019",
+    "name": "百痛敵 60粒",
+    "sku": "H6838001_S_k0019",
+    "price_now": "HK$239",
+    "price_was": "HK$278",
+    "tagline": "",
+    "lead": "",
+    "pain_points": [
+      "呢度痛完嗰度痛，周身酸痛無特效藥？",
+      "風濕、腰腿、肩頸輪流發作，好疲憊？"
+    ],
+    "benefits": [
+      "綜合針對多處酸痛與風濕不適",
+      "一瓶對應多痛點，慳時間慳選擇困難",
+      "適合痛點分散、天氣敏感體質",
+      "持續服用，全面紓緩日常痛楚負擔",
+      "周身酸痛",
+      "多處風濕"
+    ],
+    "ingredients_raw_candidates": [
+      "腰椎勞損",
+      "導致日常活動受阻",
+      "震軟",
+      "手腳長年冰冷",
+      "伸屈不順",
+      "沉重酸痛",
+      "從根源改善微循環",
+      "強化血管壁彈性"
+    ],
+    "primary": "assets/products/baitongdi-60caps-k0019/primary.png",
+    "is_peripheral": false,
+    "forbid_yanbiqing_mold": true
+  },
+  "wireless-mouse-mk401": {
+    "slug": "wireless-mouse-mk401",
+    "name": "ROCKTECH 無線靜音滑鼠",
+    "sku": "H6838001_S_MK401",
+    "price_now": "HK$99",
+    "price_was": "HK$199",
+    "tagline": "",
+    "lead": "",
+    "pain_points": [
+      "需要同養生產品一併選購的生活用品？",
+      "想送禮或家居備用不想分開落單？"
+    ],
+    "benefits": [
+      "與盈康健康產品同一客服通路，一次辦妥",
+      "規格清楚，WhatsApp 可即查現貨",
+      "適合家居備用、送禮、出行",
+      "家居備用",
+      "送禮",
+      "一併選購"
+    ],
+    "ingredients_raw_candidates": [],
+    "primary": "assets/products/wireless-mouse-mk401/primary.jpg",
+    "is_peripheral": true,
+    "forbid_yanbiqing_mold": true
+  }
+}

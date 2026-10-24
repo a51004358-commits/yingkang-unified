@@ -49,3 +49,10 @@ Replace the whole `#product-detail-images` / `.pdp-detail-stack` block with the 
 ## Live example
 
 https://www.ykimed.com/products/yanbiqing-60caps-y5.html
+
+---
+
+## SUPERSEDED (2026-10-24)
+Miles decided: stop cloning 炎必清 mold. Use **careful per-SKU prompts** instead.
+See `scripts/vg6-careful-README.md` and `/workspace/vg6-CAREFUL-HANDOFF.md`.
+Keep `yanbiqing-60caps-y5` as-is. Resume via `scripts/vg6-careful-progress.json`.
