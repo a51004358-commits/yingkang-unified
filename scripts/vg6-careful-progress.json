@@ -1,7 +1,7 @@
 {
   "version": 1,
   "mode": "vita-master-careful",
-  "updated_at": "2026-10-24T10:44:22+08:00",
+  "updated_at": "2026-10-24T10:47:16+08:00",
   "keep_as_is": [
     "yanbiqing-60caps-y5"
   ],
@@ -40,17 +40,17 @@
     "baitongdi-60caps-k0019": {
       "status": "done",
       "batch": "miles-verbatim-prompts",
-      "updated_at": "2026-10-24T10:44:22+08:00",
+      "updated_at": "2026-10-24T10:47:16+08:00",
       "panels": {
         "vg6-01": "ok",
         "vg6-02": "ok",
         "vg6-03": "ok",
         "vg6-04": "ok",
-        "vg6-05": "ok",
+        "vg6-05": "ok-fixed",
         "vg6-06": "ok"
       },
       "prompts": "scripts/vg6-careful/prompts/baitongdi-60caps-k0019.json",
-      "note": "Miles exact 6 prompts verbatim; panel5 ordinary users not celebs"
+      "note": "panel5 fixed: ordinary users 陳太/李生/張小姐, distinct faces; 01-04+06 untouched"
     },
     "wireless-mouse-mk401": {
       "status": "done",

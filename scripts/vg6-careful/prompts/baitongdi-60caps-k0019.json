@@ -1,6 +1,6 @@
 {
   "slug": "baitongdi-60caps-k0019",
-  "source": "miles-verbatim-2026-10-24",
+  "source": "miles-verbatim-2026-10-24-panel5-fix",
   "blurb": "六段直向詳圖（按 Miles 提供之百痛敵 60粒 原句 Prompt 製作；第5格為用家分享），可直向滑動瀏覽。",
   "panels": [
     {
@@ -25,8 +25,8 @@
     },
     {
       "id": "vg6-05",
-      "prompt": "Three ordinary Hong Kong users in casual-to-smart attire, arranged vertically on light beige background. Soft natural lighting. Each has a short realistic quote about 百痛敵: 陳太（45歲，家庭主婦）：「周身酸痛時，終於有得一次過對抗」; 李生（52歲，長期腰腿不適）：「風濕輪流痛，關鍵時刻想有備無患」; 張小姐（38歲，久坐上班族）：「肩頸腰輪流痛，而家會常備」. Clean and trustworthy endorsement layout, realistic everyday portraits, small product image beside the last person, vertical mobile layout. No celebrity names.",
-      "alt": "用家分享：陳太・李生・張小姐談百痛敵"
+      "prompt": "Three ordinary Hong Kong users in casual-to-smart attire, arranged vertically on light beige background. Soft natural lighting. Each has a short realistic quote about 百痛敵: 陳太（45歲，家庭主婦）：「周身酸痛時，終於有得一次過對抗」; 李生（52歲，長期腰腿不適）：「風濕輪流痛，關鍵時刻想有備無患」; 張小姐（38歲，久坐上班族）：「肩頸腰輪流痛，而家會常備」. Clean and trustworthy endorsement layout, realistic everyday portraits — THREE DISTINCT faces (one middle-aged housewife, one middle-aged man, one office woman ~38), different ages/genders/hairstyles, NOT celebrities, NOT the same face repeated. Small product image beside the last person, vertical mobile layout. No celebrity names. Forbidden: 陳貝兒, 胡定欣, 毛舜筠.",
+      "alt": "用家分享：陳太・李生・張小姐談百痛敵（普通用家，非明星）"
     },
     {
       "id": "vg6-06",
