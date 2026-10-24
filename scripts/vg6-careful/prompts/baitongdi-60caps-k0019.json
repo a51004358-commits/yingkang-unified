@@ -1,37 +1,37 @@
 {
   "slug": "baitongdi-60caps-k0019",
-  "source_template": "scripts/vg6-master-prompt.md",
-  "blurb": "六段直向詳圖（Vita主模板改寫・本產品文案），可直向滑動瀏覽。",
+  "source": "miles-verbatim-2026-10-24",
+  "blurb": "六段直向詳圖（按 Miles 提供之百痛敵 60粒 原句 Prompt 製作；第5格為用家分享），可直向滑動瀏覽。",
   "panels": [
     {
       "id": "vg6-01",
-      "alt": "【周身痛皇牌】百痛敵 60粒 – 多處酸痛・風濕輪流，HK$239 加入購物車",
-      "prompt": "Premium Hong Kong health supplement product page top section for 盈康 百痛敵 60粒 (德國漢堡里哈明／公牛牌 ATROPHIN), clean beige and white background, elegant gold accents. Large faithful product packshot of the white-blue-green ATROPHIN box and amber bottle with gold seal from the reference photo, 60粒 circular badge. Top banner text 德國進口敘述 and 周身痛一次對抗. Product title below: 【周身痛皇牌】百痛敵 60粒 – 多處酸痛、風濕輪流. Price HK$239.00 with original price HK$278.00 crossed out, quantity selector, prominent orange 加入購物車 button. Right side has gold checkmark benefit points: 綜合針對多處酸痛；風濕輪流發作；末梢循環日常關注；一瓶對應多痛點. Brand 盈康 small at top. Professional commercial photography, sharp Traditional Chinese text, high-end e-commerce style, soft lighting, mobile optimized vertical portrait 9:16 layout. Use attached packshot as accurate product appearance."
+      "prompt": "Premium Hong Kong health supplement product page top section, clean beige and white background, elegant gold accents. Large packshot of 百痛敵 Atrophin box with amber capsule bottle matching the reference product photo, Chinese and English packaging text, circular badge \"60粒\". Top banner text 周身痛皇牌 and 多處酸痛一次對抗. Product title below: 【周身痛皇牌】百痛敵 60粒 – 多處酸痛・風濕輪流・腰腿肩頸. Price HK$239.00 with original price HK$278.00 crossed out, quantity selector, orange 加入購物車 button. Right side has checkmark benefit points: 周身酸痛、多處風濕、腰腿肩頸輪流痛、天氣敏感痛. Professional commercial photography, sharp Chinese text, high-end e-commerce style, soft lighting, mobile optimized vertical layout.",
+      "alt": "【周身痛皇牌】百痛敵 60粒 – 多處酸痛・風濕輪流・腰腿肩頸，HK$239 加入購物車"
     },
     {
       "id": "vg6-02",
-      "alt": "周身痛舒返嚟・多處酸痛風濕綜合對抗・百痛敵",
-      "prompt": "Elegant Asian woman in her 30s wearing a yellow jacket, smiling gently while holding the amber ATROPHIN 百痛敵 bottle matching the reference packshot, soft natural lighting, beige background. Large Traditional Chinese text 周身痛 舒返嚟 and 多處酸痛・風濕輪流對抗, 一瓶對應多痛點. Golden GMP-style badge. Brand 盈康. Premium health supplement commercial photography, warm and trustworthy atmosphere, high detail, sharp focus on face and product, mobile vertical portrait 9:16 layout."
+      "prompt": "Elegant Asian woman in her early 30s wearing a yellow blazer, smiling gently while holding the 百痛敵 Atrophin box and amber capsule bottle, soft natural lighting, beige background. Large Chinese text 周身痛一次對抗 and 多處酸痛・風濕輪流. Small gold badge \"comprehensive relief\". Premium health supplement commercial photography, warm and trustworthy atmosphere, high detail, sharp focus on face and product, mobile vertical layout.",
+      "alt": "周身痛一次對抗・多處酸痛・風濕輪流"
     },
     {
       "id": "vg6-03",
-      "alt": "核心敘述成分：碧容健、銀杏精華、複方營養（以包裝為準）",
-      "prompt": "Clean scientific ingredient infographic for 盈康 百痛敵 60粒 on white/beige background, mobile-friendly vertical layout. Title 核心敘述成分・微循環日常配方. Three large labeled ingredient cards ONLY (do not invent TCM herbs): ① 碧容健 Pycnogenol — 微循環與抗氧化日常敘述 ② 銀杏精華 Ginkgo — 末梢循環・手腳冰冷感 ③ 複方營養 Glycolknin — 神經筋骨深層營養敘述. Small packshot of ATROPHIN box and amber bottle at bottom. Footer 以包裝標示為準・非檢測報告. Professional medical illustration style, gold and brown accents, clear Traditional Chinese text, premium health product aesthetic, portrait 9:16. FORBIDDEN: 威靈仙、防風、川芎、獨活、清熱四寶, any Lingzhi mushrooms."
+      "prompt": "Clean vertical infographic on light beige background focusing on 百痛敵的綜合應對思路. Large circular frame with bold text 多處酸痛一次對抗 and subtitle 針對腰腿肩頸輪流不適. Below shows the product box and amber capsule bottle. Small banner: 具體成分與用量請以包裝標示為準. Bottom note: 綜合紓緩思路・非檢測報告. Professional healthcare illustration style, gold and brown accents, clear Chinese text, premium supplement aesthetic.",
+      "alt": "多處酸痛一次對抗・針對腰腿肩頸輪流不適"
     },
     {
       "id": "vg6-04",
-      "alt": "週身痛三步驟：痛點分散 → 循環負擔 → 百痛敵綜合紓緩",
-      "prompt": "Clean medical infographic explaining multi-site body pain for 盈康 百痛敵, vertical mobile portrait layout. Three-step flow tailored to this product (NOT free-radical/Lingzhi): ① 痛點分散・天氣敏感 — joints and muscles ache in rotating sites ② 末梢循環與氣血舒適受影響 — stiffness, numbness, cold hands/feet feeling ③ 百痛敵綜合日常紓緩 — amber bottle protecting comfort. Chinese titles 痛!!周身都在輪流喊!! and 百痛敵綜合對抗. Scientific diagrams with arrows, shield icons. White/beige background, gold and red accents, professional healthcare style, clear Traditional Chinese text. No Lingzhi, no free-radical cell copy."
+      "prompt": "Clean medical infographic for 百痛敵, vertical mobile layout. Three-step flow with arrows: 1. 痛點分散・腰腿肩頸輪流痛（simple body diagram highlighting multiple areas）→ 2. 微循環與氣血負擔（abstract circulation icon）→ 3. 百痛敵綜合紓緩（product image）. Title: 痛!!是身體在喊救命!! Subtitle: 百痛敵・周身痛一次對抗. White background, gold and red accents, professional healthcare style, clear Chinese text.",
+      "alt": "痛!!是身體在喊救命!!・百痛敵・周身痛一次對抗"
     },
     {
       "id": "vg6-05",
-      "alt": "明星分享：陳貝兒・胡定欣・毛舜筠談百痛敵周身痛紓緩（形象視覺）",
-      "prompt": "Three professional Asian female celebrities in business attire, arranged vertically stacked for mobile on light beige background. Names: 陳貝兒, 胡定欣, 毛舜筠. Each has a short Traditional Chinese quote about 百痛敵 / easing multi-site aches and weather-sensitive discomfort (NOT Lingzhi immunity quotes). Example vibe: 陳貝兒「天氣一變周身痛，想有一瓶綜合對抗」；胡定欣「腰腿肩頸輪流發作好攰」；毛舜筠「一瓶對應多痛點，慳得選擇困難」. Clean luxury endorsement layout, soft studio lighting, trustworthy elegant atmosphere, high detail portraits, premium health brand 盈康 style, vertical mobile portrait 9:16. Small ATROPHIN packshot optional at bottom."
+      "prompt": "Three ordinary Hong Kong users in casual-to-smart attire, arranged vertically on light beige background. Soft natural lighting. Each has a short realistic quote about 百痛敵: 陳太（45歲，家庭主婦）：「周身酸痛時，終於有得一次過對抗」; 李生（52歲，長期腰腿不適）：「風濕輪流痛，關鍵時刻想有備無患」; 張小姐（38歲，久坐上班族）：「肩頸腰輪流痛，而家會常備」. Clean and trustworthy endorsement layout, realistic everyday portraits, small product image beside the last person, vertical mobile layout. No celebrity names.",
+      "alt": "用家分享：陳太・李生・張小姐談百痛敵"
     },
     {
       "id": "vg6-06",
-      "alt": "為何選擇百痛敵而非單一部位藥／只擦外用油",
-      "prompt": "Clean comparison infographic for 盈康 百痛敵 60粒, vertical mobile portrait layout. Title 為何選擇百痛敵 而非單一止痛？. Clear comparison table with Chinese headers: 痛點覆蓋, 使用方便, 日常持續, 通路可查. Columns compare 單一部位止痛藥 | 只擦外用油 | 百痛敵60粒（本產品）. Highlight 百痛敵 column with gold. Show small ATROPHIN packshot. White/beige background, gold accents, clear readable Traditional Chinese text, medical product style. Price note HK$239. No Lingzhi fruiting-body vs spore rows."
+      "prompt": "Clean comparison infographic for 百痛敵, vertical mobile layout. Title: 為何選擇百痛敵 而非單一部位藥／只擦外用油？ Comparison table with three columns: 單一部位藥 vs 只擦外用油 vs 百痛敵 60粒（本產品）. Rows covering: 應對範圍、使用便利性、常備感覺、持續性. Bottom shows product box with amber bottle and gold price badge HK$239. White background, gold accents, clear readable Chinese text, medical product style.",
+      "alt": "為何選擇百痛敵而非單一部位藥／只擦外用油"
     }
   ]
 }
