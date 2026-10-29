@@ -88,6 +88,12 @@ PRODUCTS: dict[str, dict[str, str]] = {
         "img": "assets/products/liuwei-dihuang-350caps-yk396/primary.png",
         "reason": "日常口服輕養生，可先瀏覽規格與食用方法。",
     },
+    "liuwei-dihuang-350caps-x2-k0012": {
+        "name": "六味地黃丸 350粒×2",
+        "img": "assets/products/liuwei-dihuang-350caps-x2-k0012/primary.png",
+        "reason": "想對照家庭裝／雙盒規格時，可先瀏覽片數與標籤說明。",
+    },
+
     "jianbu-huqian-320caps-mk370": {
         "name": "健步虎潛丸 320粒",
         "img": "assets/products/jianbu-huqian-320caps-mk370/primary.jpg",
@@ -120,6 +126,9 @@ POST_PRODUCT: dict[str, str | list[str]] = {
     "2026-10-24-autumn-joint-warmth": ["jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401", "fengse-gucidan-60caps-k0002"],
     "2026-10-28-afternoon-neck-microbreaks": ["baqi-she-jianjing-cigu-oil-50ml-mk383", "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401"],
     "2026-10-29-evening-leg-buffer": ["jianbu-huqian-320caps-mk370", "zuogu-wan-60caps-hky7389"],
+    "2026-10-29-yitiaogen-patch-how-to-use": ["taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025", "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401"],
+    "2026-10-29-sciatica-patch-how-to-choose": ["taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025", "zuogu-gaobu-10pcs-x11-yk400"],
+    "2026-10-29-liuwei-dihuang-who-its-for": ["liuwei-dihuang-350caps-yk396", "liuwei-dihuang-350caps-x2-k0012"],
 }
 
 # Keyword hints for future daily posts (first match wins)
