@@ -137,6 +137,15 @@ POST_PRODUCT: dict[str, str | list[str]] = {
     "2026-10-29-athlete-foot-spray-how-to-choose": "futeiling-tokyo-tower-120ml-x3-k0037",
     "2026-10-29-heatiness-acne-qingre-how-to-read": "yanbiqing-60caps-y5",
     "2026-10-29-jinmen-vs-taiwan-yitiaogen": ["jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401", "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025"],
+    "2026-10-29-housewife-hand-cracked-spray": "futeiling-tokyo-tower-120ml-x3-k0037",
+    "2026-10-29-liuwei-when-to-take": "liuwei-dihuang-350caps-yk396",
+    "2026-10-29-sitting-waist-patch": ["taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025", "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401"],
+    "2026-10-29-throat-heatiness-qingre": "yanbiqing-60caps-y5",
+    "2026-10-29-ziyin-vs-liuwei": "liuwei-dihuang-350caps-yk396",
+    "2026-10-29-sciatica-night-worse-patch": ["taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025", "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401"],
+    "2026-10-29-dry-itch-spray-frequency": "futeiling-tokyo-tower-120ml-x3-k0037",
+    "2026-10-29-yitiaogen-how-long-redness": ["taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025", "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401"],
+    "2026-10-29-yanbiqing-vs-vitamin": "yanbiqing-60caps-y5",
 }
 
 # Keyword hints for future daily posts (first match wins)
