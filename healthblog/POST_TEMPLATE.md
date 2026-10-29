@@ -4,6 +4,8 @@
 
 ## 必做：推薦產品區塊
 
+每篇可推薦 **1–2 個**相關產品（browse-first，無購買按鈕、無價格）。
+
 放在返回健康庫／WhatsApp CTA **之前**（文章正文之後）。
 
 ```bash
@@ -35,3 +37,14 @@ python3 scripts/healthblog_rec_product.py --print biyan-60caps-mk368
 新增對照時：編輯 `scripts/healthblog_rec_product.py` 的 `PRODUCTS`、`POST_PRODUCT`、`THEME_KEYWORDS`，再跑一次腳本。
 
 CSS：`assets/site.css` 的 `.hb-rec*`；文章內 `site.css?v=` 請與腳本 `CSS_VER` 一致。
+
+| 腿／通勤緩衝 | 健步虎潛丸 `jianbu-huqian-320caps-mk370` |
+| 台灣一條根大片 | 台灣一條根膏布 20片 `taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025` |
+
+跑全量注入（含雙推薦）：
+
+```bash
+python3 scripts/healthblog_rec_product.py
+python3 scripts/healthblog_rec_product.py --list
+```
+

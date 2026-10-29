@@ -3,7 +3,7 @@
 """Healthblog 「推薦產品」block — inject into posts + helpers for future daily posts.
 
 Browse-first only (no purchase CTA / price). Soft Traditional Chinese reasons.
-Reason lines may describe product benefits freely (private site).
+Supports 1–2 related products per post.
 
 Usage:
   python3 scripts/healthblog_rec_product.py              # inject all mapped posts
@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 POSTS = ROOT / "healthblog" / "posts"
-CSS_VER = "20261020a"
+CSS_VER = "20261029a"
 
 # slug → display name, image path relative to repo root, soft 1-line reason
 PRODUCTS: dict[str, dict[str, str]] = {
@@ -41,7 +41,7 @@ PRODUCTS: dict[str, dict[str, str]] = {
     "difugen-15ml-yk395": {
         "name": "滴膚堅 Difugen 15ml",
         "img": "assets/products/difugen-15ml-yk395/primary.webp",
-        "reason": "炎夏外用保濕節奏，可一併瀏覽這款規格與使用說明。",
+        "reason": "外用保濕節奏，可一併瀏覽這款規格與使用說明。",
     },
     "xiangshui-50caps-k0035": {
         "name": "想睡就睡 50粒",
@@ -68,6 +68,11 @@ PRODUCTS: dict[str, dict[str, str]] = {
         "img": "assets/products/jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401/primary.png",
         "reason": "選膏布時可對照這款的尺寸、片數與透氣說明。",
     },
+    "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025": {
+        "name": "台灣一條根坐骨神經膏布 20片",
+        "img": "assets/products/taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025/primary.png",
+        "reason": "需要較大覆蓋與較多片數時，可先瀏覽這款膏布規格。",
+    },
     "zuogu-gaobu-10pcs-x11-yk400": {
         "name": "坐骨神經膏布 7×11cm（10片）",
         "img": "assets/products/zuogu-gaobu-10pcs-x11-yk400/primary.png",
@@ -83,22 +88,38 @@ PRODUCTS: dict[str, dict[str, str]] = {
         "img": "assets/products/liuwei-dihuang-350caps-yk396/primary.png",
         "reason": "日常口服輕養生，可先瀏覽規格與食用方法。",
     },
+    "jianbu-huqian-320caps-mk370": {
+        "name": "健步虎潛丸 320粒",
+        "img": "assets/products/jianbu-huqian-320caps-mk370/primary.jpg",
+        "reason": "關注腿腳日常節奏時，可先看看口服的用法與成分標示。",
+    },
+    "zuogu-wan-60caps-hky7389": {
+        "name": "坐骨神經丸 60粒",
+        "img": "assets/products/zuogu-wan-60caps-hky7389/primary.png",
+        "reason": "久坐臀腿相關口服系列，可先瀏覽規格與說明。",
+    },
 }
 
-# post filename stem → product slug (thematic best match)
-POST_PRODUCT: dict[str, str] = {
-    "2026-05-30-nasal-season-change": "biyan-60caps-mk368",
-    "2026-06-20-cold-weather-joints": "fengse-gucidan-60caps-k0002",
-    "2026-07-10-hydration-summer": "difugen-15ml-yk395",
-    "2026-07-28-sleep-routine": "xiangshui-50caps-k0035",
-    "2026-08-18-digestion-kids-adults": "huatatang-50caps-x4-yk470",
-    "2026-09-05-workplace-fatigue": "yahuanxian-60caps-k0038",
-    "2026-09-22-neck-shoulder-desk": "baqi-she-jianjing-cigu-oil-50ml-mk383",
-    "2026-10-08-office-back-care": "zuogu-gaobu-10pcs-x11-yk400",
-    "2026-10-17-office-dry-eyes": "futeiling-120ml-yk404",
-    "2026-10-18-plaster-selection-tips": "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401",
-    "2026-10-19-oral-wellness-rhythm": "yanbiqing-60caps-y5",
-    "2026-10-20-autumn-nasal-comfort": "biyan-60caps-mk368",
+# post filename stem → one slug or list of 1–2 slugs
+POST_PRODUCT: dict[str, str | list[str]] = {
+    "2026-05-30-nasal-season-change": ["biyan-60caps-mk368", "yanbiqing-60caps-y5"],
+    "2026-06-20-cold-weather-joints": ["fengse-gucidan-60caps-k0002", "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401"],
+    "2026-07-10-hydration-summer": ["difugen-15ml-yk395", "futeiling-120ml-yk404"],
+    "2026-07-28-sleep-routine": ["xiangshui-50caps-k0035", "liuwei-dihuang-350caps-yk396"],
+    "2026-08-18-digestion-kids-adults": ["huatatang-50caps-x4-yk470", "yanbiqing-60caps-y5"],
+    "2026-09-05-workplace-fatigue": ["yahuanxian-60caps-k0038", "liuwei-dihuang-350caps-yk396"],
+    "2026-09-22-neck-shoulder-desk": ["baqi-she-jianjing-cigu-oil-50ml-mk383", "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401"],
+    "2026-10-08-office-back-care": ["zuogu-gaobu-10pcs-x11-yk400", "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025"],
+    "2026-10-17-office-dry-eyes": ["futeiling-120ml-yk404", "difugen-15ml-yk395"],
+    "2026-10-18-plaster-selection-tips": ["jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401", "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025"],
+    "2026-10-19-oral-wellness-rhythm": ["yanbiqing-60caps-y5", "liuwei-dihuang-350caps-yk396"],
+    "2026-10-20-autumn-nasal-comfort": ["biyan-60caps-mk368", "yanbiqing-60caps-y5"],
+    "2026-10-21-autumn-skin-hydration": ["difugen-15ml-yk395", "futeiling-120ml-yk404"],
+    "2026-10-22-autumn-sleep-wind-down": ["xiangshui-50caps-k0035", "liuwei-dihuang-350caps-yk396"],
+    "2026-10-23-lunch-digestion-rhythm": ["huatatang-50caps-x4-yk470", "yanbiqing-60caps-y5"],
+    "2026-10-24-autumn-joint-warmth": ["jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401", "fengse-gucidan-60caps-k0002"],
+    "2026-10-28-afternoon-neck-microbreaks": ["baqi-she-jianjing-cigu-oil-50ml-mk383", "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401"],
+    "2026-10-29-evening-leg-buffer": ["jianbu-huqian-320caps-mk370", "zuogu-wan-60caps-hky7389"],
 }
 
 # Keyword hints for future daily posts (first match wins)
@@ -114,7 +135,15 @@ THEME_KEYWORDS: list[tuple[list[str], str]] = [
     (["皮膚", "乾燥", "保濕", "腳"], "difugen-15ml-yk395"),
     (["疲勞", "午後", "職場", "補水"], "yahuanxian-60caps-k0038"),
     (["眼", "螢幕", "乾澀", "冷氣房"], "futeiling-120ml-yk404"),
+    (["腿", "通勤", "緩衝"], "jianbu-huqian-320caps-mk370"),
 ]
+
+
+def _as_list(val: str | list[str]) -> list[str]:
+    if isinstance(val, list):
+        return val
+    return [val]
+
 
 def pick_product_for_theme(title: str, body: str = "") -> str:
     """Pick a product slug from title/body keywords; default oral flagship."""
@@ -124,13 +153,12 @@ def pick_product_for_theme(title: str, body: str = "") -> str:
             return slug
     return "yanbiqing-60caps-y5"
 
-def render_block(product_slug: str, *, rel_prefix: str = "../../") -> str:
+
+def render_card(product_slug: str, *, rel_prefix: str = "../../") -> str:
     p = PRODUCTS[product_slug]
     href = f"{rel_prefix}products/{product_slug}.html"
     img = f"{rel_prefix}{p['img']}"
     return (
-        f'<section class="hb-rec" aria-label="推薦產品">\n'
-        f'  <h2 class="hb-rec-title">推薦產品</h2>\n'
         f'  <a class="hb-rec-card" href="{href}">\n'
         f'    <div class="hb-rec-img">\n'
         f'      <img src="{img}" alt="{p["name"]}" loading="lazy" width="88" height="88">\n'
@@ -141,33 +169,43 @@ def render_block(product_slug: str, *, rel_prefix: str = "../../") -> str:
         f'      <span class="hb-rec-link">瀏覽產品詳情 →</span>\n'
         f'    </div>\n'
         f'  </a>\n'
+    )
+
+
+def render_block(product_slugs: str | list[str], *, rel_prefix: str = "../../") -> str:
+    slugs = _as_list(product_slugs)
+    cards = "".join(render_card(s, rel_prefix=rel_prefix) for s in slugs)
+    return (
+        f'<section class="hb-rec" aria-label="推薦產品">\n'
+        f'  <h2 class="hb-rec-title">推薦產品</h2>\n'
+        f'{cards}'
         f'</section>\n'
     )
+
 
 MARKER_START = "<!-- hb-rec:start -->"
 MARKER_END = "<!-- hb-rec:end -->"
 
+
 def wrap_block(html: str) -> str:
     return f"{MARKER_START}\n{html}{MARKER_END}\n"
+
 
 def inject_into_html(html: str, block: str) -> str:
     """Insert (or replace) recommended block before article footer CTAs."""
     wrapped = wrap_block(block)
-    # Remove existing block if present
     html = re.sub(
         rf"\s*{re.escape(MARKER_START)}.*?{re.escape(MARKER_END)}\s*",
         "\n",
         html,
         flags=re.DOTALL,
     )
-    # Also remove orphan .hb-rec sections without markers
     html = re.sub(
         r'\s*<section class="hb-rec"[^>]*>.*?</section>\s*',
         "\n",
         html,
         flags=re.DOTALL,
     )
-    # Prefer anchor before return / WhatsApp CTA near article end
     m = re.search(
         r'(\s*)(<p class="hb-back">|<p class="hb-cta"|<div class="hb-cta"|'
         r'<a class="hb-back"|</article>)',
@@ -177,7 +215,6 @@ def inject_into_html(html: str, block: str) -> str:
         raise ValueError("no insertion anchor found (hb-back/hb-cta/article end)")
     insertion = "\n  " + wrapped.replace("\n", "\n  ").rstrip() + "\n"
     html = html[: m.start(2)] + insertion + html[m.start(2) :]
-    # Bump CSS cache query on healthblog posts
     html = re.sub(
         r'(href="[^"]*assets/site\.css)\?v=[^"]*"',
         rf'\1?v={CSS_VER}"',
@@ -185,25 +222,45 @@ def inject_into_html(html: str, block: str) -> str:
     )
     return html
 
-def process_all() -> list[tuple[str, str]]:
-    updated: list[tuple[str, str]] = []
-    for stem, slug in sorted(POST_PRODUCT.items()):
+
+def process_all() -> list[tuple[str, list[str]]]:
+    updated: list[tuple[str, list[str]]] = []
+    for stem, val in sorted(POST_PRODUCT.items()):
+        slugs = _as_list(val)
         path = POSTS / f"{stem}.html"
         if not path.exists():
             print(f"SKIP missing {path.name}", file=sys.stderr)
             continue
-        if slug not in PRODUCTS:
-            print(f"SKIP unknown product {slug} for {stem}", file=sys.stderr)
+        for slug in slugs:
+            if slug not in PRODUCTS:
+                print(f"SKIP unknown product {slug} for {stem}", file=sys.stderr)
+                break
+            img_path = ROOT / PRODUCTS[slug]["img"]
+            if not img_path.exists():
+                print(f"WARN missing image {img_path}", file=sys.stderr)
+        else:
+            raw = path.read_text(encoding="utf-8")
+            new = inject_into_html(raw, render_block(slugs))
+            path.write_text(new, encoding="utf-8")
+            updated.append((stem, slugs))
+            names = ", ".join(PRODUCTS[s]["name"] for s in slugs)
+            print(f"OK {stem} → {names}")
+    # Also catch any unmapped posts that already exist
+    mapped = set(POST_PRODUCT)
+    for path in sorted(POSTS.glob("*.html")):
+        stem = path.stem
+        if stem in mapped:
             continue
-        img_path = ROOT / PRODUCTS[slug]["img"]
-        if not img_path.exists():
-            print(f"WARN missing image {img_path}", file=sys.stderr)
         raw = path.read_text(encoding="utf-8")
+        title_m = re.search(r"<h1[^>]*>(.*?)</h1>", raw, re.S)
+        title = re.sub(r"<[^>]+>", "", title_m.group(1)).strip() if title_m else stem
+        slug = pick_product_for_theme(title, raw)
         new = inject_into_html(raw, render_block(slug))
         path.write_text(new, encoding="utf-8")
-        updated.append((stem, slug))
-        print(f"OK {stem} → {slug} ({PRODUCTS[slug]['name']})")
+        updated.append((stem, [slug]))
+        print(f"OK(auto) {stem} → {PRODUCTS[slug]['name']}")
     return updated
+
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
@@ -212,8 +269,10 @@ def main() -> int:
     ap.add_argument("--pick", metavar="TITLE", help="Suggest product slug from title keywords")
     args = ap.parse_args()
     if args.list:
-        for stem, slug in sorted(POST_PRODUCT.items()):
-            print(f"{stem}\t{slug}\t{PRODUCTS[slug]['name']}")
+        for stem, val in sorted(POST_PRODUCT.items()):
+            slugs = _as_list(val)
+            names = ", ".join(PRODUCTS[s]["name"] for s in slugs)
+            print(f"{stem}\t{','.join(slugs)}\t{names}")
         return 0
     if args.print_slug:
         if args.print_slug not in PRODUCTS:
@@ -228,6 +287,7 @@ def main() -> int:
         return 0
     process_all()
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
