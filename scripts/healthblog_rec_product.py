@@ -38,6 +38,11 @@ PRODUCTS: dict[str, dict[str, str]] = {
         "img": "assets/products/futeiling-120ml-yk404/primary.png",
         "reason": "外用噴霧護理節奏，可先瀏覽規格與使用說明（請依標籤使用）。",
     },
+    "futeiling-tokyo-tower-120ml-x3-k0037": {
+        "name": "東京塔牌膚特靈 120ml×3",
+        "img": "assets/products/futeiling-tokyo-tower-120ml-x3-k0037/primary.png",
+        "reason": "皮膚乾癢／乾燥龜裂外用時，可先瀏覽這款家庭裝噴霧規格與使用說明。",
+    },
     "difugen-15ml-yk395": {
         "name": "滴膚堅 Difugen 15ml",
         "img": "assets/products/difugen-15ml-yk395/primary.webp",
@@ -129,6 +134,9 @@ POST_PRODUCT: dict[str, str | list[str]] = {
     "2026-10-29-yitiaogen-patch-how-to-use": ["taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025", "jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401"],
     "2026-10-29-sciatica-patch-how-to-choose": ["taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025", "zuogu-gaobu-10pcs-x11-yk400"],
     "2026-10-29-liuwei-dihuang-who-its-for": ["liuwei-dihuang-350caps-yk396", "liuwei-dihuang-350caps-x2-k0012"],
+    "2026-10-29-athlete-foot-spray-how-to-choose": "futeiling-tokyo-tower-120ml-x3-k0037",
+    "2026-10-29-heatiness-acne-qingre-how-to-read": "yanbiqing-60caps-y5",
+    "2026-10-29-jinmen-vs-taiwan-yitiaogen": ["jinmen-yitiaogen-zuogu-gaobu-10pcs-yk401", "taiwan-yitiaogen-zuogu-gaobu-20pcs-k0025"],
 }
 
 # Keyword hints for future daily posts (first match wins)
