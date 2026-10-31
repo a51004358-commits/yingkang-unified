@@ -48,3 +48,6 @@ python3 scripts/healthblog_rec_product.py
 python3 scripts/healthblog_rec_product.py --list
 ```
 
+## 硬禁：免責句
+
+ykimed 為私人站：正文**不要**加 Cap.231／「並非診斷、治療或預防疾病」／「屬一般健康產品說明」等免責段（含 `hb-disclaimer`）。功效與搜尋詞可自由寫。
